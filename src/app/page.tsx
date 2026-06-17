@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { FloatingProductShowcase } from "@/components/FloatingProductShowcase";
 import { ManufacturingTimeline } from "@/components/ManufacturingTimeline";
 import { Leaf, ShieldCheck, Factory, Droplets, Users, Globe2 } from "lucide-react";
@@ -26,12 +26,12 @@ export default function Home() {
             Premium Dehydrated Fruit, Vegetable & Herbal Powders Manufactured with Purity, Quality & Sustainability.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" asChild className="text-lg px-8 py-6 rounded-full">
-              <Link href="/products">View Products</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full bg-white/10 hover:bg-white text-white hover:text-primary border-white" asChild>
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+            <Link href="/products" className={buttonVariants({ size: "lg", className: "text-lg px-8 py-6 rounded-full" })}>
+              View Products
+            </Link>
+            <Link href="/contact" className={buttonVariants({ size: "lg", variant: "outline", className: "text-lg px-8 py-6 rounded-full bg-white/10 hover:bg-white text-white hover:text-primary border-white" })}>
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
@@ -71,9 +71,9 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Button className="mt-8" size="lg" asChild>
-                <Link href="/about">Discover Our Story</Link>
-              </Button>
+              <Link href="/about" className={buttonVariants({ className: "mt-8", size: "lg" })}>
+                Discover Our Story
+              </Link>
             </div>
           </div>
         </div>
@@ -130,12 +130,12 @@ export default function Home() {
             Contact us today for bulk inquiries, custom formulations, or sample requests.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-6 rounded-full text-primary hover:text-primary/90" asChild>
-              <Link href="/contact">Contact Our Team</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white hover:text-primary" asChild>
-              <Link href="/products">Browse Catalog</Link>
-            </Button>
+            <Link href="/contact" className={buttonVariants({ size: "lg", variant: "secondary", className: "text-lg px-8 py-6 rounded-full text-primary hover:text-primary/90" })}>
+              Contact Our Team
+            </Link>
+            <Link href="/products" className={buttonVariants({ size: "lg", variant: "outline", className: "text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white hover:text-primary" })}>
+              Browse Catalog
+            </Link>
           </div>
         </div>
       </section>
