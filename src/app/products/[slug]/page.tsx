@@ -1,0 +1,149 @@
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { products } from "@/data/products";
+import { WhatsAppInquiryButton } from "@/components/WhatsAppInquiryButton";
+import { CheckCircle2, Box, Thermometer, ShieldAlert, Package } from "lucide-react";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const product = products.find((p) => p.slug === params.slug);
+  if (!product) return { title: "Product Not Found" };
+  
+  return {
+    title: `${product.name} | Nutri Natural Powders`,
+    description: product.shortDescription,
+  };
+}
+
+// Ensure the page is generated as part of static export (if needed)
+export function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
+
+export default function ProductDetailPage({ params }: { params: { slug: string } }) {
+  const product = products.find((p) => p.slug === params.slug);
+
+  if (!product) {
+    notFound();
+  }
+
+  return (
+    <div className="py-12 bg-background min-h-screen">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          {/* Product Image */}
+          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl sticky top-28">
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* Product Details */}
+          <div className="space-y-10">
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+                {product.name}
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                {product.shortDescription}
+              </p>
+            </div>
+
+            <WhatsAppInquiryButton 
+              productName={product.name} 
+              className="w-full sm:w-auto text-lg py-6 px-8 rounded-full"
+            />
+
+            <div className="grid sm:grid-cols-2 gap-8">
+              {/* Benefits */}
+              <div className="bg-muted p-6 rounded-2xl">
+                <h3 className="text-xl font-heading font-bold mb-4 flex items-center gap-2">
+                  <ShieldAlert className="text-primary w-5 h-5" /> Key Benefits
+                </h3>
+                <ul className="space-y-3">
+                  {product.benefits.map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2 text-foreground">
+                      <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Applications */}
+              <div className="bg-muted p-6 rounded-2xl">
+                <h3 className="text-xl font-heading font-bold mb-4 flex items-center gap-2">
+                  <Box className="text-primary w-5 h-5" /> Applications
+                </h3>
+                <ul className="space-y-3">
+                  {product.applications.map((app, i) => (
+                    <li key={i} className="flex items-start gap-2 text-foreground">
+                      <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                      <span>{app}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Specifications */}
+            <div>
+              <h3 className="text-2xl font-heading font-bold mb-6">Specifications</h3>
+              <div className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm">
+                <table className="w-full text-left border-collapse">
+                  <tbody>
+                    <tr className="border-b border-border">
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Color</th>
+                      <td className="py-4 px-6 text-muted-foreground">{product.specifications.color}</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Moisture</th>
+                      <td className="py-4 px-6 text-muted-foreground">{product.specifications.moisture}</td>
+                    </tr>
+                    <tr className="border-b border-border">
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Mesh Size</th>
+                      <td className="py-4 px-6 text-muted-foreground">{product.specifications.meshSize}</td>
+                    </tr>
+                    <tr>
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Shelf Life</th>
+                      <td className="py-4 px-6 text-muted-foreground">{product.specifications.shelfLife}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Storage & Packaging */}
+            <div className="grid sm:grid-cols-2 gap-6 pt-4">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Thermometer className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-heading font-bold text-lg mb-1">Storage</h4>
+                  <p className="text-muted-foreground">{product.storage}</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Package className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-heading font-bold text-lg mb-1">Packaging</h4>
+                  <p className="text-muted-foreground">{product.packaging}</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
