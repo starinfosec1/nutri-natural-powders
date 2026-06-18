@@ -20,14 +20,14 @@ const posts = [
     excerpt: "An inside look at our manufacturing process and why low-temperature drying is superior to traditional sun-drying methods.",
     category: "Manufacturing",
     date: "June 10, 2026",
-    image: "https://images.unsplash.com/photo-1587823565977-1286c06a9284?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600",
   },
   {
     title: "Trending Natural Colorants in the Food Industry",
     excerpt: "Why Beetroot and Spinach powders are replacing synthetic dyes in the modern food and beverage manufacturing sector.",
     category: "Industry Trends",
     date: "June 5, 2026",
-    image: "https://images.unsplash.com/photo-1590165482156-f2eecc4735c3?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=600",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function BlogPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {posts.map((post, index) => (
             <article key={index} className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="relative h-48 overflow-hidden">

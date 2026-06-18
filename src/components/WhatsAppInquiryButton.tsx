@@ -10,7 +10,7 @@ interface WhatsAppInquiryButtonProps {
 }
 
 export function WhatsAppInquiryButton({ productName, className, variant = "default" }: WhatsAppInquiryButtonProps) {
-  const phoneNumber = "919876543210"; // Replace with actual number
+  const phoneNumber = "918459711477"; // Primary WhatsApp number
   
   const message = `Hello Nutri Natural Powders,
 

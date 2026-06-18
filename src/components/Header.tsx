@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -24,12 +25,13 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="font-heading text-2xl font-bold text-primary">Nutri Natural</span>
+            <Link href="/" className="flex items-center gap-3">
+              <Image src="/logo.png" alt="NNP Powders Logo" width={40} height={40} className="object-contain" />
+              <span className="font-heading text-2xl font-bold text-primary">NNP Powders</span>
             </Link>
           </div>
-          <div className="hidden md:block">
-            <nav className="flex items-center gap-6">
+          <div className="hidden xl:block">
+            <nav className="flex items-center gap-6 xl:gap-8">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -41,12 +43,12 @@ export function Header() {
               ))}
             </nav>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden xl:block">
             <Link href="/contact" className={buttonVariants()}>
               Inquire Now
             </Link>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex xl:hidden">
             <Button
               variant="ghost"
               size="icon"
@@ -66,7 +68,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="xl:hidden border-t border-border bg-background">
           <div className="space-y-1 px-4 pb-3 pt-2 sm:px-3">
             {navigation.map((item) => (
               <Link

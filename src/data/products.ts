@@ -58,7 +58,7 @@ export const products = [
     name: "Beetroot Powder",
     slug: "beetroot-powder",
     shortDescription: "Vibrant natural colorant and health supplement rich in nitrates.",
-    image: "https://images.unsplash.com/photo-1590165482156-f2eecc4735c3?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=800",
     benefits: [
       "Improves Blood Flow",
       "Lowers Blood Pressure",
@@ -85,7 +85,7 @@ export const products = [
     name: "Onion Powder",
     slug: "onion-powder",
     shortDescription: "Convenient flavor enhancer made from dehydrated premium onions.",
-    image: "https://images.unsplash.com/photo-1620574387735-3624d75b2df5?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800",
     benefits: [
       "Convenient Culinary Use",
       "Long Shelf Life",
@@ -112,7 +112,7 @@ export const products = [
     name: "Curry Leaves Powder",
     slug: "curry-leaves-powder",
     shortDescription: "Aromatic powder retaining the essential oils of fresh curry leaves.",
-    image: "https://images.unsplash.com/photo-1634594269926-0a256df0ffcd?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
     benefits: [
       "Promotes Hair Health",
       "Improves Digestion",

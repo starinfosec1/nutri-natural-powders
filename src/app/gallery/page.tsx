@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "https://images.unsplash.com/photo-1595856461947-a8775fba1894?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=800",
   "https://images.unsplash.com/photo-1508595165502-3e2652e5a405?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1587823565977-1286c06a9284?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=800",
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
   "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=800",
   "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=800",
@@ -26,7 +26,7 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {images.map((src, index) => (
             <div key={index} className="relative h-80 rounded-2xl overflow-hidden group">
               <Image

@@ -5,8 +5,9 @@ import { WhatsAppInquiryButton } from "@/components/WhatsAppInquiryButton";
 import { CheckCircle2, Box, Thermometer, ShieldAlert, Package } from "lucide-react";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const product = products.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const product = products.find((p) => p.slug === resolvedParams.slug);
   if (!product) return { title: "Product Not Found" };
   
   return {
@@ -22,8 +23,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProductDetailPage({ params }: { params: { slug: string } }) {
-  const product = products.find((p) => p.slug === params.slug);
+export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const product = products.find((p) => p.slug === resolvedParams.slug);
 
   if (!product) {
     notFound();
@@ -34,7 +36,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Product Image */}
-          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl sticky top-28">
+          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl">
             <Image
               src={product.image}
               alt={product.name}

@@ -38,7 +38,7 @@ export default function TestimonialsPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-border">
               <div className="flex gap-1 mb-6">

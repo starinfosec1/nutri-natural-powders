@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nutri Natural Powders | Nature's Nutrition, Simply Powerful",
+  title: "NNP Powders | Nature's Nutrition, Simply Powerful",
   description:
     "Premium Dehydrated Fruit, Vegetable & Herbal Powders Manufactured with Purity, Quality & Sustainability. Your trusted natural powder supplier.",
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Dehydrated Powder Manufacturer India",
   ],
   openGraph: {
-    title: "Nutri Natural Powders | Premium Dehydrated Powders",
+    title: "NNP Powders | Premium Dehydrated Powders",
     description: "Your trusted supplier of high-quality dehydrated fruit, vegetable, and herbal powders.",
     type: "website",
     locale: "en_US",
@@ -50,12 +50,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
-        <LenisProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </LenisProvider>
+      <body className="min-h-full flex flex-col font-sans overflow-x-hidden">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
