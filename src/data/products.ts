@@ -4,7 +4,7 @@ export const products = [
     name: "Moringa Powder",
     slug: "moringa-powder",
     shortDescription: "Nutrient-dense superfood powder made from premium moringa leaves.",
-    image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=800",
+    image: "/logo.jpg",
     benefits: [
       "Rich in Antioxidants",
       "Reduces Inflammation",

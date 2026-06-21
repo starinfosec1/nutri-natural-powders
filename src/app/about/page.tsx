@@ -4,8 +4,8 @@ import { FadeIn } from "@/components/animations/FadeIn";
 import { Counter } from "@/components/animations/Counter";
 
 export const metadata: Metadata = {
-  title: "About Us | NNP Powders",
-  description: "At NNP Powders, our journey begins with a simple belief: the purest nutrition comes from nature itself. Learn about our mission, vision, and values.",
+  title: "About Us | NNP Products",
+  description: "At NNP Products, our journey begins with a simple belief: the purest nutrition comes from nature itself. Learn about our mission, vision, and values.",
 };
 
 export default function AboutPage() {
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
           <FadeIn direction="up">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">About NNP Powders</h1>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">About NNP Products</h1>
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
             <p className="text-xl md:text-2xl font-light opacity-90">
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-foreground">About the Company</h2>
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                   <p className="text-foreground font-medium">
-                    At NNP Powders, our journey begins with a simple belief: the purest nutrition comes from nature itself. Guided by our philosophy, "Nature's Nutrition, Simply Powerful.", we are dedicated to transforming fresh agricultural produce into high-quality dehydrated fruit, vegetable, and herbal powders that nourish lives and empower industries.
+                    At NNP Products, our journey begins with a simple belief: the purest nutrition comes from nature itself. Guided by our philosophy, "Nature's Nutrition, Simply Powerful.", we are dedicated to transforming fresh agricultural produce into high-quality dehydrated fruit, vegetable, and herbal powders that nourish lives and empower industries.
                   </p>
                   
                   <ul className="space-y-5">
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
                   <div className="pt-4 border-t border-border">
                     <p className="font-heading text-xl font-bold text-primary italic">
-                      "At NNP Powders, every ingredient tells a story of nature, nutrition, and trust."
+                      "At NNP Products, every ingredient tells a story of nature, nutrition, and trust."
                     </p>
                   </div>
                 </div>

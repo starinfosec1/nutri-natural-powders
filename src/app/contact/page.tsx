@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | NNP Powders",
+  title: "Contact Us | NNP Products",
   description: "Get in touch for bulk inquiries, custom formulations, and sample requests.",
 };
 

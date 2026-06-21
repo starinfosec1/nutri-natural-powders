@@ -7,22 +7,14 @@ import { Leaf, ShieldCheck, Factory, Droplets, Users, Globe2 } from "lucide-reac
 import { FadeIn } from "@/components/animations/FadeIn";
 
 import { HeroAnimation } from "@/components/animations/HeroAnimation";
+import { HeroCarousel } from "@/components/animations/HeroCarousel";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image 
-            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=2000" 
-            fill 
-            className="object-cover" 
-            alt="Nature's Nutrition" 
-            priority 
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
+        <HeroCarousel />
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center justify-center pt-20">
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg">
             Nature's Nutrition, Simply Powerful.
@@ -69,7 +61,7 @@ export default function Home() {
                   Purity From Nature,<br /><span className="text-primary">Power For You.</span>
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  At NNP Powders, we bridge the gap between pure agricultural produce and high-quality industrial ingredients. Our state-of-the-art dehydration facilities ensure that every gram of powder retains its natural color, aroma, and nutritional profile.
+                  At NNP Products, we bridge the gap between pure agricultural produce and high-quality industrial ingredients. Our state-of-the-art dehydration facilities ensure that every gram of powder retains its natural color, aroma, and nutritional profile.
                 </p>
                 <ul className="space-y-4 pt-4">
                   {[
