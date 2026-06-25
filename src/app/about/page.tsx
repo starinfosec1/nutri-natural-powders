@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Counter } from "@/components/animations/Counter";
 
 export const metadata: Metadata = {
-  title: "About Us | NNP Products",
-  description: "At NNP Products, our journey begins with a simple belief: the purest nutrition comes from nature itself. Learn about our mission, vision, and values.",
+  title: "About NNP Products - Trusted Natural Powder Manufacturer Since 2015",
+  description: "Learn about NNP Products, a leading dehydrated powder manufacturer based in Sangli, Maharashtra. We work directly with farmers to deliver pure, high-quality natural powders.",
 };
 
 export default function AboutPage() {
@@ -17,11 +18,11 @@ export default function AboutPage() {
   ];
 
   const values = [
-    { title: "Quality Without Compromise", desc: "We are committed to delivering products that meet the highest standards of purity, consistency, and excellence." },
-    { title: "Respect for Nature", desc: "We believe in preserving the natural integrity of every ingredient and promoting environmentally responsible practices." },
-    { title: "Integrity & Trust", desc: "We build lasting relationships through transparency, reliability, and ethical business practices." },
-    { title: "Innovation & Growth", desc: "We continuously improve our processes and products to meet the evolving needs of our customers and industries." },
-    { title: "Customer Success", desc: "Our success is measured by the success of our customers, and we are dedicated to supporting their growth with dependable ingredient solutions." }
+    { title: "Quality Without Compromise", desc: "Every batch of powder we make is tested for purity, consistency, and safety before it leaves our facility." },
+    { title: "Respect for Nature", desc: "We protect the natural goodness of every ingredient and follow eco-friendly manufacturing practices." },
+    { title: "Integrity & Trust", desc: "We believe in honest business. Our customers trust us because we deliver what we promise, every time." },
+    { title: "Innovation & Growth", desc: "We keep improving our methods and products to give our customers the best possible ingredients." },
+    { title: "Customer Success", desc: "When our customers grow, we grow. We are here to help your business succeed with reliable, high-quality powders." }
   ];
 
   return (
@@ -42,7 +43,7 @@ export default function AboutPage() {
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
             <p className="text-xl md:text-2xl font-light opacity-90">
-              Nature's Nutrition, Simply Powerful.
+              Turning fresh farm produce into pure, natural powders since 2015.
             </p>
           </FadeIn>
         </div>
@@ -57,33 +58,33 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-foreground">About the Company</h2>
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                   <p className="text-foreground font-medium">
-                    At NNP Products, our journey begins with a simple belief: the purest nutrition comes from nature itself. Guided by our philosophy, "Nature's Nutrition, Simply Powerful.", we are dedicated to transforming fresh agricultural produce into high-quality dehydrated fruit, vegetable, and herbal powders that nourish lives and empower industries.
+                    NNP Products is a natural powder manufacturing company based in Sangli, Maharashtra. We take fresh fruits, vegetables, and herbs from local farms and turn them into fine, pure powders using modern drying technology. Our goal is simple: keep the natural taste, color, and nutrition in every product we make.
                   </p>
                   
                   <ul className="space-y-5">
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>Located in the fertile agricultural region of Ishwarpur MIDC, Taluka Walwa, District Sangli, Maharashtra, we work closely with farmers and agricultural communities to source carefully selected raw materials.</p>
+                      <p>Our factory is located in Ishwarpur MIDC, Taluka Walwa, District Sangli, Maharashtra. We buy raw materials directly from local farmers, which helps us get the freshest ingredients and supports the farming community.</p>
                     </li>
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>Through advanced dehydration and processing techniques, we preserve the natural goodness, color, flavor, and nutritional value of every ingredient, ensuring that nature's benefits reach consumers in their purest form.</p>
+                      <p>We use low-temperature drying methods to remove moisture from fruits, vegetables, and herbs. This keeps the natural color, flavor, and vitamins intact, so our powders are as close to the real thing as possible.</p>
                     </li>
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>Every product we manufacture represents a connection between the land, the farmer, our manufacturing expertise, and the businesses and consumers who trust our ingredients.</p>
+                      <p>Every powder we make connects the farmer who grows the crop, our team who processes it, and the businesses who use it in their products. We take pride in this chain of trust.</p>
                     </li>
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>Whether used in food products, health supplements, herbal formulations, nutraceuticals, or wellness applications, our powders are crafted with a commitment to quality, purity, and sustainability.</p>
+                      <p>Our powders are used in many industries — from food and beverages to health supplements and beauty products. No matter where they are used, our commitment to purity and quality stays the same.</p>
                     </li>
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>We believe that responsible manufacturing goes beyond production. It means supporting agricultural communities, promoting sustainable practices, reducing post-harvest wastage, and creating value from nature's harvest while maintaining respect for the environment.</p>
+                      <p>For us, good manufacturing means more than just making products. It means supporting farmers, reducing food waste, using sustainable methods, and treating the environment with care.</p>
                     </li>
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
-                      <p>Through innovation, consistency, and integrity, we strive to build lasting partnerships with our customers and contribute to a healthier future.</p>
+                      <p>We work hard to improve every day, keep our promises, and build long-term relationships with our customers. Together, we are making a healthier future.</p>
                     </li>
                   </ul>
 
@@ -117,7 +118,7 @@ export default function AboutPage() {
               <div className="bg-white p-12 rounded-3xl shadow-sm h-full">
                 <h2 className="text-3xl font-heading font-bold mb-6 text-primary">Our Vision</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To become a globally trusted leader in natural dehydrated ingredients by delivering sustainable, innovative, and high-quality nutritional solutions that enrich lives, support healthier choices, and create value across the food, wellness, and nutraceutical industries.
+                  To become a globally trusted name in natural dehydrated powders. We want to be the company that food makers, health brands, and wellness businesses think of first when they need pure, natural ingredients.
                 </p>
               </div>
             </FadeIn>
@@ -125,7 +126,7 @@ export default function AboutPage() {
               <div className="bg-white p-12 rounded-3xl shadow-sm h-full">
                 <h2 className="text-3xl font-heading font-bold mb-6 text-primary">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To harness the power of nature through responsible sourcing and advanced processing, delivering premium dehydrated fruit, vegetable, and herbal powders that meet the highest standards of quality, purity, and customer satisfaction.
+                  To make the best natural powders by working directly with farmers, using modern drying technology, and following strict quality standards. Every product we deliver must be pure, safe, and exactly what our customers need.
                 </p>
               </div>
             </FadeIn>
@@ -180,11 +181,11 @@ export default function AboutPage() {
                 <div className="bg-muted p-8 rounded-3xl h-full">
                   <ul className="space-y-6">
                     {[
-                      "To provide premium-quality dehydrated fruit, vegetable, and herbal powders that retain their natural nutritional value, taste, and functionality.",
-                      "To support farmers and agricultural communities through responsible sourcing and long-term partnerships.",
-                      "To maintain hygienic manufacturing practices and rigorous quality standards at every stage of production.",
-                      "To deliver consistent, safe, and reliable ingredients that help our customers create products people can trust.",
-                      "To contribute to a healthier and more sustainable future by bringing the power of nature to industries and consumers worldwide."
+                      "Make natural powders that keep their original taste, color, and health benefits.",
+                      "Support local farmers by buying directly from them and building long-term partnerships.",
+                      "Follow strict hygiene and quality checks at every step of production.",
+                      "Deliver safe, consistent products that our customers can always rely on.",
+                      "Help build a healthier future by bringing nature's goodness to industries and consumers everywhere."
                     ].map((item, i) => (
                       <li key={i} className="flex gap-4">
                         <div className="w-6 h-6 rounded-full bg-accent flex items-center justify-center text-white shrink-0 mt-1">✓</div>
@@ -195,6 +196,26 @@ export default function AboutPage() {
                 </div>
               </div>
             </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Cross-Links */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <Link href="/products" className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all">
+              <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">Explore Our Products</h3>
+              <p className="text-muted-foreground">See our full range of natural dehydrated powders.</p>
+            </Link>
+            <Link href="/manufacturing" className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all">
+              <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">See Our Process</h3>
+              <p className="text-muted-foreground">Learn how we make our powders step by step.</p>
+            </Link>
+            <Link href="/contact" className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all">
+              <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">Get in Touch</h3>
+              <p className="text-muted-foreground">Contact us for bulk orders or free samples.</p>
+            </Link>
           </div>
         </div>
       </section>

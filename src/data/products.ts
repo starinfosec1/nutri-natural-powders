@@ -4,7 +4,7 @@ export const products = [
     name: "Moringa Powder",
     slug: "moringa-powder",
     shortDescription: "Nutrient-dense superfood powder made from premium moringa leaves.",
-    image: "/logo.jpg",
+    image: "/moringa.png",
     benefits: [
       "Rich in Antioxidants",
       "Reduces Inflammation",
@@ -31,7 +31,7 @@ export const products = [
     name: "Ginger Powder",
     slug: "ginger-powder",
     shortDescription: "Aromatic and pungent ginger powder with high gingerol content.",
-    image: "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=800",
+    image: "/ginger-powders.png",
     benefits: [
       "Aids Digestion",
       "Relieves Nausea",
@@ -58,7 +58,7 @@ export const products = [
     name: "Beetroot Powder",
     slug: "beetroot-powder",
     shortDescription: "Vibrant natural colorant and health supplement rich in nitrates.",
-    image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=800",
+    image: "/beetroot-powders.png",
     benefits: [
       "Improves Blood Flow",
       "Lowers Blood Pressure",
@@ -85,7 +85,7 @@ export const products = [
     name: "Onion Powder",
     slug: "onion-powder",
     shortDescription: "Convenient flavor enhancer made from dehydrated premium onions.",
-    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800",
+    image: "/Onion-Powders.png",
     benefits: [
       "Convenient Culinary Use",
       "Long Shelf Life",
@@ -112,7 +112,7 @@ export const products = [
     name: "Curry Leaves Powder",
     slug: "curry-leaves-powder",
     shortDescription: "Aromatic powder retaining the essential oils of fresh curry leaves.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+    image: "/curry-leaves.png",
     benefits: [
       "Promotes Hair Health",
       "Improves Digestion",
@@ -139,7 +139,7 @@ export const products = [
     name: "Methi (Fenugreek) Powder",
     slug: "methi-powder",
     shortDescription: "Slightly bitter, highly nutritious powder used in wellness and culinary applications.",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=800",
+    image: "/methi.png",
     benefits: [
       "Aids Blood Sugar Regulation",
       "Supports Digestion",
@@ -166,7 +166,7 @@ export const products = [
     name: "Tomato Powder",
     slug: "tomato-powder",
     shortDescription: "Tangy, vibrant powder made from sun-ripened dehydrated tomatoes.",
-    image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=800",
+    image: "/tomato-powders.png",
     benefits: [
       "Rich in Lycopene",
       "High Vitamin C Content",

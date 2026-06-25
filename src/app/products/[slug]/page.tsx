@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { WhatsAppInquiryButton } from "@/components/WhatsAppInquiryButton";
@@ -11,8 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return { title: "Product Not Found" };
   
   return {
-    title: `${product.name} | Nutri Natural Powders`,
-    description: product.shortDescription,
+    title: `${product.name} - Natural Dehydrated Powder | NNP Products`,
+    description: `Buy pure ${product.name} from NNP Products. ${product.shortDescription} FSSAI certified, bulk supply available.`,
   };
 }
 
@@ -141,6 +142,16 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   <p className="text-muted-foreground">{product.packaging}</p>
                 </div>
               </div>
+            </div>
+
+            {/* Cross-Links */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link href="/products" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                ← Back to All Products
+              </Link>
+              <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                Contact Us for Pricing →
+              </Link>
             </div>
 
           </div>

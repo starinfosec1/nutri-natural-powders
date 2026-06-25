@@ -6,13 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const products = [
-  { name: "Moringa Powder", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=400", slug: "moringa-powder" },
-  { name: "Ginger Powder", image: "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=400", slug: "ginger-powder" },
-  { name: "Beetroot Powder", image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=400", slug: "beetroot-powder" },
-  { name: "Onion Powder", image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400", slug: "onion-powder" },
-  { name: "Curry Leaves Powder", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400", slug: "curry-leaves-powder" },
-  { name: "Methi Powder", image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=400", slug: "methi-powder" },
-  { name: "Tomato Powder", image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=400", slug: "tomato-powder" },
+  { name: "Moringa Powder", image: "/moringa.png", slug: "moringa-powder" },
+  { name: "Ginger Powder", image: "/ginger-powders.png", slug: "ginger-powder" },
+  { name: "Beetroot Powder", image: "/beetroot-powders.png", slug: "beetroot-powder" },
+  { name: "Onion Powder", image: "/Onion-Powders.png", slug: "onion-powder" },
+  { name: "Curry Leaves Powder", image: "/curry-leaves.png", slug: "curry-leaves-powder" },
+  { name: "Methi Powder", image: "/methi.png", slug: "methi-powder" },
+  { name: "Tomato Powder", image: "/tomato-powders.png", slug: "tomato-powder" },
 ];
 
 export function FloatingProductShowcase() {
@@ -20,9 +20,9 @@ export function FloatingProductShowcase() {
 
   useEffect(() => {
     if (!containerRef.current) return;
-    
+
     const container = containerRef.current;
-    
+
     gsap.to(container, {
       xPercent: -50,
       ease: "none",
@@ -39,11 +39,11 @@ export function FloatingProductShowcase() {
           Premium Powders Collection
         </h2>
       </div>
-      
+
       <div className="w-full overflow-hidden flex whitespace-nowrap touch-pan-y">
         <div ref={containerRef} className="flex gap-4 md:gap-6 px-4 w-max touch-pan-y">
           {[...products, ...products].map((product, index) => (
-            <Link 
+            <Link
               key={`${product.slug}-${index}`}
               href={`/products/${product.slug}`}
               className="group relative flex-shrink-0 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105"

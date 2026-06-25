@@ -7,14 +7,24 @@ import { Leaf, ShieldCheck, Factory, Droplets, Users, Globe2 } from "lucide-reac
 import { FadeIn } from "@/components/animations/FadeIn";
 
 import { HeroAnimation } from "@/components/animations/HeroAnimation";
-import { HeroCarousel } from "@/components/animations/HeroCarousel";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
-        <HeroCarousel />
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute top-0 left-0 w-full h-full object-cover object-center pointer-events-none"
+          >
+            <source src="/videos/nnpv.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center justify-center pt-20">
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg">
             Nature's Nutrition, Simply Powerful.
@@ -36,6 +46,113 @@ export default function Home() {
       {/* Floating Product Showcase */}
       <FloatingProductShowcase />
 
+
+      {/* Health Benefits Section */}
+      <section className="py-24 bg-muted/40 border-t border-b border-border/40">
+        <div className="container mx-auto px-4">
+          <FadeIn direction="up">
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+                Health Benefits of Our Powders
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Our 100% natural, nutrient-dense dehydrated powders are packed with vitamins, minerals, and bioactive compounds to support daily health and vitality.
+              </p>
+            </div>
+          </FadeIn>
+
+          {/* Stacking Cards Container */}
+          <div className="relative max-w-4xl mx-auto flex flex-col gap-12 pb-24">
+            {[
+              {
+                title: "Moringa Powder",
+                benefit: "Boosts Immunity & Energy",
+                desc: "Known as the 'Miracle Tree', moringa is rich in iron, calcium, vitamin A, and antioxidants that enhance energy, support healthy immune function, and combat cell damage.",
+                image: "/moringa.png",
+                color: "bg-emerald-50 text-emerald-800 border-emerald-100"
+              },
+              {
+                title: "Beetroot Powder",
+                benefit: "Improves Blood Flow & Stamina",
+                desc: "High in dietary nitrates, beetroot helps dilate blood vessels to improve circulation, optimize oxygen delivery, support cardiovascular health, and increase stamina.",
+                image: "/beetroot-powders.png",
+                color: "bg-red-50 text-red-800 border-red-100"
+              },
+              {
+                title: "Ginger Powder",
+                benefit: "Supports Digestion & Joint Health",
+                desc: "Contains gingerol, a powerful bioactive compound that aids digestion, relieves stomach upset, reduces muscle soreness, and offers strong anti-inflammatory properties.",
+                image: "/ginger-powders.png",
+                color: "bg-amber-50 text-amber-800 border-amber-100"
+              },
+              {
+                title: "Curry Leaf Powder",
+                benefit: "Promotes Hair & Gut Vitality",
+                desc: "Rich in antioxidants, iron, and fiber, curry leaves help maintain healthy digestion, regulate cholesterol levels, and nourish hair follicles to promote hair health.",
+                image: "/curry-leaves.png",
+                color: "bg-green-50 text-green-800 border-green-100"
+              },
+              {
+                title: "Onion Powder",
+                benefit: "Supports Heart Health & Immunity",
+                desc: "Rich in vitamin C, potassium, and phytochemicals, onion powder helps maintain healthy blood pressure levels, supports cardiovascular health, and strengthens immune defenses.",
+                image: "/Onion-Powders.png",
+                color: "bg-slate-50 text-slate-800 border-slate-100"
+              },
+              {
+                title: "Methi (Fenugreek) Powder",
+                benefit: "Regulates Blood Sugar & Metabolism",
+                desc: "Highly nutritious and rich in soluble fiber, methi powder supports healthy glucose levels, boosts digestive function, enhances metabolism, and promotes skin and hair vitality.",
+                image: "/methi.png",
+                color: "bg-yellow-50 text-yellow-800 border-yellow-100"
+              },
+              {
+                title: "Tomato Powder",
+                benefit: "Heart Health & Lycopene Boost",
+                desc: "Packed with lycopene, vitamin C, and potassium, tomato powder acts as a strong antioxidant shield, supporting cardiovascular health and protecting cells from oxidative stress.",
+                image: "/tomato-powders.png",
+                color: "bg-rose-50 text-rose-800 border-rose-100"
+              }
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="relative md:sticky bg-white border border-border rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col md:flex-row min-h-[350px] md:h-[320px]"
+                style={{
+                  top: `calc(100px + ${i * 32}px)`,
+                  zIndex: i + 1
+                }}
+              >
+                {/* Image side */}
+                <div className="relative w-full md:w-2/5 h-48 md:h-full bg-muted overflow-hidden shrink-0">
+                  <Image
+                    src={card.image}
+                    alt={`${card.title} benefits`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/5" />
+                </div>
+                {/* Content side */}
+                <div className="p-8 md:p-10 flex-1 flex flex-col justify-center">
+                  <div>
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase mb-4 ${card.color}`}>
+                      {card.benefit}
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold font-heading text-foreground mb-4 group-hover:text-primary transition-colors">
+                      {card.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                      {card.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* About Preview */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -43,7 +160,7 @@ export default function Home() {
             <FadeIn direction="up">
               <div className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1508595165502-3e2652e5a405?auto=format&fit=crop&q=80&w=1000"
+                  src="/powder-image.jpg"
                   alt="Premium Quality Powders"
                   fill
                   className="object-cover"
@@ -61,7 +178,7 @@ export default function Home() {
                   Purity From Nature,<br /><span className="text-primary">Power For You.</span>
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  At NNP Products, we bridge the gap between pure agricultural produce and high-quality industrial ingredients. Our state-of-the-art dehydration facilities ensure that every gram of powder retains its natural color, aroma, and nutritional profile.
+                  We turn fresh fruits, vegetables, and herbs into pure, natural powders. Our advanced drying process keeps the natural color, taste, and nutrition in every product we make.
                 </p>
                 <ul className="space-y-4 pt-4">
                   {[
@@ -94,16 +211,16 @@ export default function Home() {
                 Our Services
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive powder manufacturing and supply solutions tailored for your industry needs.
+                We make four types of natural powders to meet the needs of food, health, and wellness businesses.
               </p>
             </div>
           </FadeIn>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
-              { title: "Dehydrated Fruit Powders", desc: "Premium-quality fruit powders processed to preserve natural flavor, color, and nutritional value for food, beverage, and wellness applications.", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&q=80&w=800" },
-              { title: "Dehydrated Vegetable Powders", desc: "Manufacturing a wide range of vegetable powders including tomato, onion, beetroot, spinach, and other value-added ingredients for food processing industries.", image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=800" },
-              { title: "Herbal & Nutritional Powders", desc: "Specialized production of natural herbal powders such as moringa, ginger, curry leaf, methi, and other plant-based ingredients for health and wellness products.", image: "https://images.unsplash.com/photo-1508595165502-3e2652e5a405?auto=format&fit=crop&q=80&w=800" },
-              { title: "Bulk Supply Solutions", desc: "Reliable supply of high-quality powders for food manufacturers, nutraceutical companies, wholesalers, exporters, and industrial buyers.", image: "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=800" }
+
+              { title: "Dehydrated Vegetable Powders", desc: "Our vegetable powders include tomato, onion, beetroot, spinach, and more. They are perfect for soups, sauces, ready-to-eat meals, and food processing companies.", image: "/vegetable-powder.png" },
+              { title: "Green Leaf Powders", desc: "Made from fresh moringa, curry leaf, spinach, and mint leaves. These powders are rich in vitamins and minerals, ideal for health supplements and natural food products.", image: "/green-leaf.png" },
+
             ].map((service, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="border border-border rounded-3xl overflow-hidden hover:border-primary/50 hover:shadow-lg transition-all group h-full flex flex-col">
@@ -130,18 +247,18 @@ export default function Home() {
                 Why Choose Us?
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                We deliver uncompromising quality through sustainable practices and advanced technology.
+                Here is what makes NNP Products different from other powder suppliers.
               </p>
             </div>
           </FadeIn>
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
             {[
-              { title: "Carefully Selected Raw Materials", icon: ShieldCheck, desc: "Sourced from quality agricultural produce to ensure superior product performance and nutritional value.", image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600" },
-              { title: "Preservation of Natural Goodness", icon: Droplets, desc: "Our processing methods are designed to retain the natural color, aroma, taste, and nutritional properties of the original ingredients.", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&q=80&w=600" },
-              { title: "Customized Product Solutions", icon: Factory, desc: "Tailored specifications, particle sizes, blends, and packaging options to meet unique customer requirements.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
-              { title: "Bulk Production Capability", icon: Users, desc: "Efficient manufacturing infrastructure capable of fulfilling both small and large-volume orders.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
-              { title: "Reliable Supply & Timely Delivery", icon: Leaf, desc: "A strong commitment to on-time order fulfillment and uninterrupted supply.", image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600" },
-              { title: "Customer-Centric Approach", icon: Globe2, desc: "Building long-term partnerships through responsive service, transparency, and dependable support.", image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600" },
+              { title: "Best Raw Materials", icon: ShieldCheck, desc: "We pick only the best fruits, vegetables, and herbs so our powders are always high in nutrition and quality.", image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600" },
+              { title: "Natural Goodness Preserved", icon: Droplets, desc: "Our drying process keeps the real color, taste, smell, and health benefits of every ingredient.", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&q=80&w=600" },
+              { title: "Custom Orders Available", icon: Factory, desc: "Need a specific powder size, blend, or packaging? We can customize products to match your exact needs.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
+              { title: "Small & Large Orders", icon: Users, desc: "Whether you need 10 kg or 10 tons, our factory can handle orders of any size with the same quality.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
+              { title: "On-Time Delivery", icon: Leaf, desc: "We take deadlines seriously. Your orders will arrive on time, every time, with no delays.", image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600" },
+              { title: "Friendly & Helpful Team", icon: Globe2, desc: "Our team is always ready to help. From your first inquiry to after-sales support, we are here for you.", image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600" },
             ].map((feature, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all h-full overflow-hidden flex flex-col group">
@@ -171,7 +288,7 @@ export default function Home() {
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                 </div>
                 <h3 className="text-xl font-bold font-heading mb-2">Free Delivery</h3>
-                <p className="text-muted-foreground">On all bulk orders across India.</p>
+                <p className="text-muted-foreground">Free shipping on all bulk orders across India.</p>
               </div>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
@@ -179,8 +296,8 @@ export default function Home() {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                   <ShieldCheck className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold font-heading mb-2">Shop with Confidence</h3>
-                <p className="text-muted-foreground">100% secure payments and quality guarantee.</p>
+                <h3 className="text-xl font-bold font-heading mb-2">Quality Guarantee</h3>
+                <p className="text-muted-foreground">Every product is tested and certified for purity and safety.</p>
               </div>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
@@ -188,8 +305,8 @@ export default function Home() {
                 <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
-                <h3 className="text-xl font-bold font-heading mb-2">Detailed Help Centre</h3>
-                <p className="text-muted-foreground">24/7 dedicated support for our partners.</p>
+                <h3 className="text-xl font-bold font-heading mb-2">Dedicated Support</h3>
+                <p className="text-muted-foreground">Our team is available to help you with any questions or orders.</p>
               </div>
             </FadeIn>
           </div>
@@ -234,10 +351,10 @@ export default function Home() {
           </FadeIn>
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
             {[
-              { name: "Moringa Powder", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=400", slug: "moringa-powder" },
-              { name: "Beetroot Powder", image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=400", slug: "beetroot-powder" },
-              { name: "Ginger Powder", image: "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=400", slug: "ginger-powder" },
-              { name: "Onion Powder", image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400", slug: "onion-powder" }
+              { name: "Moringa Powder", image: "/moringa.png", slug: "moringa-powder" },
+              { name: "Beetroot Powder", image: "/beetroot-powders.png", slug: "beetroot-powder" },
+              { name: "Ginger Powder", image: "/ginger-powders.png", slug: "ginger-powder" },
+              { name: "Onion Powder", image: "/Onion-Powders.png", slug: "onion-powder" }
             ].map((product, i) => (
               <FadeIn key={product.slug} direction="up" delay={i * 0.1}>
                 <Link href={`/products/${product.slug}`} className="group block">
@@ -272,12 +389,12 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 text-center">
           <FadeIn direction="up">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Ready to Source Premium Natural Powders?
+              Looking for Natural Powder Supplier?
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
             <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
-              Contact us today for bulk inquiries, custom formulations, or sample requests.
+              Get in touch with us for bulk orders, custom blends, or free product samples. We are happy to help.
             </p>
           </FadeIn>
           <FadeIn direction="up" delay={0.4}>

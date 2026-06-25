@@ -17,26 +17,36 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NNP Products | Nature's Nutrition, Simply Powerful",
+  title: "NNP Products - Natural Dehydrated Fruit, Vegetable & Herbal Powder Manufacturer in India",
   description:
-    "Premium Dehydrated Fruit, Vegetable & Herbal Powders Manufactured with Purity, Quality & Sustainability. Your trusted natural powder supplier.",
+    "NNP Products manufactures 100% natural dehydrated fruit, vegetable, and herbal powders in Sangli, Maharashtra. FSSAI certified. Bulk supply for food, health & wellness industries.",
   keywords: [
-    "Natural Powder Manufacturer",
-    "Moringa Powder Manufacturer",
-    "Ginger Powder Supplier",
-    "Beetroot Powder Supplier",
-    "Tomato Powder Manufacturer",
-    "Herbal Powder Manufacturer",
-    "Vegetable Powder Supplier",
-    "Fruit Powder Manufacturer",
-    "Natural Food Ingredients",
-    "Dehydrated Powder Manufacturer India",
+    "natural powder manufacturer India",
+    "dehydrated fruit powder",
+    "dehydrated vegetable powder",
+    "herbal powder manufacturer",
+    "moringa powder manufacturer",
+    "beetroot powder supplier",
+    "ginger powder supplier",
+    "onion powder manufacturer",
+    "tomato powder supplier",
+    "curry leaves powder",
+    "green leaf powder",
+    "spice powder manufacturer Sangli",
+    "bulk powder supplier India",
+    "FSSAI certified powder manufacturer",
+    "natural food ingredients India",
   ],
   openGraph: {
-    title: "NNP Products | Premium Dehydrated Powders",
-    description: "Your trusted supplier of high-quality dehydrated fruit, vegetable, and herbal powders.",
+    title: "NNP Products - Natural Dehydrated Powder Manufacturer in India",
+    description: "We manufacture 100% natural dehydrated fruit, vegetable, and herbal powders. FSSAI certified facility in Sangli, Maharashtra.",
     type: "website",
-    locale: "en_US",
+    locale: "en_IN",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.jpg",
   },
 };
 

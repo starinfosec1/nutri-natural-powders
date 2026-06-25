@@ -26,7 +26,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/logo.jpg" alt="NNP Products Logo" width={40} height={40} className="object-contain" />
+              <Image src="/logo.jpg" alt="NNP Products Logo" width={60} height={60} className="object-contain" />
               <span className="font-heading text-2xl font-bold text-primary">NNP Products</span>
             </Link>
           </div>

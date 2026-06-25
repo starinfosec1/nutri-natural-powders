@@ -5,8 +5,8 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | NNP Products",
-  description: "Get in touch for bulk inquiries, custom formulations, and sample requests.",
+  title: "Contact NNP Products - Get a Quote for Natural Powders",
+  description: "Contact NNP Products for bulk orders, custom powder blends, or free samples. Call, email, or visit our factory in Sangli, Maharashtra.",
 };
 
 export default function ContactPage() {
@@ -133,10 +133,43 @@ export default function ContactPage() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full sm:w-auto">
-                  Submit Inquiry
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button type="submit" size="lg" className="w-full sm:w-auto font-semibold">
+                    Submit Inquiry
+                  </Button>
+                  <a
+                    href="https://wa.me/918459711477?text=Hi%2C%20I'm%20interested%20in%20your%20products."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors shadow-sm"
+                  >
+                    <MessageCircle className="w-5 h-5 fill-current" />
+                    Inquire via WhatsApp
+                  </a>
+                </div>
               </form>
+            </div>
+          </div>
+        </div>
+
+        {/* Map Location */}
+        <div className="max-w-6xl mx-auto mt-16">
+          <div className="bg-white border border-border p-4 rounded-3xl shadow-sm">
+            <div className="flex items-center gap-2 mb-4 px-2">
+              <MapPin className="w-5 h-5 text-primary" />
+              <h2 className="text-xl font-heading font-bold text-foreground">Our Location</h2>
+            </div>
+            <div className="w-full rounded-2xl overflow-hidden h-[400px]">
+              <iframe
+                src="https://maps.google.com/maps?q=Ishwarpur%20MIDC%2C%20Walwa%2C%20Sangli%2C%20Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="NNP Products Factory Location Map"
+              ></iframe>
             </div>
           </div>
         </div>

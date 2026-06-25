@@ -1,6 +1,7 @@
 "use client";
 
 import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -85,7 +86,7 @@ export default function TestimonialsPage() {
             What our clients say
           </h1>
           <p className="text-lg text-muted-foreground mt-6 max-w-xl mx-auto">
-            Trusted by leading food, beverage, and nutraceutical companies worldwide. See how NNP Products powers their success.
+            Food companies, supplement brands, and wellness businesses trust NNP Products for quality and reliability. Here is what they say.
           </p>
         </motion.div>
 
@@ -93,6 +94,20 @@ export default function TestimonialsPage() {
           <TestimonialsColumn testimonials={firstColumn} duration={25} />
           <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={35} />
           <TestimonialsColumn testimonials={thirdColumn} className="hidden xl:block" duration={30} />
+        </div>
+      </div>
+
+      {/* Internal Cross-Links */}
+      <div className="container mx-auto px-4 mt-16 mb-10">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <Link href="/products" className="group p-8 bg-muted rounded-2xl text-center hover:shadow-md transition-all">
+            <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">Explore Our Products</h3>
+            <p className="text-muted-foreground">See the natural powders our clients love.</p>
+          </Link>
+          <Link href="/contact" className="group p-8 bg-muted rounded-2xl text-center hover:shadow-md transition-all">
+            <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">Contact Us</h3>
+            <p className="text-muted-foreground">Ready to partner with us? Get in touch today.</p>
+          </Link>
         </div>
       </div>
     </section>

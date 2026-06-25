@@ -6,8 +6,8 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Premium Natural Powders | Nutri Natural Powders",
-  description: "Browse our extensive catalog of high-quality dehydrated fruit, vegetable, and herbal powders.",
+  title: "Our Products - Dehydrated Fruit, Vegetable & Herbal Powders | NNP Products",
+  description: "Browse our full range of natural dehydrated powders including moringa, beetroot, ginger, onion, tomato, and curry leaves powder. 100% pure and chemical-free.",
 };
 
 export default function ProductsPage() {
@@ -19,7 +19,7 @@ export default function ProductsPage() {
             Our Premium Products
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our range of 100% natural, high-quality dehydrated powders processed under stringent quality controls.
+            We make 100% natural dehydrated powders from fresh fruits, vegetables, and herbs. Every product is made without chemicals or artificial additives.
           </p>
         </div>
 
@@ -47,6 +47,18 @@ export default function ProductsPage() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        {/* Internal Cross-Links */}
+        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <Link href="/contact" className="group p-8 bg-white border border-border rounded-2xl text-center hover:shadow-md transition-all">
+            <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">Need a Custom Blend?</h3>
+            <p className="text-muted-foreground">Contact us for custom powder sizes, blends, or packaging.</p>
+          </Link>
+          <Link href="/manufacturing" className="group p-8 bg-white border border-border rounded-2xl text-center hover:shadow-md transition-all">
+            <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">How We Make Our Powders</h3>
+            <p className="text-muted-foreground">See our step-by-step manufacturing process.</p>
+          </Link>
         </div>
       </div>
     </div>
