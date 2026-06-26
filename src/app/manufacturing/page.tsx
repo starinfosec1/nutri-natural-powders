@@ -43,8 +43,9 @@ export default function ManufacturingPage() {
                   Our manufacturing unit in Sangli, Maharashtra is built to meet international food safety standards. We use modern low-temperature drying machines that remove moisture without destroying the natural color, flavor, or vitamins of the raw ingredients.
                 </p>
                 <ul className="space-y-3 pt-4">
-                  <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> ISO & GMP Certified Facility</li>
-                  <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> Low-Temperature Dehydration</li>
+                  <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> FSSAI Certified Facility</li>
+                  <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> ISE Certified Facility</li>
+                  <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> Sun Drying & Tray Drying Dehydration</li>
                   <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> Multi-stage Sorting & Cleaning</li>
                   <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-primary" /> Zero Contamination Processing</li>
                 </ul>

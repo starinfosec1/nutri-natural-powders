@@ -1,35 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { blogPosts } from "@/data/blog";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export const metadata: Metadata = {
   title: "Blog - Natural Powder Tips, Benefits & Industry News | NNP Products",
   description: "Read helpful articles about the health benefits of natural powders, manufacturing insights, and food industry trends from NNP Products.",
 };
-
-const posts = [
-  {
-    title: "The Ultimate Guide to Moringa Powder Benefits",
-    excerpt: "Moringa is called the 'Miracle Tree' for a reason. Learn about its amazing health benefits and how moringa powder can boost your daily nutrition.",
-    category: "Health Benefits",
-    date: "June 15, 2026",
-    image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600",
-  },
-  {
-    title: "How Low-Temperature Dehydration Preserves Nutrients",
-    excerpt: "Find out why low-temperature drying is better than sun drying. It keeps more vitamins, color, and flavor in the final powder.",
-    category: "Manufacturing",
-    date: "June 10, 2026",
-    image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600",
-  },
-  {
-    title: "Trending Natural Colorants in the Food Industry",
-    excerpt: "More food companies are choosing beetroot and spinach powders instead of artificial colors. Learn why natural colorants are the future.",
-    category: "Industry Trends",
-    date: "June 5, 2026",
-    image: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&q=80&w=600",
-  },
-];
 
 export default function BlogPage() {
   return (
@@ -43,32 +21,33 @@ export default function BlogPage() {
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {posts.map((post, index) => (
-            <article key={index} className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                  {post.category}
+          {blogPosts.map((post, index) => (
+            <FadeIn key={index} direction="up" delay={index * 0.1}>
+              <article className="bg-white h-full border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                <div className="relative overflow-hidden shrink-0 flex justify-center bg-muted/10">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    {post.category}
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <div className="text-sm text-muted-foreground mb-3">{post.date}</div>
-                <h2 className="text-xl font-heading font-bold mb-3 text-foreground line-clamp-2 hover:text-primary transition-colors">
-                  <Link href="/products">{post.title}</Link>
-                </h2>
-                <p className="text-muted-foreground line-clamp-3 mb-4">
-                  {post.excerpt}
-                </p>
-                <Link href="/products" className="text-primary font-medium hover:underline inline-flex items-center gap-1">
-                  Read Article →
-                </Link>
-              </div>
-            </article>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="text-sm text-muted-foreground mb-3">{post.date}</div>
+                  <h2 className="text-xl font-heading font-bold mb-3 text-foreground line-clamp-2 hover:text-primary transition-colors">
+                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                  </h2>
+                  <p className="text-muted-foreground line-clamp-3 mb-4 flex-1">
+                    {post.excerpt}
+                  </p>
+                  <Link href={`/blog/${post.slug}`} className="text-primary font-medium hover:underline inline-flex items-center gap-1 mt-auto">
+                    Read Article →
+                  </Link>
+                </div>
+              </article>
+            </FadeIn>
           ))}
         </div>
 

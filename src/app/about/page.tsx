@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const stats = [
-    { label: "Farmers Connected", value: 500, suffix: "+" },
-    { label: "Products Manufactured", value: 50, suffix: "+" },
+    { label: "Farmers Connected", value: 50, suffix: "+" },
+    { label: "Products Manufactured", value: 15, suffix: "+" },
     { label: "Industries Served", value: 15, suffix: "+" },
-    { label: "Years of Expertise", value: 10, suffix: "+" },
+    { label: "Years of Expertise", value: 5, suffix: "+" },
   ];
 
   const values = [
@@ -30,7 +30,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative min-h-[60dvh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=2000"
+          src="/aboutbg.png"
           alt="Agricultural Farming"
           fill
           className="object-cover"
@@ -60,7 +60,7 @@ export default function AboutPage() {
                   <p className="text-foreground font-medium">
                     NNP Products is a natural powder manufacturing company based in Sangli, Maharashtra. We take fresh fruits, vegetables, and herbs from local farms and turn them into fine, pure powders using modern drying technology. Our goal is simple: keep the natural taste, color, and nutrition in every product we make.
                   </p>
-                  
+
                   <ul className="space-y-5">
                     <li className="flex gap-4">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary shrink-0 mt-2.5" />
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <FadeIn direction="left">
               <div className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000"
+                  src="/about.png"
                   alt="Fresh produce and ingredients"
                   fill
                   className="object-cover"
@@ -138,7 +138,7 @@ export default function AboutPage() {
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=2000"
+            src="/about.png"
             alt="Background Texture"
             fill
             className="object-cover"

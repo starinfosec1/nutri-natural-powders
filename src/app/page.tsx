@@ -116,36 +116,38 @@ export default function Home() {
             ].map((card, i) => (
               <div
                 key={i}
-                className="relative md:sticky bg-white border border-border rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col md:flex-row min-h-[350px] md:h-[320px]"
+                className="sticky bg-white border border-border rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group min-h-[350px] md:h-[320px]"
                 style={{
                   top: `calc(100px + ${i * 32}px)`,
                   zIndex: i + 1
                 }}
               >
-                {/* Image side */}
-                <div className="relative w-full md:w-2/5 h-48 md:h-full bg-muted overflow-hidden shrink-0">
-                  <Image
-                    src={card.image}
-                    alt={`${card.title} benefits`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-black/5" />
-                </div>
-                {/* Content side */}
-                <div className="p-8 md:p-10 flex-1 flex flex-col justify-center">
-                  <div>
-                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase mb-4 ${card.color}`}>
-                      {card.benefit}
-                    </span>
-                    <h3 className="text-2xl md:text-3xl font-bold font-heading text-foreground mb-4 group-hover:text-primary transition-colors">
-                      {card.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                      {card.desc}
-                    </p>
+                <FadeIn direction="up" delay={0.1} className="flex flex-col md:flex-row h-full">
+                  {/* Image side */}
+                  <div className="relative w-full md:w-2/5 h-48 md:h-full bg-muted overflow-hidden shrink-0">
+                    <Image
+                      src={card.image}
+                      alt={`${card.title} benefits`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/5" />
                   </div>
-                </div>
+                  {/* Content side */}
+                  <div className="p-8 md:p-10 flex-1 flex flex-col justify-center">
+                    <div>
+                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase mb-4 ${card.color}`}>
+                        {card.benefit}
+                      </span>
+                      <h3 className="text-2xl md:text-3xl font-bold font-heading text-foreground mb-4 group-hover:text-primary transition-colors">
+                        {card.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                        {card.desc}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
               </div>
             ))}
           </div>
@@ -217,10 +219,9 @@ export default function Home() {
           </FadeIn>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
-
+              { title: "Dehydrated Fruit Powders", desc: "We dry fresh fruits at low temperatures to make fine powders. These powders keep the natural taste, color, and vitamins of the original fruit. Used in drinks, snacks, and health products.", image: "/fruit-powder.png" },
               { title: "Dehydrated Vegetable Powders", desc: "Our vegetable powders include tomato, onion, beetroot, spinach, and more. They are perfect for soups, sauces, ready-to-eat meals, and food processing companies.", image: "/vegetable-powder.png" },
               { title: "Green Leaf Powders", desc: "Made from fresh moringa, curry leaf, spinach, and mint leaves. These powders are rich in vitamins and minerals, ideal for health supplements and natural food products.", image: "/green-leaf.png" },
-
             ].map((service, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="border border-border rounded-3xl overflow-hidden hover:border-primary/50 hover:shadow-lg transition-all group h-full flex flex-col">
@@ -253,19 +254,19 @@ export default function Home() {
           </FadeIn>
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
             {[
-              { title: "Best Raw Materials", icon: ShieldCheck, desc: "We pick only the best fruits, vegetables, and herbs so our powders are always high in nutrition and quality.", image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600" },
-              { title: "Natural Goodness Preserved", icon: Droplets, desc: "Our drying process keeps the real color, taste, smell, and health benefits of every ingredient.", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&q=80&w=600" },
-              { title: "Custom Orders Available", icon: Factory, desc: "Need a specific powder size, blend, or packaging? We can customize products to match your exact needs.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
-              { title: "Small & Large Orders", icon: Users, desc: "Whether you need 10 kg or 10 tons, our factory can handle orders of any size with the same quality.", image: "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" },
-              { title: "On-Time Delivery", icon: Leaf, desc: "We take deadlines seriously. Your orders will arrive on time, every time, with no delays.", image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600" },
-              { title: "Friendly & Helpful Team", icon: Globe2, desc: "Our team is always ready to help. From your first inquiry to after-sales support, we are here for you.", image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600" },
+              { title: "Best Raw Materials", icon: ShieldCheck, desc: "We pick only the best fruits, vegetables, and herbs so our powders are always high in nutrition and quality.", image: "/why.png" },
+              { title: "Natural Goodness Preserved", icon: Droplets, desc: "Our drying process keeps the real color, taste, smell, and health benefits of every ingredient.", image: "/why1.png" },
+              { title: "Custom Orders Available", icon: Factory, desc: "Need a specific powder size, blend, or packaging? We can customize products to match your exact needs.", image: "/why2.png" },
+              { title: "Small & Large Orders", icon: Users, desc: "Whether you need 10 kg or 10 tons, our factory can handle orders of any size with the same quality.", image: "/why3.png" },
+              { title: "On-Time Delivery", icon: Leaf, desc: "We take deadlines seriously. Your orders will arrive on time, every time, with no delays.", image: "/why4.png" },
+              { title: "Friendly & Helpful Team", icon: Globe2, desc: "Our team is always ready to help. From your first inquiry to after-sales support, we are here for you.", image: "/why5.png" },
             ].map((feature, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all h-full overflow-hidden flex flex-col group">
-                  <div className="relative h-48 w-full overflow-hidden">
-                    <Image src={feature.image} alt={feature.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <feature.icon className="w-10 h-10 text-white absolute bottom-4 left-6 drop-shadow-md" />
+                  <div className="relative w-full overflow-hidden flex justify-center bg-muted/10">
+                    <img src={feature.image} alt={feature.title} className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                    <feature.icon className="w-10 h-10 text-white absolute bottom-4 left-6 drop-shadow-md z-10" />
                   </div>
                   <div className="p-8 pt-6 flex-1">
                     <h3 className="text-xl font-bold font-heading mb-3">{feature.title}</h3>
@@ -320,7 +321,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-center text-foreground mb-8">Certifications & Standards</h2>
           </FadeIn>
           <div className="flex flex-wrap justify-center gap-12 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            {['FSSAI', 'ISO 9001', 'GMP', 'FDA', 'APEDA', 'SPICE BOARD'].map((cert, index) => (
+            {['FSSAI', 'ISE'].map((cert, index) => (
               <div key={index} className="flex items-center gap-2">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary text-xs">
                   {cert}

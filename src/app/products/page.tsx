@@ -4,6 +4,7 @@ import { products } from "@/data/products";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Metadata } from "next";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export const metadata: Metadata = {
   title: "Our Products - Dehydrated Fruit, Vegetable & Herbal Powders | NNP Products",
@@ -24,28 +25,30 @@ export default function ProductsPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <Card key={product.id} className="group overflow-hidden border-border flex flex-col hover:shadow-lg transition-shadow">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <CardContent className="p-6 flex-1">
-                <h2 className="text-xl font-heading font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-                  {product.name}
-                </h2>
-                <p className="text-muted-foreground line-clamp-2">
-                  {product.shortDescription}
-                </p>
-              </CardContent>
-              <CardFooter className="p-6 pt-0">
-                <Link href={`/products/${product.slug}`} className={buttonVariants({ className: "w-full" })}>View Details</Link>
-              </CardFooter>
-            </Card>
+          {products.map((product, index) => (
+            <FadeIn key={product.id} direction="up" delay={index * 0.05} className="h-full">
+              <Card className="group h-full overflow-hidden border-border flex flex-col hover:shadow-lg transition-shadow">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <CardContent className="p-6 flex-1">
+                  <h2 className="text-xl font-heading font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                    {product.name}
+                  </h2>
+                  <p className="text-muted-foreground line-clamp-2">
+                    {product.shortDescription}
+                  </p>
+                </CardContent>
+                <CardFooter className="p-6 pt-0">
+                  <Link href={`/products/${product.slug}`} className={buttonVariants({ className: "w-full" })}>View Details</Link>
+                </CardFooter>
+              </Card>
+            </FadeIn>
           ))}
         </div>
 

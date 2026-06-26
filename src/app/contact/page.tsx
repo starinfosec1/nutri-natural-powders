@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact NNP Products - Get a Quote for Natural Powders",
@@ -96,58 +95,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             <div className="bg-white border border-border p-8 rounded-2xl shadow-sm">
               <h2 className="text-2xl font-heading font-bold mb-6">Send an Inquiry</h2>
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">Full Name</label>
-                    <Input id="name" placeholder="John Doe" />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium">Company Name</label>
-                    <Input id="company" placeholder="Acme Corp" />
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">Email Address</label>
-                    <Input id="email" type="email" placeholder="john@example.com" />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium">Phone Number</label>
-                    <Input id="phone" type="tel" placeholder="+91 98765 43210" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="product" className="text-sm font-medium">Product of Interest</label>
-                  <Input id="product" placeholder="e.g. Moringa Powder" />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">Message</label>
-                  <Textarea
-                    id="message"
-                    placeholder="Please let us know your requirements (MOQ, specifications, etc.)"
-                    className="min-h-[150px]"
-                  />
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button type="submit" size="lg" className="w-full sm:w-auto font-semibold">
-                    Submit Inquiry
-                  </Button>
-                  <a
-                    href="https://wa.me/918459711477?text=Hi%2C%20I'm%20interested%20in%20your%20products."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors shadow-sm"
-                  >
-                    <MessageCircle className="w-5 h-5 fill-current" />
-                    Inquire via WhatsApp
-                  </a>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
