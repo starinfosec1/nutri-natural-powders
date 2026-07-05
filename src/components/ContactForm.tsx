@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MessageCircle } from "lucide-react";
 
-export function ContactForm() {
+export function ContactForm({ t }: { t: any }) {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -23,13 +23,13 @@ export function ContactForm() {
     e.preventDefault();
     
     // Construct WhatsApp message
-    let text = `*New Inquiry*\n\n`;
-    if (formData.name) text += `*Name:* ${formData.name}\n`;
-    if (formData.company) text += `*Company:* ${formData.company}\n`;
-    if (formData.email) text += `*Email:* ${formData.email}\n`;
-    if (formData.phone) text += `*Phone:* ${formData.phone}\n`;
-    if (formData.product) text += `*Product:* ${formData.product}\n\n`;
-    if (formData.message) text += `*Message:*\n${formData.message}`;
+    let text = `${t.contact.whatsappMsgNewInquiry}\n\n`;
+    if (formData.name) text += `${t.contact.whatsappMsgName} ${formData.name}\n`;
+    if (formData.company) text += `${t.contact.whatsappMsgCompany} ${formData.company}\n`;
+    if (formData.email) text += `${t.contact.whatsappMsgEmail} ${formData.email}\n`;
+    if (formData.phone) text += `${t.contact.whatsappMsgPhone} ${formData.phone}\n`;
+    if (formData.product) text += `${t.contact.whatsappMsgProduct} ${formData.product}\n\n`;
+    if (formData.message) text += `${t.contact.whatsappMsgMessage}\n${formData.message}`;
 
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/918459711477?text=${encodedText}`;
@@ -41,38 +41,38 @@ export function ContactForm() {
     <form className="space-y-6" onSubmit={handleSubmit}>
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <label htmlFor="name" className="text-sm font-medium">Full Name</label>
-          <Input id="name" value={formData.name} onChange={handleChange} placeholder="John Doe" required />
+          <label htmlFor="name" className="text-sm font-medium">{t.contact.formName}</label>
+          <Input id="name" value={formData.name} onChange={handleChange} placeholder={t.contact.formNamePlaceholder} required />
         </div>
         <div className="space-y-2">
-          <label htmlFor="company" className="text-sm font-medium">Company Name</label>
-          <Input id="company" value={formData.company} onChange={handleChange} placeholder="Acme Corp" />
+          <label htmlFor="company" className="text-sm font-medium">{t.contact.formCompany}</label>
+          <Input id="company" value={formData.company} onChange={handleChange} placeholder={t.contact.formCompanyPlaceholder} />
         </div>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <label htmlFor="email" className="text-sm font-medium">Email Address</label>
-          <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" />
+          <label htmlFor="email" className="text-sm font-medium">{t.contact.formEmail}</label>
+          <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder={t.contact.formEmailPlaceholder} />
         </div>
         <div className="space-y-2">
-          <label htmlFor="phone" className="text-sm font-medium">Phone Number</label>
-          <Input id="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 98765 43210" required />
+          <label htmlFor="phone" className="text-sm font-medium">{t.contact.formPhone}</label>
+          <Input id="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder={t.contact.formPhonePlaceholder} required />
         </div>
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="product" className="text-sm font-medium">Product of Interest</label>
-        <Input id="product" value={formData.product} onChange={handleChange} placeholder="e.g. Moringa Powder" />
+        <label htmlFor="product" className="text-sm font-medium">{t.contact.formProduct}</label>
+        <Input id="product" value={formData.product} onChange={handleChange} placeholder={t.contact.formProductPlaceholder} />
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="message" className="text-sm font-medium">Message</label>
+        <label htmlFor="message" className="text-sm font-medium">{t.contact.formMessage}</label>
         <Textarea
           id="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Please let us know your requirements (MOQ, specifications, etc.)"
+          placeholder={t.contact.formMessagePlaceholder}
           className="min-h-[150px]"
           required
         />
@@ -84,7 +84,7 @@ export function ContactForm() {
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors shadow-sm"
         >
           <MessageCircle className="w-5 h-5 fill-current" />
-          Inquire via WhatsApp
+          {t.contact.inquireViaWhatsApp}
         </button>
       </div>
     </form>

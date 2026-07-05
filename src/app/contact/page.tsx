@@ -1,21 +1,26 @@
-
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
+import { cookies } from "next/headers";
+import { getTranslations } from "@/lib/translations";
 
 export const metadata: Metadata = {
   title: "Contact NNP Products - Get a Quote for Natural Powders",
   description: "Contact NNP Products for bulk orders, custom powder blends, or free samples. Call, email, or visit our factory in Sangli, Maharashtra.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "mr";
+  const t = getTranslations(lang);
+
   return (
     <div className="bg-background min-h-screen py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">{t.contact.heroTitle}</h1>
           <p className="text-lg text-muted-foreground">
-            Have a question about our products or want to request a sample? We'd love to hear from you.
+            {t.contact.heroSubtitle}
           </p>
         </div>
 
@@ -23,7 +28,7 @@ export default function ContactPage() {
           {/* Contact Information */}
           <div className="space-y-8 lg:col-span-1">
             <div className="bg-muted p-8 rounded-2xl">
-              <h2 className="text-2xl font-heading font-bold mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-heading font-bold mb-6">{t.contact.getInTouch}</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -31,7 +36,7 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Head Office & Facility</h3>
+                    <h3 className="font-bold text-foreground mb-1">{t.contact.headOffice}</h3>
                     <p className="text-muted-foreground">Plot no. S-5, S-6, Ishwarpur MIDC,<br />Tal. Walwa, Dist. Sangli, Maharashtra</p>
                   </div>
                 </div>
@@ -41,7 +46,7 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Phone / WhatsApp</h3>
+                    <h3 className="font-bold text-foreground mb-1">{t.contact.phoneLabel}</h3>
                     <p className="text-muted-foreground">+91 84597 11477<br />+91 93228 85156</p>
                   </div>
                 </div>
@@ -51,7 +56,7 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Email</h3>
+                    <h3 className="font-bold text-foreground mb-1">{t.contact.emailLabel}</h3>
                     <p className="text-muted-foreground break-all">nutrinaturalpowders123@gmail.com</p>
                   </div>
                 </div>
@@ -61,13 +66,13 @@ export default function ContactPage() {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Business Hours</h3>
-                    <p className="text-muted-foreground">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                    <h3 className="font-bold text-foreground mb-1">{t.contact.businessHours}</h3>
+                    <p className="text-muted-foreground">{t.contact.hoursDetails}</p>
                   </div>
                 </div>
 
                 <div className="pt-6 border-t border-border mt-6">
-                  <h3 className="font-bold text-foreground mb-4">Connect With Us</h3>
+                  <h3 className="font-bold text-foreground mb-4">{t.contact.connectWithUs}</h3>
                   <div className="flex space-x-4">
                     <a href="https://www.instagram.com/nutri.natural.powders?igsh=MWhnOW1yOHdrejl6Zw==" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
                       <span className="sr-only">Instagram</span>
@@ -94,8 +99,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white border border-border p-8 rounded-2xl shadow-sm">
-              <h2 className="text-2xl font-heading font-bold mb-6">Send an Inquiry</h2>
-              <ContactForm />
+              <h2 className="text-2xl font-heading font-bold mb-6">{t.contact.sendInquiry}</h2>
+              <ContactForm t={t} />
             </div>
           </div>
         </div>

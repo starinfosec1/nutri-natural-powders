@@ -5,10 +5,16 @@ import { products } from "@/data/products";
 import { WhatsAppInquiryButton } from "@/components/WhatsAppInquiryButton";
 import { CheckCircle2, Box, Thermometer, ShieldAlert, Package } from "lucide-react";
 import { Metadata } from "next";
+import { cookies } from "next/headers";
+import { getTranslations } from "@/lib/translations";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const product = products.find((p) => p.slug === resolvedParams.slug);
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "mr";
+  const t = getTranslations(lang);
+
+  const product = t.products.productsList.find((p: any) => p.slug === resolvedParams.slug);
   if (!product) return { title: "Product Not Found" };
   
   return {
@@ -17,16 +23,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// Ensure the page is generated as part of static export (if needed)
-export function generateStaticParams() {
-  return products.map((product) => ({
-    slug: product.slug,
-  }));
-}
+// Page is dynamic due to cookies
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const product = products.find((p) => p.slug === resolvedParams.slug);
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "mr";
+  const t = getTranslations(lang);
+
+  const product = t.products.productsList.find((p: any) => p.slug === resolvedParams.slug);
 
   if (!product) {
     notFound();
@@ -67,10 +72,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               {/* Benefits */}
               <div className="bg-muted p-6 rounded-2xl">
                 <h3 className="text-xl font-heading font-bold mb-4 flex items-center gap-2">
-                  <ShieldAlert className="text-primary w-5 h-5" /> Key Benefits
+                  <ShieldAlert className="text-primary w-5 h-5" /> {t.products.keyBenefits}
                 </h3>
                 <ul className="space-y-3">
-                  {product.benefits.map((benefit, i) => (
+                  {product.benefits.map((benefit: string, i: number) => (
                     <li key={i} className="flex items-start gap-2 text-foreground">
                       <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                       <span>{benefit}</span>
@@ -82,10 +87,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               {/* Applications */}
               <div className="bg-muted p-6 rounded-2xl">
                 <h3 className="text-xl font-heading font-bold mb-4 flex items-center gap-2">
-                  <Box className="text-primary w-5 h-5" /> Applications
+                  <Box className="text-primary w-5 h-5" /> {t.products.applications}
                 </h3>
                 <ul className="space-y-3">
-                  {product.applications.map((app, i) => (
+                  {product.applications.map((app: string, i: number) => (
                     <li key={i} className="flex items-start gap-2 text-foreground">
                       <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                       <span>{app}</span>
@@ -97,24 +102,24 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
             {/* Specifications */}
             <div>
-              <h3 className="text-2xl font-heading font-bold mb-6">Specifications</h3>
+              <h3 className="text-2xl font-heading font-bold mb-6">{t.products.specificationsTitle}</h3>
               <div className="bg-white border border-border rounded-2xl overflow-hidden shadow-sm">
                 <table className="w-full text-left border-collapse">
                   <tbody>
                     <tr className="border-b border-border">
-                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Color</th>
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">{t.products.colorLabel}</th>
                       <td className="py-4 px-6 text-muted-foreground">{product.specifications.color}</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Moisture</th>
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">{t.products.moistureLabel}</th>
                       <td className="py-4 px-6 text-muted-foreground">{product.specifications.moisture}</td>
                     </tr>
                     <tr className="border-b border-border">
-                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Mesh Size</th>
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">{t.products.meshSizeLabel}</th>
                       <td className="py-4 px-6 text-muted-foreground">{product.specifications.meshSize}</td>
                     </tr>
                     <tr>
-                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">Shelf Life</th>
+                      <th className="py-4 px-6 bg-muted font-medium text-foreground w-1/3">{t.products.shelfLifeLabel}</th>
                       <td className="py-4 px-6 text-muted-foreground">{product.specifications.shelfLife}</td>
                     </tr>
                   </tbody>
@@ -129,7 +134,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   <Thermometer className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-lg mb-1">Storage</h4>
+                  <h4 className="font-heading font-bold text-lg mb-1">{t.products.storageLabel}</h4>
                   <p className="text-muted-foreground">{product.storage}</p>
                 </div>
               </div>
@@ -138,7 +143,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                   <Package className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-lg mb-1">Packaging</h4>
+                  <h4 className="font-heading font-bold text-lg mb-1">{t.products.packagingLabel}</h4>
                   <p className="text-muted-foreground">{product.packaging}</p>
                 </div>
               </div>
@@ -147,10 +152,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             {/* Cross-Links */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/products" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                ← Back to All Products
+                {t.products.backToProducts}
               </Link>
               <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                Contact Us for Pricing →
+                {t.products.contactForPricing}
               </Link>
             </div>
 

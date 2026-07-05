@@ -5,19 +5,22 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { getTranslations } from "@/lib/translations";
+import { LanguageToggle } from "./LanguageToggle";
 
-export function Header() {
+export function Header({ lang }: { lang: string }) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = getTranslations(lang);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Products", href: "/products" },
-    { name: "Manufacturing", href: "/manufacturing" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Testimonials", href: "/testimonials" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    { name: t.nav.home, href: "/" },
+    { name: t.nav.about, href: "/about" },
+    { name: t.nav.products, href: "/products" },
+    { name: t.nav.manufacturing, href: "/manufacturing" },
+    { name: t.nav.gallery, href: "/gallery" },
+    { name: t.nav.testimonials, href: "/testimonials" },
+    { name: t.nav.blog, href: "/blog" },
+    { name: t.nav.contact, href: "/contact" },
   ];
 
   return (
@@ -43,12 +46,14 @@ export function Header() {
               ))}
             </nav>
           </div>
-          <div className="hidden xl:block">
+          <div className="hidden xl:flex items-center gap-4">
+            <LanguageToggle />
             <Link href="/contact" className={buttonVariants()}>
-              Inquire Now
+              {t.nav.inquire}
             </Link>
           </div>
-          <div className="-mr-2 flex xl:hidden">
+          <div className="-mr-2 flex xl:hidden items-center gap-4">
+            <LanguageToggle />
             <Button
               variant="ghost"
               size="icon"
@@ -69,20 +74,24 @@ export function Header() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="xl:hidden border-t border-border bg-background">
-          <div className="space-y-1 px-4 pb-3 pt-2 sm:px-3">
+          <div className="space-y-1 px-4 pb-3 pt-2 sm:px-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-muted hover:text-primary"
+                className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-muted hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <div className="mt-4 px-3">
-              <Link href="/contact" onClick={() => setIsOpen(false)} className={buttonVariants({ className: "w-full" })}>
-                Inquire Now
+            <div className="pt-4 pb-2">
+              <Link
+                href="/contact"
+                className={`w-full justify-center ${buttonVariants()}`}
+                onClick={() => setIsOpen(false)}
+              >
+                {t.nav.inquire}
               </Link>
             </div>
           </div>

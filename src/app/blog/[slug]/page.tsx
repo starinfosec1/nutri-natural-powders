@@ -1,18 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/data/blog";
 import { Metadata } from "next";
-
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
-}
+import { cookies } from "next/headers";
+import { getTranslations } from "@/lib/translations";
+import { blogPosts } from "@/data/blog";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "mr";
+  const t = getTranslations(lang);
+
+  const post = t.blog.posts.find((p: any) => p.slug === resolvedParams.slug);
   
   if (!post) {
     return {
@@ -28,7 +27,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("NEXT_LOCALE")?.value || "en") as "en" | "mr";
+  const t = getTranslations(lang);
+
+  const post = t.blog.posts.find((p: any) => p.slug === resolvedParams.slug);
 
   if (!post) {
     notFound();
@@ -43,7 +46,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           href="/blog" 
           className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary mb-8 transition-colors"
         >
-          ← Back to Blog
+          {t.blog.backToBlog}
         </Link>
 
         {/* Post Header */}
@@ -55,7 +58,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.title}
           </h1>
           <p className="text-muted-foreground text-lg mb-8">
-            Published on {post.date}
+            {post.date}
           </p>
         </header>
 
@@ -96,7 +99,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               }
             };
 
-            lines.forEach((line, i) => {
+            lines.forEach((line: string, i: number) => {
               const trimmed = line.trim();
               if (!trimmed) {
                 flushList();

@@ -1,56 +1,16 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { translations } from "@/lib/translations";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const timelineSteps = [
-  {
-    title: "Step 1: Harvesting or Bulk Buying",
-    icon: "🌱",
-    process: "Fresh vegetables and fruits are harvested at the proper maturity stage. Alternatively, produce is procured from trusted farmers in bulk.",
-    objective: "Ensure freshness, quality, nutrition, and traceability."
-  },
-  {
-    title: "Step 2: Washing and Cleaning",
-    icon: "💧",
-    process: "The produce is thoroughly washed using clean water. Dirt, dust, soil particles, pesticides, and impurities are removed.",
-    objective: "Maintain hygiene and food safety standards."
-  },
-  {
-    title: "Step 3: Cutting and Slicing",
-    icon: "🔪",
-    process: "Cleaned produce is trimmed. Vegetables and fruits are cut into uniform pieces or slices.",
-    objective: "Achieve consistent and even drying. Improve drying efficiency and product quality."
-  },
-  {
-    title: "Step 4: Drying (Sun or Tray)",
-    icon: "☀️",
-    methods: [
-      { name: "Sun Drying", desc: "Natural sunlight is used. Cost-effective and traditional." },
-      { name: "Tray Drying", desc: "Controlled-temperature drying chambers or dehydrators are used. Better consistency and hygiene." }
-    ],
-    objective: "Remove moisture. Preserve nutrients, natural color, flavor, and aroma. Extend shelf life naturally without preservatives."
-  },
-  {
-    title: "Step 5: Powder Making Process",
-    icon: "⚙️",
-    process: "Dried slices are fed into food-grade grinders or pulverizers. Fine and smooth powders are produced.",
-    note: "No additives, fillers, colors, or preservatives are mixed."
-  },
-  {
-    title: "Step 6: Packaging",
-    icon: "📦",
-    process: "Powders are packed in hygienic, food-grade, air-tight pouches.",
-    objective: "Lock in freshness. Protect flavor and nutrients. Prevent moisture absorption. Increase shelf life naturally."
-  }
-];
-
-export function ManufacturingTimeline() {
+export function ManufacturingTimeline({ t = translations.en }: { t?: any }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const timelineSteps = t.manufacturing.steps;
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -79,24 +39,24 @@ export function ManufacturingTimeline() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
-            Our Manufacturing Process
+            {t.manufacturing.timelineTitle}
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Here is how we make our powders, step by step. Every stage is designed to keep the natural goodness of the ingredients.
+            {t.manufacturing.timelineDesc}
           </p>
 
           {/* Core Principles */}
           <div className="mt-8 flex flex-col items-center">
-            <span className="text-xs font-semibold tracking-wider text-muted-foreground uppercase mb-3">Core Principles</span>
+            <span className="text-xs font-semibold tracking-wider text-muted-foreground uppercase mb-3">{t.manufacturing.corePrinciples}</span>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-100 text-green-700 rounded-full font-medium text-sm shadow-sm hover:scale-105 transition-transform">
-                <span>🌿</span> No Preservatives
+                <span>🌿</span> {t.manufacturing.noPreservatives}
               </div>
               <div className="flex items-center gap-2 px-5 py-2.5 bg-amber-50 border border-amber-100 text-amber-700 rounded-full font-medium text-sm shadow-sm hover:scale-105 transition-transform">
-                <span>⚗️</span> No Additives
+                <span>⚗️</span> {t.manufacturing.noAdditives}
               </div>
               <div className="flex items-center gap-2 px-5 py-2.5 bg-emerald-50 border border-emerald-100 text-emerald-700 rounded-full font-medium text-sm shadow-sm hover:scale-105 transition-transform">
-                <span>✅</span> 100% Natural
+                <span>✅</span> {t.manufacturing.allNatural}
               </div>
             </div>
           </div>
@@ -106,7 +66,7 @@ export function ManufacturingTimeline() {
           {/* Vertical line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-primary/20 transform md:-translate-x-1/2 rounded-full"></div>
 
-          {timelineSteps.map((step, index) => (
+          {timelineSteps.map((step: any, index: number) => (
             <div
               key={index}
               ref={(el) => { stepsRef.current[index] = el; }}
@@ -130,16 +90,16 @@ export function ManufacturingTimeline() {
                   <div className="space-y-4 text-sm text-muted-foreground">
                     {step.process && (
                       <div>
-                        <span className="font-semibold text-foreground block mb-1">Process:</span>
+                        <span className="font-semibold text-foreground block mb-1">{t.manufacturing.processLabel}</span>
                         <p className="leading-relaxed">{step.process}</p>
                       </div>
                     )}
 
                     {step.methods && (
                       <div>
-                        <span className="font-semibold text-foreground block mb-1.5">Methods:</span>
+                        <span className="font-semibold text-foreground block mb-1.5">{t.manufacturing.methodsLabel}</span>
                         <ul className="space-y-2 pl-1">
-                          {step.methods.map((method, mIdx) => (
+                          {step.methods.map((method: any, mIdx: number) => (
                             <li key={mIdx} className="leading-relaxed">
                               <strong className="text-foreground">{method.name}:</strong> {method.desc}
                             </li>
@@ -150,14 +110,14 @@ export function ManufacturingTimeline() {
 
                     {step.objective && (
                       <div className="pt-2 border-t border-border/65">
-                        <span className="font-semibold text-foreground block mb-1">Objective:</span>
+                        <span className="font-semibold text-foreground block mb-1">{t.manufacturing.objectiveLabel}</span>
                         <p className="leading-relaxed text-foreground/80">{step.objective}</p>
                       </div>
                     )}
 
                     {step.note && (
                       <div className="pt-2 border-t border-border/65">
-                        <span className="font-semibold text-foreground block mb-1">Note:</span>
+                        <span className="font-semibold text-foreground block mb-1">{t.manufacturing.noteLabel}</span>
                         <p className="leading-relaxed text-foreground/80 font-medium italic">{step.note}</p>
                       </div>
                     )}

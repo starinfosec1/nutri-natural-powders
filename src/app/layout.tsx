@@ -54,20 +54,25 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+import { cookies } from "next/headers";
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const lang = cookieStore.get("NEXT_LOCALE")?.value || "en";
+
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans overflow-x-hidden">
-        <Header />
+        <Header lang={lang} />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );
