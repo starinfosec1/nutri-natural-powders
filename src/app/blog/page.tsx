@@ -69,10 +69,8 @@ export default async function BlogPage() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="hidden md:block">
-              <CarouselPrevious />
-              <CarouselNext />
-            </div>
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
         </div>
 

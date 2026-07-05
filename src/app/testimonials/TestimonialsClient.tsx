@@ -72,10 +72,8 @@ export function TestimonialsClient({ t }: { t: any }) {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="hidden md:block">
-              <CarouselPrevious />
-              <CarouselNext />
-            </div>
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
         </div>
       </div>

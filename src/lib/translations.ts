@@ -264,7 +264,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Store in a cool, dry place away from direct sunlight.",
-          packaging: "25kg HDPE Drums with double food-grade poly-liners.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "ginger-powder",
@@ -291,7 +291,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Keep in a tightly sealed container in a cool, dark environment.",
-          packaging: "25kg Paper Bags / 20kg Cartons.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "beetroot-powder",
@@ -318,7 +318,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Hygroscopic. Keep sealed tightly in a dry area.",
-          packaging: "20kg Cartons with foil liners.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "onion-powder",
@@ -345,7 +345,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Store in a cool, dry place.",
-          packaging: "25kg Cartons/Bags.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "curry-leaves-powder",
@@ -372,7 +372,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Store away from heat and moisture.",
-          packaging: "25kg Bulk Bags.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "methi-powder",
@@ -399,7 +399,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Keep in a cool, dark, dry place.",
-          packaging: "25kg HDPE Bags.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         },
         {
           id: "tomato-powder",
@@ -426,7 +426,7 @@ export const translations = {
             shelfLife: "10 Months",
           },
           storage: "Hygroscopic. Must be stored in a completely dry, cool environment.",
-          packaging: "20kg Foil-lined Cartons.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
         }
       ]
     },
@@ -674,7 +674,7 @@ export const translations = {
         {
           title: "आले (Ginger) पावडर",
           benefit: "पचन आणि सांध्यांच्या आरोग्यासाठी उपयुक्त",
-          desc: "यामध्ये जिंजरोल हे शक्तिशाली बायोअॅक्टिव्ह संयुग असते जे पचनास मदत करते, पोटाचा त्रास कमी करते, स्नायूंची वेदना कमी करते आणि यामध्ये मजबूत दाहक-विरोधी गुणधर्म असतात."
+          desc: "यामध्ये जिंजरोल हे शक्तिशाली बायोएक्टिव्ह संयुग असते जे पचनास मदत करते, पोटाचा त्रास कमी करते, स्नायूंची वेदना कमी करते आणि यामध्ये मजबूत दाहक-विरोधी गुणधर्म असतात."
         },
         {
           title: "कढीपत्ता (Curry Leaf) पावडर",
@@ -907,7 +907,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "थेट सूर्यप्रकाशापासून दूर थंड, कोरड्या जागी साठवा.",
-          packaging: "डबल फूड-ग्रेड पॉली-लायनर्ससह २५ किलो एचडीपीई ड्रम्स.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "ginger-powder",
@@ -934,7 +934,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "थंड, अंधाऱ्या वातावरणात घट्ट बंद कंटेनरमध्ये ठेवा.",
-          packaging: "२५ किलो पेपर बॅग्ज / २० किलो कार्टन्स.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "beetroot-powder",
@@ -961,7 +961,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "हायग्रोस्कोपिक. कोरड्या जागी घट्ट बंद करून ठेवा.",
-          packaging: "फॉइल लाइनर्ससह २० किलो कार्टन्स.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "onion-powder",
@@ -988,7 +988,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "थंड, कोरड्या जागी साठवा.",
-          packaging: "२५ किलो कार्टन्स/बॅग्ज.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "curry-leaves-powder",
@@ -1015,7 +1015,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "उष्णता आणि आर्द्रतेपासून दूर साठवा.",
-          packaging: "२५ किलो बल्क बॅग्ज.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "methi-powder",
@@ -1042,7 +1042,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "थंड, अंधाऱ्या, कोरड्या जागी ठेवा.",
-          packaging: "२५ किलो एचडीपीई बॅग्ज.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         },
         {
           id: "tomato-powder",
@@ -1069,7 +1069,7 @@ export const translations = {
             shelfLife: "१० महिने",
           },
           storage: "हायग्रोस्कोपिक. पूर्णपणे कोरड्या, थंड वातावरणात साठवणे आवश्यक आहे.",
-          packaging: "फॉइल-लाईन्ड २० किलो कार्टन्स.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
         }
       ]
     },

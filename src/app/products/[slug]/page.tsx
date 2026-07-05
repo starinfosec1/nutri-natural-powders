@@ -144,7 +144,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-lg mb-1">{t.products.packagingLabel}</h4>
-                  <p className="text-muted-foreground">{product.packaging}</p>
+                  <p className="text-muted-foreground whitespace-pre-line">{product.packaging}</p>
                 </div>
               </div>
             </div>

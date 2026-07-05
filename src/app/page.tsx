@@ -208,10 +208,8 @@ export default async function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="hidden md:block">
               <CarouselPrevious />
               <CarouselNext />
-            </div>
           </Carousel>
         </div>
       </section>
@@ -257,10 +255,8 @@ export default async function Home() {
                 )
               })}
             </CarouselContent>
-            <div className="hidden md:block">
               <CarouselPrevious />
               <CarouselNext />
-            </div>
           </Carousel>
         </div>
       </section>
@@ -356,10 +352,8 @@ export default async function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="hidden md:block">
               <CarouselPrevious />
               <CarouselNext />
-            </div>
           </Carousel>
           <div className="mt-8 text-center md:hidden">
             <Link href="/products" className={buttonVariants({ variant: "outline" })}>
