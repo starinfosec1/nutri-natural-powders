@@ -56,7 +56,7 @@ export function GalleryClient({ t }: { t: any }) {
 
   return (
     <>
-      <div className="bg-background py-24 min-h-screen">
+      <div className="bg-background py-24 min-h-screen overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">{t.gallery.heroTitle}</h1>
@@ -157,7 +157,7 @@ export function GalleryClient({ t }: { t: any }) {
       </div>
 
         {/* Internal Cross-Links */}
-        <div className="bg-muted py-16">
+        <div className="bg-muted py-16 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <FadeIn direction="up" delay={0.1}>

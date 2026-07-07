@@ -39,7 +39,7 @@ export default async function ManufacturingPage() {
       </section>
 
       {/* Facility Overview */}
-      <section className="py-24">
+      <section className="py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
@@ -73,7 +73,7 @@ export default async function ManufacturingPage() {
       <ManufacturingTimeline t={t} />
 
       {/* Quality Control */}
-      <section className="py-24 bg-primary text-primary-foreground">
+      <section className="py-24 bg-primary text-primary-foreground overflow-hidden">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <FadeIn direction="up">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-8">{t.manufacturing.qualityTitle}</h2>
@@ -87,7 +87,7 @@ export default async function ManufacturingPage() {
       </section>
 
       {/* Internal Cross-Links */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <Link href="/products" className="group p-8 bg-muted rounded-2xl hover:shadow-md transition-all">

@@ -50,7 +50,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Story & About */}
-      <section className="py-24">
+      <section className="py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">
@@ -93,7 +93,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-24 bg-muted">
+      <section className="py-24 bg-muted overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <FadeIn direction="up">
@@ -141,7 +141,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Values & Commitment */}
-      <section className="py-24">
+      <section className="py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16">
             <FadeIn direction="right">
@@ -177,7 +177,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Internal Cross-Links */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-muted overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <Link href="/products" className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all">

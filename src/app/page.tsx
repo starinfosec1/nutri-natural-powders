@@ -129,7 +129,7 @@ export default async function Home() {
 
 
       {/* About Preview */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <FadeIn direction="up">
@@ -173,7 +173,7 @@ export default async function Home() {
       </section>
 
       {/* Our Services */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="text-center mb-16">
@@ -215,7 +215,7 @@ export default async function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-muted">
+      <section className="py-24 bg-muted overflow-hidden">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="text-center mb-16">
@@ -262,7 +262,7 @@ export default async function Home() {
       </section>
 
       {/* Trust Cards Section */}
-      <section className="py-16 bg-white border-t border-b border-border">
+      <section className="py-16 bg-white border-t border-b border-border overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-border">
             <FadeIn direction="up" delay={0.1}>
@@ -319,7 +319,7 @@ export default async function Home() {
       <ManufacturingTimeline t={t} />
 
       {/* Best Sellers Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="flex justify-between items-end mb-12">

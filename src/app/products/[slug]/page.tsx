@@ -38,7 +38,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   }
 
   return (
-    <div className="py-12 bg-background min-h-screen">
+    <div className="py-12 bg-background min-h-screen overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Product Image */}

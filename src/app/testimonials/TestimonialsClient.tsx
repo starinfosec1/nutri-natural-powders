@@ -22,7 +22,7 @@ export function TestimonialsClient({ t }: { t: any }) {
   const thirdColumn = testimonials.slice(6, 9);
 
   return (
-    <section className="bg-background my-20 relative min-h-screen">
+    <section className="bg-background my-20 relative min-h-screen overflow-hidden">
       <div className="container z-10 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

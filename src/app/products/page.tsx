@@ -26,7 +26,7 @@ export default async function ProductsPage() {
   const t = getTranslations(lang);
 
   return (
-    <div className="bg-muted py-24 min-h-screen">
+    <div className="bg-muted py-24 min-h-screen overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">

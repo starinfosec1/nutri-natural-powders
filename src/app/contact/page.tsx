@@ -15,7 +15,7 @@ export default async function ContactPage() {
   const t = getTranslations(lang);
 
   return (
-    <div className="bg-background min-h-screen py-24">
+    <div className="bg-background min-h-screen py-24 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">{t.contact.heroTitle}</h1>
