@@ -85,6 +85,7 @@ export default async function Home() {
                 { image: "/Onion-Powders.png", color: "bg-slate-50 text-slate-800 border-slate-100" },
                 { image: "/methi.png", color: "bg-yellow-50 text-yellow-800 border-yellow-100" },
                 { image: "/tomato-powders.png", color: "bg-rose-50 text-rose-800 border-rose-100" },
+                { image: "/lemongrass-powder.png", color: "bg-lime-50 text-lime-800 border-lime-100" },
               ][i];
               return (
               <div
@@ -337,7 +338,7 @@ export default async function Home() {
             className="w-full relative"
           >
             <CarouselContent>
-              {t.products.productsList.slice(0, 4).map((product, i) => (
+              {t.products.productsList.map((product, i) => (
                 <CarouselItem key={product.slug} className="sm:basis-1/2 xl:basis-1/4">
                   <FadeIn direction="up" delay={i * 0.1}>
                     <Link href={`/products/${product.slug}`} className="group block mx-2 mb-2">

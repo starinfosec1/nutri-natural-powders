@@ -40,9 +40,9 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   return (
     <div className="py-12 bg-background min-h-screen overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Product Image */}
-          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:sticky lg:top-24">
             <Image
               src={product.image}
               alt={product.name}
@@ -58,9 +58,16 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
                 {product.name}
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground mb-6">
                 {product.shortDescription}
               </p>
+              {product.longDescription && (
+                <div className="prose prose-lg text-muted-foreground">
+                  {product.longDescription.split('\n\n').map((p: string, i: number) => (
+                    <p key={i} className="mb-4">{p}</p>
+                  ))}
+                </div>
+              )}
             </div>
 
             <WhatsAppInquiryButton 
@@ -99,6 +106,41 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 </ul>
               </div>
             </div>
+
+            {/* How to Use Section */}
+            {product.howToUse && (
+              <div className="pt-6 border-t border-border">
+                <h3 className="text-2xl font-heading font-bold mb-4">{t.products.howToUseTitle || `How to Use ${product.name}?`}</h3>
+                <p className="text-lg text-muted-foreground mb-6">{product.howToUse}</p>
+                
+                {product.popularWays && (
+                  <div className="bg-muted p-6 rounded-2xl mb-6">
+                    <h4 className="text-lg font-heading font-bold mb-4 flex items-center gap-2">
+                      <Box className="text-primary w-5 h-5" /> {t.products.popularWaysTitle || "Popular Ways to Use"}
+                    </h4>
+                    <ul className="space-y-4">
+                      {product.popularWays.map((way: any, i: number) => (
+                        <li key={i} className="text-foreground">
+                          <span className="font-bold block text-primary">{way.title}</span>
+                          <span className="text-muted-foreground">{way.desc}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                {product.recommendedUsage && (
+                  <div>
+                    <h4 className="text-lg font-heading font-bold mb-2">{t.products.recommendedUsageTitle || "Recommended Usage"}</h4>
+                    <div className="prose text-muted-foreground">
+                      {product.recommendedUsage.split('\n\n').map((p: string, i: number) => (
+                        <p key={i} className="mb-2 leading-relaxed">{p}</p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Specifications */}
             <div>

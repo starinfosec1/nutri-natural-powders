@@ -5,19 +5,23 @@ import { useRouter } from "next/navigation";
 
 export function LanguageToggle() {
   const router = useRouter();
-  const [lang, setLang] = useState<"en" | "mr">("en");
+  const [lang, setLang] = useState<"en" | "mr" | "hi">("en");
 
   useEffect(() => {
     // Read the current locale from cookies
     const cookies = document.cookie.split("; ");
     const localeCookie = cookies.find((row) => row.startsWith("NEXT_LOCALE="));
     if (localeCookie) {
-      setLang(localeCookie.split("=")[1] as "en" | "mr");
+      setLang(localeCookie.split("=")[1] as "en" | "mr" | "hi");
     }
   }, []);
 
   const toggleLanguage = () => {
-    const newLang = lang === "en" ? "mr" : "en";
+    let newLang: "en" | "mr" | "hi" = "en";
+    if (lang === "en") newLang = "mr";
+    else if (lang === "mr") newLang = "hi";
+    else newLang = "en";
+    
     setLang(newLang);
     document.cookie = `NEXT_LOCALE=${newLang}; path=/; max-age=31536000`;
     router.refresh();
@@ -32,6 +36,8 @@ export function LanguageToggle() {
       <span className={lang === "en" ? "opacity-100" : "opacity-50"}>EN</span>
       <span className="mx-1">|</span>
       <span className={lang === "mr" ? "opacity-100" : "opacity-50"}>मराठी</span>
+      <span className="mx-1">|</span>
+      <span className={lang === "hi" ? "opacity-100" : "opacity-50"}>हिंदी</span>
     </button>
   );
 }

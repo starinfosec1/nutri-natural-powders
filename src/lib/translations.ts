@@ -52,6 +52,11 @@ export const translations = {
           title: "Tomato Powder",
           benefit: "Heart Health & Lycopene Boost",
           desc: "Packed with lycopene, vitamin C, and potassium, tomato powder acts as a strong antioxidant shield, supporting cardiovascular health and protecting cells from oxidative stress."
+        },
+        {
+          title: "Lemongrass Powder",
+          benefit: "Refresh & Revitalize",
+          desc: "Rich in antioxidants and natural citrus essence, lemongrass powder supports digestion, promotes a healthy metabolism, and provides a calming, refreshing effect."
         }
       ],
       aboutQuality: "Quality First",
@@ -238,11 +243,40 @@ export const translations = {
       packagingLabel: "Packaging",
       backToProducts: "← Back to All Products",
       contactForPricing: "Contact Us for Pricing →",
+      whyUseTitle: "Why Use",
+      howToUseTitle: "How to Use",
+      popularWaysTitle: "Popular Ways",
+      recommendedUsageTitle: "Recommended Usage",
       productsList: [
         {
           id: "moringa-powder",
           name: "Moringa Powder",
           slug: "moringa-powder",
+          longDescription: "Moringa Powder is made from carefully dried and finely ground Moringa leaves, often referred to as one of nature's most nutrient-rich plants. Packed with essential vitamins, minerals, antioxidants, and plant-based nutrients, it is a simple and natural way to support a healthy lifestyle.\n\nWhether you are looking to enhance your daily nutrition, maintain an active routine, or add more plant-based goodness to your diet, Moringa Powder offers a convenient solution. Its versatility allows it to be incorporated into a wide variety of foods and beverages, making healthy nutrition accessible every day.",
+          howToUse: "Adding Moringa Powder to your daily routine is simple and convenient. Its mild, earthy flavor blends well with many foods and beverages, allowing you to enjoy its nutritional benefits in a way that suits your lifestyle.",
+          popularWays: [
+          {
+                    "title": "Smoothies & Juices",
+                    "desc": "Blend a teaspoon of Moringa Powder into your favorite smoothie or fresh juice for a nutritious boost."
+          },
+          {
+                    "title": "Tea & Health Drinks",
+                    "desc": "Mix with warm water, herbal tea, or health beverages as part of your daily wellness routine."
+          },
+          {
+                    "title": "Soups & Curries",
+                    "desc": "Add to soups, dals, curries, and sauces to enhance their nutritional value."
+          },
+          {
+                    "title": "Baking & Healthy Recipes",
+                    "desc": "Incorporate into cookies, energy bars, pancakes, or other baked products."
+          },
+          {
+                    "title": "Everyday Meals",
+                    "desc": "Mix into chapati dough, rice dishes, salads, or yogurt for an easy nutritional addition."
+          }
+],
+          recommendedUsage: "For regular consumption, add 1–2 teaspoons (approximately 3–5 grams) daily to your preferred food or beverage. Adjust according to your dietary needs and preferences.\n\nAt NNP Products, our Moringa Powder is carefully processed to help preserve its natural goodness, ensuring you receive quality nutrition in every serving.",
           shortDescription: "Nutrient-dense superfood powder made from premium moringa leaves.",
           image: "/moringa.png",
           benefits: [
@@ -270,6 +304,31 @@ export const translations = {
           id: "ginger-powder",
           name: "Ginger Powder",
           slug: "ginger-powder",
+          longDescription: "Ginger Powder is a versatile and aromatic ingredient made from carefully dried and finely ground ginger roots. Known for its distinctive flavor and natural goodness, it has been valued for generations in traditional cuisines and wellness practices. Ginger Powder offers a convenient way to enjoy the benefits of ginger while adding warmth and depth to a variety of foods and beverages.\n\nWhether used in cooking, baking, or daily wellness drinks, Ginger Powder is an easy addition to a balanced lifestyle and a flavorful ingredient for everyday use.",
+          howToUse: "Ginger Powder can be effortlessly incorporated into your daily routine. Its concentrated flavor makes it ideal for a wide range of culinary and wellness applications.",
+          popularWays: [
+          {
+                    "title": "Tea & Herbal Drinks",
+                    "desc": "Mix a small amount into hot water, tea, or herbal beverages for a refreshing ginger-infused drink."
+          },
+          {
+                    "title": "Cooking & Curries",
+                    "desc": "Add to vegetables, curries, soups, gravies, and sauces to enhance flavor and aroma."
+          },
+          {
+                    "title": "Baking & Desserts",
+                    "desc": "Use in cookies, cakes, biscuits, muffins, and other baked products for a warm, spicy taste."
+          },
+          {
+                    "title": "Smoothies & Health Drinks",
+                    "desc": "Blend with smoothies, juices, or nutrition drinks for added flavor and convenience."
+          },
+          {
+                    "title": "Seasoning & Spice Blends",
+                    "desc": "Incorporate into spice mixes, marinades, and seasoning blends for a rich culinary experience."
+          }
+],
+          recommendedUsage: "Use approximately ½–1 teaspoon daily or as required for your recipe and taste preference.\n\nAt NNP Products, our Ginger Powder is carefully processed to help maintain its natural aroma, flavor, and quality, delivering a premium ingredient for your kitchen and wellness needs.",
           shortDescription: "Aromatic and pungent ginger powder with high gingerol content.",
           image: "/ginger-powders.png",
           benefits: [
@@ -324,6 +383,31 @@ export const translations = {
           id: "onion-powder",
           name: "Onion Powder",
           slug: "onion-powder",
+          longDescription: "Onion Powder is made from carefully selected onions that are dehydrated and finely ground to create a convenient and flavorful ingredient. It offers the rich taste and aroma of onions without the need for peeling, chopping, or storage concerns associated with fresh onions.\n\nPerfect for everyday cooking and food manufacturing applications, Onion Powder provides consistent flavor, easy handling, and long shelf life. It is an excellent choice for enhancing the taste of a wide variety of dishes while saving time in the kitchen.",
+          howToUse: "Onion Powder is a versatile ingredient that blends easily into recipes, providing authentic onion flavor in a convenient powdered form.",
+          popularWays: [
+          {
+                    "title": "Curries & Gravies",
+                    "desc": "Add to curries, gravies, and vegetable dishes for a rich onion flavor."
+          },
+          {
+                    "title": "Soups & Sauces",
+                    "desc": "Mix into soups, sauces, dressings, and marinades to enhance taste and aroma."
+          },
+          {
+                    "title": "Seasonings & Spice Blends",
+                    "desc": "Use in seasoning mixes, spice blends, and snack coatings for a balanced savory flavor."
+          },
+          {
+                    "title": "Snacks & Fast Foods",
+                    "desc": "Ideal for chips, popcorn, roasted nuts, noodles, and other savory snack preparations."
+          },
+          {
+                    "title": "Breads & Savory Recipes",
+                    "desc": "Incorporate into bread dough, savory baked goods, and homemade recipes for added flavor."
+          }
+],
+          recommendedUsage: "Use ½–2 teaspoons or adjust according to your recipe and desired flavor intensity.\n\nAt NNP Products, our Onion Powder is carefully processed to help preserve the natural flavor, aroma, and quality of fresh onions, delivering convenience and consistency in every serving.",
           shortDescription: "Convenient flavor enhancer made from dehydrated premium onions.",
           image: "/Onion-Powders.png",
           benefits: [
@@ -351,6 +435,31 @@ export const translations = {
           id: "curry-leaves-powder",
           name: "Curry Leaves Powder",
           slug: "curry-leaves-powder",
+          longDescription: "Curry Leaves Powder is made from carefully selected and naturally dried curry leaves, finely ground to preserve their authentic flavor, aroma, and nutritional value. A staple ingredient in many traditional cuisines, curry leaves are known for their distinctive taste and are widely used to enhance a variety of dishes.\n\nOur Curry Leaves Powder offers a convenient way to enjoy the goodness of curry leaves throughout the year without the need for fresh leaves. It is an excellent addition to daily meals, helping you add natural flavor and nutrition to your diet.",
+          howToUse: "Curry Leaves Powder can be easily incorporated into a wide range of dishes, making it a versatile ingredient for everyday cooking.",
+          popularWays: [
+          {
+                    "title": "Curries & Gravies",
+                    "desc": "Add to curries, gravies, and vegetable dishes for authentic flavor and aroma."
+          },
+          {
+                    "title": "Rice Preparations",
+                    "desc": "Mix into rice dishes, pulao, khichdi, or flavored rice recipes."
+          },
+          {
+                    "title": "Chutneys & Dips",
+                    "desc": "Blend into chutneys, dips, and spice mixes to enhance taste and nutrition."
+          },
+          {
+                    "title": "Soups & Snacks",
+                    "desc": "Sprinkle into soups, snacks, roasted nuts, or savory preparations."
+          },
+          {
+                    "title": "Chapati & Paratha Dough",
+                    "desc": "Mix into dough for chapatis, parathas, or other homemade breads."
+          }
+],
+          recommendedUsage: "Add 1–2 teaspoons (approximately 3–5 grams) daily or as required according to your recipe and taste preference.\n\nAt NNP Products, our Curry Leaves Powder is carefully processed to help preserve its natural flavor, aroma, and nutritional goodness, delivering quality and convenience in every serving.",
           shortDescription: "Aromatic powder retaining the essential oils of fresh curry leaves.",
           image: "/curry-leaves.png",
           benefits: [
@@ -378,6 +487,31 @@ export const translations = {
           id: "methi-powder",
           name: "Methi (Fenugreek) Powder",
           slug: "methi-powder",
+          longDescription: "Methi Powder is made from carefully selected fenugreek leaves that are naturally dried and finely ground to preserve their distinctive aroma, flavor, and nutritional value. Widely used in traditional cuisine, Methi Powder is a convenient way to enjoy the goodness of fenugreek throughout the year.\n\nIts rich taste and versatility make it an excellent addition to a variety of dishes, helping enhance both flavor and nutrition. Whether used in everyday cooking or specialty recipes, Methi Powder offers a simple and natural way to enrich your meals.",
+          howToUse: "Methi Powder can be easily incorporated into a wide range of foods, making it a versatile ingredient for daily cooking.",
+          popularWays: [
+          {
+                    "title": "Curries & Vegetable Dishes",
+                    "desc": "Add to curries, sabzis, and gravies to enhance flavor and aroma."
+          },
+          {
+                    "title": "Chapati & Paratha Dough",
+                    "desc": "Mix into dough for chapatis, parathas, and other flatbreads for added taste and nutrition."
+          },
+          {
+                    "title": "Soups & Dal Preparations",
+                    "desc": "Blend into soups, dals, and lentil-based dishes to enrich their flavor profile."
+          },
+          {
+                    "title": "Seasonings & Spice Blends",
+                    "desc": "Use in spice mixes, chutneys, and seasoning blends for authentic taste."
+          },
+          {
+                    "title": "Snacks & Savory Recipes",
+                    "desc": "Incorporate into snacks, savory baked goods, and traditional recipes."
+          }
+],
+          recommendedUsage: "Add 1–2 teaspoons (approximately 3–5 grams) daily or as required according to your recipe and taste preference.\n\nAt NNP Products, our Methi Powder is carefully processed to help preserve the natural goodness, flavor, and quality of fenugreek leaves, ensuring a premium ingredient for your culinary and wellness needs.",
           shortDescription: "Slightly bitter, highly nutritious powder used in wellness and culinary applications.",
           image: "/methi.png",
           benefits: [
@@ -405,6 +539,31 @@ export const translations = {
           id: "tomato-powder",
           name: "Tomato Powder",
           slug: "tomato-powder",
+          longDescription: "Tomato Powder is made from carefully selected, ripe tomatoes that are dehydrated and finely ground to create a convenient and versatile ingredient. It delivers the rich taste, vibrant color, and natural goodness of tomatoes in an easy-to-use powdered form.\n\nIdeal for both home kitchens and food manufacturing applications, Tomato Powder provides a practical alternative to fresh tomatoes while offering longer shelf life and consistent quality. It can be used to enhance the flavor, texture, and appearance of a wide range of dishes.",
+          howToUse: "Tomato Powder is a highly versatile ingredient that can be incorporated into numerous recipes to add authentic tomato taste and color.",
+          popularWays: [
+          {
+                    "title": "Soups & Sauces",
+                    "desc": "Mix into soups, pasta sauces, gravies, and curry bases for enhanced flavor and consistency."
+          },
+          {
+                    "title": "Seasonings & Spice Blends",
+                    "desc": "Use in seasoning mixes, snack coatings, and spice blends to add a rich tomato taste."
+          },
+          {
+                    "title": "Curries & Vegetable Dishes",
+                    "desc": "Add directly to curries, vegetables, and savory dishes for natural tomato flavor."
+          },
+          {
+                    "title": "Ketchup & Dips",
+                    "desc": "Reconstitute with water and use in homemade ketchup, dips, and spreads."
+          },
+          {
+                    "title": "Ready-to-Eat & Convenience Foods",
+                    "desc": "Ideal for instant foods, soups, noodles, and food processing applications."
+          }
+],
+          recommendedUsage: "Use 1–2 teaspoons or adjust according to your recipe, desired flavor intensity, and application.\n\nAt NNP Products, our Tomato Powder is carefully processed to help preserve the natural taste, color, and quality of tomatoes, providing a reliable ingredient for everyday cooking and food innovation.",
           shortDescription: "Tangy, vibrant powder made from sun-ripened dehydrated tomatoes.",
           image: "/tomato-powders.png",
           benefits: [
@@ -427,6 +586,61 @@ export const translations = {
           },
           storage: "Hygroscopic. Must be stored in a completely dry, cool environment.",
           packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "lemongrass-powder",
+          name: "Lemongrass Powder",
+          slug: "lemongrass-powder",
+          longDescription: "Lemongrass Powder is made from carefully selected lemongrass leaves that are naturally dried and finely ground to preserve their refreshing citrus aroma, flavor, and natural goodness. Known for its distinctive fragrance and versatility, lemongrass has been widely used in traditional beverages, culinary preparations, and wellness routines.\n\nOur Lemongrass Powder offers a convenient way to enjoy the essence of fresh lemongrass throughout the year. Whether added to teas, beverages, or recipes, it provides a refreshing and flavorful experience while supporting a healthy lifestyle.",
+          howToUse: "Lemongrass Powder is a versatile ingredient that can be incorporated into a variety of beverages and recipes, making it an excellent addition to everyday use.",
+          popularWays: [
+            {
+              "title": "Herbal Tea & Infusions",
+              "desc": "Mix with hot water or tea to prepare a refreshing lemongrass beverage."
+            },
+            {
+              "title": "Health Drinks & Smoothies",
+              "desc": "Add to smoothies, juices, and wellness drinks for a natural citrus flavor."
+            },
+            {
+              "title": "Soups & Curries",
+              "desc": "Incorporate into soups, curries, and broths to enhance taste and aroma."
+            },
+            {
+              "title": "Seasonings & Spice Blends",
+              "desc": "Use in seasoning mixes and culinary blends for a unique flavor profile."
+            },
+            {
+              "title": "Baking & Specialty Recipes",
+              "desc": "Add to baked goods, desserts, and innovative recipes for a refreshing twist."
+            }
+          ],
+          recommendedUsage: "Add ½–1 teaspoon (approximately 2–3 grams) daily or as required according to your recipe and taste preference.\n\nAt NNP Products, our Lemongrass Powder is carefully processed to help preserve its natural aroma, flavor, and quality, delivering a premium ingredient for your culinary and wellness needs.",
+          shortDescription: "Made from carefully selected lemongrass leaves, naturally dried to preserve their refreshing citrus aroma and flavor.",
+          image: "/lemongrass-powder.png",
+          benefits: [
+            "Made from premium-quality lemongrass",
+            "Refreshing natural citrus aroma and flavor",
+            "Rich in naturally occurring antioxidants",
+            "Convenient and easy to use",
+            "Suitable for beverages, cooking, and wellness applications",
+            "Easy to store with a long shelf life"
+          ],
+          applications: [
+            "Herbal Tea & Infusions",
+            "Health Drinks & Smoothies",
+            "Soups & Curries",
+            "Seasonings & Spice Blends",
+            "Baking & Specialty Recipes"
+          ],
+          specifications: {
+            color: "Light Green",
+            moisture: "Max 5%",
+            meshSize: "60-80 Mesh",
+            shelfLife: "12 Months"
+          },
+          storage: "Store in a cool, dry place away from direct sunlight.",
+          packaging: "For min order - 50g, 100g, 200g, 500g & 1kg\nFor bulk order - 10kg, 25kg, 50kg"
         }
       ]
     },
@@ -695,6 +909,11 @@ export const translations = {
           title: "टोमॅटो (Tomato) पावडर",
           benefit: "हृदयाचे आरोग्य आणि लायकोपीन बूस्ट",
           desc: "लायकोपीन, जीवनसत्त्व क आणि पोटॅशियमने भरलेले टोमॅटो पावडर एक मजबूत अँटीऑक्सिडंट कवच म्हणून काम करते, हृदयाच्या आरोग्यास समर्थन देते आणि पेशींचे ऑक्सिडेटिव्ह तणावापासून रक्षण करते."
+        },
+        {
+          title: "गवती चहा (Lemongrass) पावडर",
+          benefit: "ताजेतवाने आणि ऊर्जादायी",
+          desc: "अँटिऑक्सिडंट्स आणि नैसर्गिक लिंबूवर्गीय सुगंधाने समृद्ध गवती चहा पावडर पचनास मदत करते, चयापचय सुधारते आणि शरीराला शांत व ताजेतवाने करते."
         }
       ],
       aboutQuality: "तडजोड नसलेली गुणवत्ता",
@@ -881,11 +1100,40 @@ export const translations = {
       packagingLabel: "पॅकेजिंग",
       backToProducts: "← सर्व उत्पादनांवर परत जा",
       contactForPricing: "किमतीसाठी आमच्याशी संपर्क साधा →",
+      whyUseTitle: "का वापरावे?",
+      howToUseTitle: "कसे वापरावे?",
+      popularWaysTitle: "वापरण्याचे लोकप्रिय मार्ग",
+      recommendedUsageTitle: "शिफारस केलेला वापर",
       productsList: [
         {
           id: "moringa-powder",
           name: "शेवगा (मोरिंगा) पावडर",
           slug: "moringa-powder",
+          longDescription: "मोरिंगा पावडर काळजीपूर्वक वाळवलेल्या आणि बारीक केलेल्या मोरिंगा (शेवगा) पानांपासून बनवली जाते. हे निसर्गातील सर्वात पौष्टिक वनस्पतींपैकी एक मानले जाते. यामध्ये जीवनसत्त्वे, खनिजे, अँटिऑक्सिडंट्स आणि वनस्पती-आधारित पोषक घटक भरपूर असतात. निरोगी जीवनशैलीसाठी हा एक सोपा आणि नैसर्गिक मार्ग आहे.\n\nतुमचे दैनंदिन पोषण वाढवण्यासाठी, सक्रिय राहण्यासाठी किंवा तुमच्या आहारात नैसर्गिक घटकांचा समावेश करण्यासाठी मोरिंगा पावडर हा एक उत्तम पर्याय आहे. हे विविध पदार्थ आणि पेयांमध्ये सहजपणे मिसळता येते.",
+          howToUse: "तुमच्या दैनंदिन जीवनात मोरिंगा पावडरचा वापर करणे अतिशय सोपे आहे. याची चव सौम्य आणि मातीसारखी (earthy) असते, ज्यामुळे ती अनेक पदार्थ आणि पेयांमध्ये सहज मिसळते.",
+          popularWays: [
+          {
+                    "title": "स्मूदी आणि ज्यूस",
+                    "desc": "पौष्टिकतेसाठी तुमच्या आवडत्या स्मूदी किंवा ताज्या फळांच्या रसात एक चमचा मोरिंगा पावडर मिसळा."
+          },
+          {
+                    "title": "चहा आणि आरोग्यदायी पेये",
+                    "desc": "रोजच्या आरोग्यासाठी कोमट पाणी, हर्बल टी किंवा आरोग्यदायी पेयांमध्ये मिसळा."
+          },
+          {
+                    "title": "सूप आणि आमटी",
+                    "desc": "सूप, डाळ, आमटी आणि भाज्यांचे पोषण वाढवण्यासाठी त्यात घाला."
+          },
+          {
+                    "title": "बेकिंग आणि पौष्टिक पदार्थ",
+                    "desc": "कुकीज, एनर्जी बार्स, पॅनकेक्स किंवा इतर बेकरी पदार्थांमध्ये वापरा."
+          },
+          {
+                    "title": "रोजचे जेवण",
+                    "desc": "चपातीच्या कणकेत, भातामध्ये, सॅलड किंवा दह्यामध्ये सहज मिसळा."
+          }
+],
+          recommendedUsage: "नियमित वापरासाठी, तुमच्या आवडीच्या पदार्थ किंवा पेयामध्ये रोज १-२ चमचे (सुमारे ३-५ ग्रॅम) घाला. तुमच्या आहाराच्या गरजेनुसार प्रमाण कमी-जास्त करा.\n\nएनएनपी प्रॉडक्ट्समध्ये, मोरिंगा पावडरवर काळजीपूर्वक प्रक्रिया केली जाते जेणेकरून त्याचे नैसर्गिक गुणधर्म टिकून राहतील आणि तुम्हाला उत्कृष्ट पोषण मिळेल.",
           shortDescription: "प्रीमियम शेवग्याच्या पानांपासून बनलेली पोषक तत्वांनी युक्त सुपरफूड पावडर.",
           image: "/moringa.png",
           benefits: [
@@ -913,6 +1161,31 @@ export const translations = {
           id: "ginger-powder",
           name: "सुंठ (आले) पावडर",
           slug: "ginger-powder",
+          longDescription: "आले पावडर (सुंठ) हा काळजीपूर्वक वाळवलेल्या आणि बारीक केलेल्या आल्यापासून बनवलेला एक बहुगुणी आणि सुगंधी पदार्थ आहे. याची खास चव आणि नैसर्गिक गुणधर्मांमुळे पारंपारिक स्वयंपाक आणि आयुर्वेदिक उपचारांमध्ये याला खूप महत्त्व आहे.\n\nस्वयंपाकात, बेकिंगमध्ये किंवा रोजच्या आरोग्यदायी पेयांमध्ये आले पावडर वापरणे खूप सोपे आहे.",
+          howToUse: "आले पावडर तुमच्या दैनंदिन जीवनात सहज समाविष्ट करता येते. याची चव तीव्र असल्याने हे स्वयंपाक आणि आरोग्यासाठी अत्यंत उपयुक्त आहे.",
+          popularWays: [
+          {
+                    "title": "चहा आणि हर्बल पेये",
+                    "desc": "गरम पाणी, चहा किंवा हर्बल पेयांमध्ये थोडे मिसळून ताजेतवाने करणारे पेय बनवा."
+          },
+          {
+                    "title": "स्वयंपाक आणि भाज्या",
+                    "desc": "भाज्या, आमटी, सूप आणि ग्रेव्हीची चव आणि सुगंध वाढवण्यासाठी घाला."
+          },
+          {
+                    "title": "बेकिंग आणि गोड पदार्थ",
+                    "desc": "कुकीज, केक, बिस्किटे आणि मफिन्समध्ये गरम आणि मसालेदार चवीसाठी वापरा."
+          },
+          {
+                    "title": "स्मूदी आणि आरोग्यदायी पेये",
+                    "desc": "स्मूदी, ज्यूस किंवा पौष्टिक पेयांमध्ये मिसळा."
+          },
+          {
+                    "title": "मसाले आणि सिझनिंग",
+                    "desc": "मसाले, मॅरिनेड आणि सिझनिंगमध्ये मिसळून जेवणाची चव वाढवा."
+          }
+],
+          recommendedUsage: "तुमच्या आवडीनुसार किंवा रेसिपीनुसार दररोज अंदाजे अर्धा ते एक चमचा वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, आले पावडर (सुंठ) काळजीपूर्वक तयार केली जाते ज्यामुळे तिचा नैसर्गिक सुगंध, चव आणि दर्जा टिकून राहतो.",
           shortDescription: "उच्च जिंजरॉल सामग्रीसह सुगंधी आणि तिखट आल्याची पावडर.",
           image: "/ginger-powders.png",
           benefits: [
@@ -967,6 +1240,31 @@ export const translations = {
           id: "onion-powder",
           name: "कांदा पावडर",
           slug: "onion-powder",
+          longDescription: "कांदा पावडर ही दर्जेदार कांदे वाळवून आणि बारीक करून बनवली जाते. हे कांदे सोलणे, कापणे किंवा साठवण्याच्या त्रासाशिवाय तुम्हाला कांद्याची अस्सल चव आणि सुगंध देते.\n\nरोजच्या स्वयंपाकासाठी कांदा पावडर खूप सोयीची आहे. यामुळे वेळेची बचत होते आणि पदार्थाला उत्तम चव मिळते.",
+          howToUse: "कांदा पावडर कोणत्याही पदार्थात सहज मिसळते आणि एका सोप्या पावडरच्या स्वरूपात कांद्याची चव देते.",
+          popularWays: [
+          {
+                    "title": "आमटी आणि ग्रेव्ही",
+                    "desc": "आमटी, ग्रेव्ही आणि भाज्यांमध्ये उत्तम चवीसाठी घाला."
+          },
+          {
+                    "title": "सूप आणि सॉस",
+                    "desc": "सूप, सॉस, ड्रेसिंग आणि मॅरिनेडची चव आणि सुगंध वाढवण्यासाठी मिसळा."
+          },
+          {
+                    "title": "मसाले आणि सिझनिंग",
+                    "desc": "सिझनिंग आणि स्नॅक्सच्या कोटिंगमध्ये चवदारपणासाठी वापरा."
+          },
+          {
+                    "title": "स्नॅक्स आणि फास्ट फूड",
+                    "desc": "चिप्स, पॉपकॉर्न, नूडल्स आणि इतर चटपटीत पदार्थांसाठी उत्तम."
+          },
+          {
+                    "title": "ब्रेड आणि बेकरी",
+                    "desc": "ब्रेडच्या पिठात, बेकरी पदार्थ आणि घरगुती रेसिपीमध्ये चवीसाठी मिसळा."
+          }
+],
+          recommendedUsage: "रेसिपी आणि तुम्हाला हव्या असलेल्या चवीनुसार अर्धा ते दोन चमचे किंवा आवश्यकतेनुसार वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, कांदा पावडर काळजीपूर्वक तयार केली जाते ज्यामुळे ताज्या कांद्याची नैसर्गिक चव आणि सुगंध कायम राहतो.",
           shortDescription: "सुकायलेल्या प्रीमियम कांद्यापासून बनवलेली चव वाढवणारी पावडर.",
           image: "/Onion-Powders.png",
           benefits: [
@@ -994,6 +1292,31 @@ export const translations = {
           id: "curry-leaves-powder",
           name: "कढीपत्ता पावडर",
           slug: "curry-leaves-powder",
+          longDescription: "कढीपत्ता पावडर ही निवडक आणि नैसर्गिकरित्या वाळवलेल्या कढीपत्त्यापासून बनवली जाते. तिचा अस्सल सुगंध, चव आणि पोषक घटक टिकवून ठेवण्यासाठी ती बारीक वाटली जाते. पारंपारिक स्वयंपाकात कढीपत्ता हा अत्यंत महत्त्वाचा घटक आहे.\n\nआमची कढीपत्ता पावडर तुम्हाला वर्षभर ताजे कढीपत्ते न शोधता त्याचा नैसर्गिक फायदा मिळवून देते. हे रोजच्या जेवणात वापरण्यासाठी अत्यंत सोयीचे आहे.",
+          howToUse: "कढीपत्ता पावडर विविध पदार्थांमध्ये सहजपणे मिसळता येते, ज्यामुळे ती रोजच्या स्वयंपाकासाठी खूप उपयुक्त ठरते.",
+          popularWays: [
+          {
+                    "title": "आमटी आणि ग्रेव्ही",
+                    "desc": "अस्सल चव आणि सुगंधासाठी आमटी, ग्रेव्ही आणि भाज्यांमध्ये घाला."
+          },
+          {
+                    "title": "भाताचे पदार्थ",
+                    "desc": "भात, पुलाव, खिचडी किंवा मसालेभातामध्ये मिसळा."
+          },
+          {
+                    "title": "चटण्या आणि डिप्स",
+                    "desc": "चटणी, डिप्स आणि मसाल्यांमध्ये चव वाढवण्यासाठी वापरा."
+          },
+          {
+                    "title": "सूप आणि स्नॅक्स",
+                    "desc": "सूप, स्नॅक्स, भाजलेले ड्रायफ्रुट्स किंवा फरसाणवर भुरभुरा."
+          },
+          {
+                    "title": "चपाती आणि पराठा",
+                    "desc": "चपाती, पराठा किंवा इतर घरगुती ब्रेडच्या पिठात मिसळा."
+          }
+],
+          recommendedUsage: "तुमच्या आवडीनुसार किंवा रेसिपीनुसार रोज १-२ चमचे (सुमारे ३-५ ग्रॅम) वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, कढीपत्ता पावडर काळजीपूर्वक तयार केली जाते जेणेकरून तिचा नैसर्गिक सुगंध, चव आणि पोषक घटक टिकून राहतील.",
           shortDescription: "ताज्या कढीपत्त्यातील आवश्यक तेले टिकवून ठेवणारी सुगंधी पावडर.",
           image: "/curry-leaves.png",
           benefits: [
@@ -1021,6 +1344,31 @@ export const translations = {
           id: "methi-powder",
           name: "मेथी पावडर",
           slug: "methi-powder",
+          longDescription: "मेथी पावडर ही निवडक मेथीच्या पानांपासून बनवली जाते. ही पाने नैसर्गिकरित्या वाळवून बारीक केली जातात ज्यामुळे त्यांचा खास सुगंध, चव आणि पोषणमूल्य टिकून राहते. पारंपारिक स्वयंपाकात मेथी पावडर खूप वापरली जाते.\n\nयाची खास चव अनेक पदार्थांची रंगत वाढवते. घरगुती जेवण असो वा विशेष पदार्थ, मेथी पावडर हा चव आणि पोषण वाढवणारा एक नैसर्गिक पर्याय आहे.",
+          howToUse: "मेथी पावडर अनेक पदार्थांमध्ये सहजपणे मिसळता येते, ज्यामुळे ती रोजच्या स्वयंपाकासाठी खूप उपयुक्त ठरते.",
+          popularWays: [
+          {
+                    "title": "आमटी आणि भाज्या",
+                    "desc": "आमटी, ग्रेव्ही आणि सुक्या भाज्यांची चव आणि सुगंध वाढवण्यासाठी घाला."
+          },
+          {
+                    "title": "चपाती आणि पराठा",
+                    "desc": "चपाती, पराठा किंवा इतर पिठात मिसळून त्याची चव आणि पोषण वाढवा."
+          },
+          {
+                    "title": "सूप आणि डाळ",
+                    "desc": "सूप, डाळ आणि वरणामध्ये मिसळून चव अधिक आकर्षक बनवा."
+          },
+          {
+                    "title": "मसाले आणि सिझनिंग",
+                    "desc": "मसाल्यांचे मिश्रण आणि चटण्यांमध्ये अस्सल चवीसाठी वापरा."
+          },
+          {
+                    "title": "स्नॅक्स आणि चटपटीत पदार्थ",
+                    "desc": "स्नॅक्स, बेकरी पदार्थ आणि पारंपारिक रेसिपीमध्ये मिसळा."
+          }
+],
+          recommendedUsage: "तुमच्या आवडीनुसार किंवा रेसिपीनुसार रोज १-२ चमचे (सुमारे ३-५ ग्रॅम) वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, मेथी पावडर अतिशय काळजीपूर्वक तयार केली जाते ज्यामुळे मेथी पानांचे नैसर्गिक गुणधर्म आणि चव उत्तम प्रकारे टिकून राहते.",
           shortDescription: "आरोग्य आणि स्वयंपाकात वापरली जाणारी किंचित कडू, अत्यंत पौष्टिक पावडर.",
           image: "/methi.png",
           benefits: [
@@ -1048,6 +1396,31 @@ export const translations = {
           id: "tomato-powder",
           name: "टोमॅटो पावडर",
           slug: "tomato-powder",
+          longDescription: "टोमॅटो पावडर निवडक आणि पिकलेल्या टोमॅटोंपासून बनवली जाते. हे टोमॅटो वाळवून बारीक वाटले जातात. हे टोमॅटोची अस्सल चव, रंग आणि नैसर्गिक गुणधर्म एका सोप्या स्वरूपात देते.\n\nघरगुती स्वयंपाक आणि व्यावसायिक अन्ननिर्मिती या दोन्हीसाठी टोमॅटो पावडर उत्तम आहे. हे ताज्या टोमॅटोंपेक्षा जास्त काळ टिकते आणि अनेक पदार्थांची चव आणि रंग वाढवण्यासाठी वापरले जाते.",
+          howToUse: "टोमॅटो पावडर अत्यंत बहुगुणी आहे आणि टोमॅटोची नैसर्गिक चव मिळवण्यासाठी ती अनेक पदार्थांमध्ये वापरता येते.",
+          popularWays: [
+          {
+                    "title": "सूप आणि सॉस",
+                    "desc": "सूप, पास्ता सॉस, ग्रेव्ही आणि आमटीमध्ये मिसळून त्याची चव वाढवा."
+          },
+          {
+                    "title": "मसाले आणि सिझनिंग",
+                    "desc": "मसाल्यांचे मिश्रण आणि स्नॅक्सच्या कोटिंगमध्ये उत्तम टोमॅटो चवीसाठी वापरा."
+          },
+          {
+                    "title": "आमटी आणि भाज्या",
+                    "desc": "आमटी, भाज्या आणि इतर पदार्थांमध्ये थेट टोमॅटोच्या चवीसाठी घाला."
+          },
+          {
+                    "title": "केचप आणि डिप्स",
+                    "desc": "पाण्यात मिसळून घरगुती केचप, डिप्स आणि स्प्रेड्स तयार करा."
+          },
+          {
+                    "title": "इन्स्टंट फूड",
+                    "desc": "इन्स्टंट फूड, सूप, नूडल्स आणि अन्न प्रक्रियेसाठी अतिशय उपयुक्त."
+          }
+],
+          recommendedUsage: "रेसिपी आणि तुम्हाला हव्या असलेल्या चवीनुसार १-२ चमचे किंवा आवश्यकतेनुसार वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, टोमॅटो पावडर अतिशय काळजीपूर्वक तयार केली जाते ज्यामुळे टोमॅटोचा नैसर्गिक रंग आणि चव टिकून राहते.",
           shortDescription: "उन्हात पिकलेल्या डिहायड्रेटेड टोमॅटोपासून बनवलेली आंबट, दोलायमान पावडर.",
           image: "/tomato-powders.png",
           benefits: [
@@ -1070,6 +1443,61 @@ export const translations = {
           },
           storage: "हायग्रोस्कोपिक. पूर्णपणे कोरड्या, थंड वातावरणात साठवणे आवश्यक आहे.",
           packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो",
+        },
+        {
+          id: "lemongrass-powder",
+          name: "गवती चहा (Lemongrass) पावडर",
+          slug: "lemongrass-powder",
+          longDescription: "गवती चहा पावडर ही काळजीपूर्वक निवडलेल्या पानांपासून बनवली जाते. तिचा ताजेतवाने करणारा लिंबूवर्गीय सुगंध, चव आणि नैसर्गिक गुणधर्म टिकवून ठेवण्यासाठी ती नैसर्गिकरित्या वाळवून बारीक वाटली जाते. गवती चहा त्याच्या खास सुगंधासाठी आणि बहुगुणी वापरासाठी प्रसिद्ध असून पारंपारिक पेये, स्वयंपाक आणि आरोग्यासाठी मोठ्या प्रमाणावर वापरला जातो.\n\nआमची गवती चहा पावडर तुम्हाला वर्षभर ताज्या गवती चहाचा नैसर्गिक फायदा मिळवून देते. चहा, पेये किंवा पदार्थांमध्ये मिसळल्यावर ते एक ताजेतवाने आणि चवदार अनुभव देते आणि निरोगी जीवनशैलीला मदत करते.",
+          howToUse: "गवती चहा पावडर एक अत्यंत बहुगुणी पदार्थ आहे जो अनेक पेये आणि पदार्थांमध्ये वापरता येतो, ज्यामुळे ती रोजच्या वापरासाठी एक उत्तम पर्याय ठरते.",
+          popularWays: [
+            {
+              "title": "हर्बल टी आणि इन्फ्युजन्स",
+              "desc": "गरम पाणी किंवा चहामध्ये मिसळून ताजेतवाने करणारे गवती चहा पेय बनवा."
+            },
+            {
+              "title": "हेल्थ ड्रिंक्स आणि स्मूदी",
+              "desc": "स्मूदी, ज्यूस आणि आरोग्यदायी पेयांमध्ये नैसर्गिक लिंबूवर्गीय चवीसाठी घाला."
+            },
+            {
+              "title": "सूप आणि आमटी",
+              "desc": "चव आणि सुगंध वाढवण्यासाठी सूप, आमटी आणि रस्स्यामध्ये मिसळा."
+            },
+            {
+              "title": "मसाले आणि सिझनिंग",
+              "desc": "वेगळ्या चवीसाठी मसाल्यांचे मिश्रण आणि जेवणात वापरा."
+            },
+            {
+              "title": "बेकिंग आणि विशेष रेसिपी",
+              "desc": "बेकरी पदार्थ, गोड पदार्थ आणि नाविन्यपूर्ण रेसिपीमध्ये ताजेपणासाठी वापरा."
+            }
+          ],
+          recommendedUsage: "रेसिपी आणि तुम्हाला हव्या असलेल्या चवीनुसार दररोज अर्धा ते एक चमचा (सुमारे २-३ ग्रॅम) किंवा आवश्यकतेनुसार वापरा.\n\nएनएनपी प्रॉडक्ट्समध्ये, गवती चहा पावडर काळजीपूर्वक तयार केली जाते ज्यामुळे तिचा नैसर्गिक सुगंध, चव आणि गुणवत्ता टिकून राहते, आणि तुमच्या स्वयंपाक व आरोग्याच्या गरजांसाठी एक उत्कृष्ट घटक मिळतो.",
+          shortDescription: "ताजेतवाने करणारा लिंबूवर्गीय सुगंध आणि चव देणारी नैसर्गिकरित्या वाळवलेली गवती चहा पावडर.",
+          image: "/lemongrass-powder.png",
+          benefits: [
+            "उच्च दर्जाच्या गवती चहापासून बनवलेली",
+            "ताजेतवाने करणारा नैसर्गिक लिंबूवर्गीय सुगंध आणि चव",
+            "नैसर्गिक अँटिऑक्सिडंट्सने समृद्ध",
+            "वापरण्यास सुलभ आणि सोयीस्कर",
+            "पेये, स्वयंपाक आणि आरोग्यासाठी उपयुक्त",
+            "साठवण्यास सोपी आणि जास्त काळ टिकणारी"
+          ],
+          applications: [
+            "हर्बल टी आणि इन्फ्युजन्स",
+            "हेल्थ ड्रिंक्स आणि स्मूदी",
+            "सूप आणि आमटी",
+            "मसाले आणि सिझनिंग",
+            "बेकिंग आणि विशेष रेसिपी"
+          ],
+          specifications: {
+            color: "हलका हिरवा",
+            moisture: "जास्तीत जास्त ५%",
+            meshSize: "६०-८० मेश",
+            shelfLife: "१२ महिने"
+          },
+          storage: "थेट सूर्यप्रकाशापासून दूर, थंड आणि कोरड्या जागी साठवा.",
+          packaging: "किमान ऑर्डरसाठी - ५० ग्रॅम, १०० ग्रॅम, २०० ग्रॅम, ५०० ग्रॅम आणि १ किलो\nबल्क ऑर्डरसाठी - १० किलो, २५ किलो, ५० किलो"
         }
       ]
     },
@@ -1285,11 +1713,870 @@ export const translations = {
       rights: "© २०२६ NNP प्रॉडक्ट्स. सर्व हक्क राखीव.",
     }
   }
+,
+  hi: {
+    nav: {
+      home: "होम",
+      about: "हमारे बारे में",
+      products: "उत्पाद",
+      manufacturing: "निर्माण",
+      gallery: "गैलरी",
+      testimonials: "प्रतिक्रिया",
+      blog: "ब्लॉग",
+      contact: "संपर्क",
+      inquire: "पूछताछ करें",
+    },
+    home: {
+      heroTitle: "प्रकृति का पोषण, सरल और शक्तिशाली।",
+      heroSubtitle: "प्रीमियम निर्जलित (Dehydrated) सब्जियां, फल और हर्बल पाउडर सीधे खेतों से आपके व्यवसाय तक।",
+      viewProducts: "सभी उत्पाद देखें",
+      healthTitle: "हर चम्मच में प्राकृतिक फायदे",
+      healthDesc: "हमारे पाउडर अधिकतम पोषण मूल्य बनाए रखते हैं, जो खाद्य, पेय और पूरक आहार (supplements) के लिए स्वास्थ्य लाभ प्रदान करते हैं।",
+      healthCards: [
+        {
+          title: "मोरिंगा पाउडर (Moringa Powder)",
+          benefit: "इम्यूनिटी और ऊर्जा बढ़ाता है",
+          desc: "इसे 'चमत्कारी पेड़' कहा जाता है। मोरिंगा आयरन, कैल्शियम, विटामिन ए और एंटीऑक्सीडेंट से भरपूर है जो ऊर्जा बढ़ाता है, रोग प्रतिरोधक क्षमता में सुधार करता है और कोशिकाओं को सुरक्षित रखता है।"
+        },
+        {
+          title: "चुकंदर पाउडर (Beetroot Powder)",
+          benefit: "रक्त प्रवाह और स्टैमिना में सुधार",
+          desc: "आहार नाइट्रेट्स से भरपूर, चुकंदर पाउडर रक्त वाहिकाओं को फैलाने में मदद करता है, जिससे परिसंचरण में सुधार होता है और स्टैमिना बढ़ता है।"
+        },
+        {
+          title: "अदरक पाउडर (Ginger Powder)",
+          benefit: "पाचन और जोड़ों के स्वास्थ्य में सहायक",
+          desc: "इसमें जिंजरोल होता है, जो पाचन में मदद करता है, पेट की खराबी को दूर करता है, मांसपेशियों के दर्द को कम करता है और मजबूत सूजन-रोधी गुण प्रदान करता है।"
+        },
+        {
+          title: "करी पत्ता पाउडर (Curry Leaf Powder)",
+          benefit: "बालों और आंत के स्वास्थ्य के लिए",
+          desc: "एंटीऑक्सीडेंट, आयरन और फाइबर से भरपूर, करी पत्ता पाउडर स्वस्थ पाचन बनाए रखने में मदद करता है और बालों को पोषण देता है।"
+        },
+        {
+          title: "प्याज पाउडर (Onion Powder)",
+          benefit: "हृदय स्वास्थ्य और रोग प्रतिरोधक क्षमता",
+          desc: "विटामिन सी, पोटेशियम और फाइटोकेमिकल्स से भरपूर, प्याज पाउडर स्वस्थ रक्तचाप बनाए रखने में मदद करता है और प्रतिरक्षा प्रणाली को मजबूत करता है।"
+        },
+        {
+          title: "मेथी पाउडर (Methi Powder)",
+          benefit: "रक्त शर्करा (Blood Sugar) और चयापचय को नियंत्रित करता है",
+          desc: "फाइबर से भरपूर, मेथी पाउडर स्वस्थ ग्लूकोज स्तर का समर्थन करता है, पाचन क्रिया को बढ़ाता है और त्वचा तथा बालों के लिए फायदेमंद है।"
+        },
+        {
+          title: "टमाटर पाउडर (Tomato Powder)",
+          benefit: "हृदय स्वास्थ्य और लाइकोपीन का बूस्ट",
+          desc: "लाइकोपीन, विटामिन सी और पोटेशियम से भरपूर, टमाटर पाउडर एक मजबूत एंटीऑक्सीडेंट के रूप में कार्य करता है और कोशिकाओं को नुकसान से बचाता है।"
+        },
+        {
+          title: "लेमनग्रास पाउडर (Lemongrass Powder)",
+          benefit: "ताजगी और ऊर्जा",
+          desc: "एंटीऑक्सीडेंट और प्राकृतिक नींबू की सुगंध से भरपूर, लेमनग्रास पाउडर पाचन में सहायता करता है, स्वस्थ चयापचय को बढ़ावा देता है और ताजगी प्रदान करता है।"
+        }
+      ],
+      aboutQuality: "सबसे पहले गुणवत्ता",
+      aboutFarm: "खेत से कारखाने तक",
+      aboutTitle1: "जहां शुद्धता मिलती है",
+      aboutTitle2: "सटीकता के साथ",
+      aboutDesc: "हम ताजे फलों, सब्जियों और जड़ी-बूटियों को शुद्ध, प्राकृतिक पाउडर में बदलते हैं। हमारी आधुनिक सुखाने की प्रक्रिया हर उत्पाद में प्राकृतिक रंग, स्वाद और पोषण बनाए रखती है।",
+      aboutBullets: [
+        "100% प्राकृतिक और मिलावट रहित",
+        "स्थानीय किसानों के साथ सीधी साझेदारी",
+        "कम तापमान पर आधुनिक निर्जलीकरण (Dehydration)",
+        "वैश्विक निर्यात गुणवत्ता मानक"
+      ],
+      discoverStory: "हमारी कहानी जानें",
+      whyTitle: "हमें क्यों चुनें?",
+      whyDesc: "यहाँ वह सब कुछ है जो NNP Products को अन्य पाउडर आपूर्तिकर्ताओं से अलग बनाता है।",
+      whyFeatures: [
+        { title: "सर्वश्रेष्ठ कच्चा माल", desc: "हम केवल बेहतरीन फलों, सब्जियों और जड़ी-बूटियों को चुनते हैं ताकि हमारे पाउडर हमेशा पोषण और गुणवत्ता में उच्च हों।" },
+        { title: "प्राकृतिक गुण सुरक्षित", desc: "हमारी सुखाने की प्रक्रिया हर सामग्री का असली रंग, स्वाद, गंध और स्वास्थ्य लाभ बनाए रखती है।" },
+        { title: "कस्टम ऑर्डर उपलब्ध", desc: "क्या आपको विशिष्ट पाउडर आकार, मिश्रण या पैकेजिंग की आवश्यकता है? हम आपकी आवश्यकताओं के अनुसार उत्पादों को अनुकूलित (customize) कर सकते हैं।" },
+        { title: "छोटे और बड़े ऑर्डर", desc: "चाहे आपको 10 किलो चाहिए या 10 टन, हमारा कारखाना किसी भी आकार के ऑर्डर को समान गुणवत्ता के साथ पूरा कर सकता है।" },
+        { title: "समय पर डिलीवरी", desc: "हम समय सीमा को गंभीरता से लेते हैं। आपके ऑर्डर बिना किसी देरी के हर बार समय पर पहुंचेंगे।" },
+        { title: "मिलनसार और मददगार टीम", desc: "हमारी टीम मदद के लिए हमेशा तैयार है। आपकी पहली पूछताछ से लेकर बिक्री के बाद के समर्थन तक, हम आपके लिए यहाँ हैं।" }
+      ],
+      servicesTitle: "हमारी सेवाएँ",
+      servicesDesc: "हम खाद्य, स्वास्थ्य और कल्याण व्यवसायों की जरूरतों को पूरा करने के लिए चार प्रकार के प्राकृतिक पाउडर बनाते हैं।",
+      servicesList: [
+        { title: "निर्जलित फल पाउडर", desc: "हम ताजे फलों को कम तापमान पर सुखाकर महीन पाउडर बनाते हैं। ये पाउडर मूल फल का प्राकृतिक स्वाद, रंग और विटामिन बनाए रखते हैं। पेय, स्नैक्स और स्वास्थ्य उत्पादों में उपयोग किया जाता है।" },
+        { title: "निर्जलित सब्जी पाउडर", desc: "हमारे सब्जी पाउडर में टमाटर, प्याज, चुकंदर, पालक और बहुत कुछ शामिल हैं। वे सूप, सॉस, रेडी-टू-ईट भोजन और खाद्य प्रसंस्करण कंपनियों के लिए एकदम सही हैं।" },
+        { title: "हरी पत्ती पाउडर", desc: "ताजा मोरिंगा, करी पत्ता, पालक और पुदीने की पत्तियों से बनाया गया। ये पाउडर विटामिन और खनिजों से भरपूर होते हैं, जो स्वास्थ्य की खुराक और प्राकृतिक खाद्य उत्पादों के लिए आदर्श हैं।" },
+      ],
+      trustFreeDelivery: "मुफ़्त डिलीवरी",
+      trustFreeDeliveryDesc: "भारत भर में सभी थोक (Bulk) ऑर्डर्स पर मुफ़्त शिपिंग।",
+      trustQuality: "गुणवत्ता की गारंटी",
+      trustQualityDesc: "प्रत्येक उत्पाद का शुद्धता और सुरक्षा के लिए परीक्षण और प्रमाणीकरण किया जाता है।",
+      trustSupport: "समर्पित समर्थन",
+      trustSupportDesc: "हमारी टीम आपके किसी भी प्रश्न या ऑर्डर में मदद करने के लिए उपलब्ध है।",
+      certsTitle: "प्रमाणपत्र और मानक",
+      certsDesc: "प्रमाणित",
+      bestSellersTitle: "सबसे अधिक बिकने वाले",
+      bestSellersDesc: "हमारे सबसे अधिक मांग वाले प्रीमियम पाउडर।",
+      viewAllProducts: "सभी उत्पाद देखें →",
+      pureAndNatural: "100% शुद्ध और प्राकृतिक",
+      ctaTitle: "क्या आप प्राकृतिक पाउडर आपूर्तिकर्ता की तलाश कर रहे हैं?",
+      ctaDesc: "थोक ऑर्डर्स, कस्टम मिश्रण या निःशुल्क उत्पाद नमूनों के लिए हमसे संपर्क करें। हमें मदद करने में खुशी होगी।",
+      contactTeam: "हमारी टीम से संपर्क करें",
+      browseCatalog: "कैटलॉग ब्राउज़ करें"
+    },
+    about: {
+      heroTitle: "NNP Products के बारे में",
+      heroSubtitle: "2015 से ताजे कृषि उत्पादों को शुद्ध, प्राकृतिक पाउडर में बदलना।",
+      storyTitle: "कंपनी के बारे में",
+      storyText1: "NNP Products एक प्राकृतिक पाउडर निर्माण कंपनी है जो सांगली, महाराष्ट्र में स्थित है। हम स्थानीय खेतों से ताजे फल, सब्जियां और जड़ी-बूटियां लेते हैं और आधुनिक सुखाने की तकनीक का उपयोग करके उन्हें महीन, शुद्ध पाउडर में बदलते हैं। हमारा लक्ष्य सरल है: हमारे द्वारा बनाए गए हर उत्पाद में प्राकृतिक स्वाद, रंग और पोषण बनाए रखना।",
+      storyList: [
+        "हमारा कारखाना ईश्वरपुर MIDC, तालुका वाळवा, जिला सांगली, महाराष्ट्र में स्थित है। हम सीधे स्थानीय किसानों से कच्चा माल खरीदते हैं, जिससे हमें सबसे ताज़ा सामग्री मिलती है और कृषि समुदाय को समर्थन मिलता है।",
+        "हम फलों, सब्जियों और जड़ी-बूटियों से नमी को हटाने के लिए कम तापमान सुखाने के तरीकों का उपयोग करते हैं। यह प्राकृतिक रंग, स्वाद और विटामिन को बरकरार रखता है।",
+        "हमारे द्वारा बनाया गया हर पाउडर उस किसान को जोड़ता है जो फसल उगाता है, हमारी टीम जो इसे संसाधित करती है, और वे व्यवसाय जो अपने उत्पादों में इसका उपयोग करते हैं।",
+        "हमारे पाउडर का उपयोग कई उद्योगों में किया जाता है - खाद्य और पेय पदार्थों से लेकर स्वास्थ्य पूरक और सौंदर्य उत्पादों तक। कोई फर्क नहीं पड़ता कि उनका उपयोग कहाँ किया जाता है, शुद्धता और गुणवत्ता के प्रति हमारी प्रतिबद्धता समान रहती है।",
+        "हमारे लिए, अच्छे निर्माण का मतलब सिर्फ उत्पाद बनाने से कहीं अधिक है। इसका मतलब है किसानों का समर्थन करना, भोजन की बर्बादी को कम करना, टिकाऊ तरीकों का उपयोग करना और पर्यावरण के साथ सावधानी से व्यवहार करना।",
+        "हम हर दिन सुधार करने, अपने वादों को निभाने और अपने ग्राहकों के साथ दीर्घकालिक संबंध बनाने के लिए कड़ी मेहनत करते हैं। साथ मिलकर, हम एक स्वस्थ भविष्य बना रहे हैं।"
+      ],
+      storyQuote: "\"NNP Products में, प्रत्येक सामग्री प्रकृति, पोषण और विश्वास की कहानी बताती है।\"",
+      visionTitle: "हमारा दृष्टिकोण",
+      visionDesc: "प्राकृतिक निर्जलित पाउडर में विश्व स्तर पर विश्वसनीय नाम बनना। हम वह कंपनी बनना चाहते हैं जिसके बारे में खाद्य निर्माता, स्वास्थ्य ब्रांड और कल्याण व्यवसाय सबसे पहले सोचते हैं जब उन्हें शुद्ध, प्राकृतिक सामग्री की आवश्यकता होती है।",
+      missionTitle: "हमारा लक्ष्य",
+      missionDesc: "किसानों के साथ सीधे काम करके, आधुनिक सुखाने की तकनीक का उपयोग करके और सख्त गुणवत्ता मानकों का पालन करके सर्वोत्तम प्राकृतिक पाउडर बनाना। हमारे द्वारा वितरित किया जाने वाला हर उत्पाद शुद्ध, सुरक्षित और बिल्कुल वही होना चाहिए जिसकी हमारे ग्राहकों को आवश्यकता है।",
+      stats: [
+        { label: "जुड़े हुए किसान", suffix: "+" },
+        { label: "निर्मित उत्पाद", suffix: "+" },
+        { label: "सेवा दिए गए उद्योग", suffix: "+" },
+        { label: "वर्षों की विशेषज्ञता", suffix: "+" }
+      ],
+      valuesTitle: "हमारे मूल्य",
+      values: [
+        { title: "गुणवत्ता के साथ कोई समझौता नहीं", desc: "हमारे द्वारा बनाए गए पाउडर के प्रत्येक बैच को हमारी सुविधा से बाहर निकलने से पहले शुद्धता, निरंतरता और सुरक्षा के लिए परीक्षण किया जाता है।" },
+        { title: "प्रकृति का सम्मान", desc: "हम हर सामग्री के प्राकृतिक गुणों की रक्षा करते हैं और पर्यावरण के अनुकूल विनिर्माण प्रथाओं का पालन करते हैं।" },
+        { title: "ईमानदारी और विश्वास", desc: "हम ईमानदार व्यवसाय में विश्वास करते हैं। हमारे ग्राहक हम पर भरोसा करते हैं क्योंकि हम हर बार वही देते हैं जिसका हम वादा करते हैं।" },
+        { title: "नवाचार और विकास", desc: "हम अपने ग्राहकों को सर्वोत्तम संभव सामग्री देने के लिए अपने तरीकों और उत्पादों में सुधार करते रहते हैं।" },
+        { title: "ग्राहक की सफलता", desc: "जब हमारे ग्राहक बढ़ते हैं, तो हम बढ़ते हैं। हम विश्वसनीय, उच्च गुणवत्ता वाले पाउडर के साथ आपके व्यवसाय को सफल बनाने में मदद करने के लिए यहाँ हैं।" }
+      ],
+      commitmentTitle: "हमारी प्रतिबद्धता",
+      commitments: [
+        "ऐसे प्राकृतिक पाउडर बनाना जो उनके मूल स्वाद, रंग और स्वास्थ्य लाभों को बनाए रखें।",
+        "स्थानीय किसानों से सीधे खरीद कर और दीर्घकालिक साझेदारी बनाकर उनका समर्थन करना।",
+        "उत्पादन के हर चरण में सख्त स्वच्छता और गुणवत्ता जांच का पालन करना।",
+        "सुरक्षित, सुसंगत उत्पाद वितरित करना जिन पर हमारे ग्राहक हमेशा भरोसा कर सकें।",
+        "हर जगह उद्योगों और उपभोक्ताओं के लिए प्रकृति की अच्छाई लाकर एक स्वस्थ भविष्य बनाने में मदद करना।"
+      ],
+      exploreProducts: "हमारे उत्पादों का अन्वेषण करें",
+      exploreProductsDesc: "प्राकृतिक निर्जलित पाउडर की हमारी पूरी श्रृंखला देखें।",
+      seeProcess: "हमारी प्रक्रिया देखें",
+      seeProcessDesc: "जानें कि हम चरण-दर-चरण अपने पाउडर कैसे बनाते हैं।",
+      getInTouch: "संपर्क करें",
+      getInTouchDesc: "थोक ऑर्डर्स या मुफ़्त नमूनों के लिए हमसे संपर्क करें।"
+    },
+    manufacturing: {
+      heroTitle: "उन्नत विनिर्माण (Advanced Manufacturing)",
+      heroSubtitle: "देखें कि कैसे हम खेत की ताज़ी उपज को शुद्ध, प्राकृतिक पाउडर में बदलते हैं।",
+      factoryTitle: "हमारा कारखाना",
+      factoryDesc: "सांगली, महाराष्ट्र में हमारी विनिर्माण इकाई अंतरराष्ट्रीय खाद्य सुरक्षा मानकों को पूरा करने के लिए बनाई गई है। हम आधुनिक कम तापमान वाली सुखाने की मशीनों का उपयोग करते हैं जो कच्चे अवयवों के प्राकृतिक रंग, स्वाद या विटामिन को नष्ट किए बिना नमी को हटा देती हैं।",
+      factoryPoints: [
+        "FSSAI प्रमाणित सुविधा",
+        "ISE प्रमाणित सुविधा",
+        "सूर्य सुखाने (Sun Drying) और ट्रे सुखाने (Tray Drying) का निर्जलीकरण",
+        "बहु-चरण छंटाई और सफाई",
+        "शून्य संदूषण प्रसंस्करण (Zero Contamination Processing)"
+      ],
+      qualityTitle: "कठोर गुणवत्ता नियंत्रण",
+      qualityDesc: "गुणवत्ता हमारे हर काम का हिस्सा है। हम अपने साझेदार खेतों में मिट्टी का परीक्षण करते हैं, उत्पादन के दौरान हर बैच की जांच करते हैं, और पैकिंग से पहले अंतिम लैब परीक्षण चलाते हैं। हमारे कारखाने से निकलने वाला हर उत्पाद सख्त सुरक्षा और गुणवत्ता जांच पास कर चुका होता है।",
+      browseProducts: "हमारे उत्पादों को ब्राउज़ करें",
+      browseProductsDesc: "वे सभी प्राकृतिक पाउडर देखें जो हम बनाते हैं।",
+      aboutCompany: "हमारी कंपनी के बारे में",
+      aboutCompanyDesc: "हमारी कहानी, मूल्यों और मिशन के बारे में जानें।",
+      requestQuote: "कोटेशन (Quote) का अनुरोध करें",
+      requestQuoteDesc: "मूल्य निर्धारण या कस्टम ऑर्डर्स के लिए हमसे संपर्क करें।",
+      timelineTitle: "हमारी विनिर्माण प्रक्रिया",
+      timelineDesc: "यहाँ बताया गया है कि हम कदम दर कदम अपने पाउडर कैसे बनाते हैं। हर चरण सामग्री की प्राकृतिक अच्छाई को बनाए रखने के लिए डिज़ाइन किया गया है।",
+      corePrinciples: "मूल सिद्धांत",
+      noPreservatives: "कोई परिरक्षक (Preservatives) नहीं",
+      noAdditives: "कोई योजक (Additives) नहीं",
+      allNatural: "100% प्राकृतिक",
+      processLabel: "प्रक्रिया:",
+      methodsLabel: "तरीके:",
+      objectiveLabel: "उद्देश्य:",
+      noteLabel: "नोट:",
+      steps: [
+        {
+          title: "चरण 1: कटाई या थोक खरीद",
+          icon: "🌱",
+          process: "ताजी सब्जियों और फलों को उचित परिपक्वता अवस्था में काटा जाता है। वैकल्पिक रूप से, उपज विश्वसनीय किसानों से थोक में खरीदी जाती है।",
+          objective: "ताजगी, गुणवत्ता, पोषण और पता लगाने की क्षमता सुनिश्चित करना।"
+        },
+        {
+          title: "चरण 2: धुलाई और सफाई",
+          icon: "💧",
+          process: "स्वच्छ पानी का उपयोग करके उपज को अच्छी तरह से धोया जाता है। गंदगी, धूल, मिट्टी के कण, कीटनाशक और अशुद्धियाँ हटा दी जाती हैं।",
+          objective: "स्वच्छता और खाद्य सुरक्षा मानकों को बनाए रखना।"
+        },
+        {
+          title: "चरण 3: काटना और टुकड़े करना",
+          icon: "🔪",
+          process: "साफ की गई उपज को छांटा जाता है। सब्जियों और फलों को एक समान टुकड़ों या स्लाइस में काटा जाता है।",
+          objective: "लगातार और समान रूप से सूखना प्राप्त करना। सुखाने की दक्षता और उत्पाद की गुणवत्ता में सुधार करना।"
+        },
+        {
+          title: "चरण 4: सुखाना (सूर्य या ट्रे)",
+          icon: "☀️",
+          methods: [
+            { name: "सूर्य सुखाना (Sun Drying)", desc: "प्राकृतिक धूप का उपयोग किया जाता है। लागत प्रभावी और पारंपरिक।" },
+            { name: "ट्रे सुखाना (Tray Drying)", desc: "नियंत्रित तापमान वाले सुखाने वाले कक्ष या डिहाइड्रेटर का उपयोग किया जाता है। बेहतर स्थिरता और स्वच्छता।" }
+          ],
+          objective: "नमी हटाना। पोषक तत्वों, प्राकृतिक रंग, स्वाद और सुगंध को संरक्षित करना। परिरक्षकों के बिना प्राकृतिक रूप से शेल्फ जीवन बढ़ाना।"
+        },
+        {
+          title: "चरण 5: पाउडर बनाने की प्रक्रिया",
+          icon: "⚙️",
+          process: "सूखे टुकड़ों को फूड-ग्रेड ग्राइंडर या पल्वराइज़र में डाला जाता है। बारीक और चिकना पाउडर तैयार किया जाता है।",
+          note: "कोई भी योजक (additives), फिलर्स, रंग या परिरक्षक नहीं मिलाए जाते हैं।"
+        },
+        {
+          title: "चरण 6: पैकेजिंग",
+          icon: "📦",
+          process: "पाउडर को स्वच्छ, फूड-ग्रेड, हवा-बंद पाउच में पैक किया जाता है।",
+          objective: "ताजगी को लॉक करना। स्वाद और पोषक तत्वों की रक्षा करना। नमी के अवशोषण को रोकना। स्वाभाविक रूप से शेल्फ जीवन बढ़ाना।"
+        }
+      ]
+    },
+    products: {
+      heroTitle: "हमारे प्रीमियम उत्पाद",
+      heroSubtitle: "हम ताजे फलों, सब्जियों और जड़ी-बूटियों से 100% प्राकृतिक निर्जलित पाउडर बनाते हैं। प्रत्येक उत्पाद रसायनों या कृत्रिम योजक के बिना बनाया जाता है।",
+      viewDetails: "विवरण देखें",
+      customBlendTitle: "क्या आपको कस्टम मिश्रण चाहिए?",
+      customBlendDesc: "कस्टम पाउडर आकार, मिश्रण या पैकेजिंग के लिए हमसे संपर्क करें।",
+      howWeMakeTitle: "हम अपना पाउडर कैसे बनाते हैं",
+      howWeMakeDesc: "हमारी चरण-दर-चरण विनिर्माण प्रक्रिया देखें।",
+      keyBenefits: "प्रमुख लाभ",
+      applications: "अनुप्रयोग (Applications)",
+      specificationsTitle: "विशेष विवरण",
+      colorLabel: "रंग",
+      moistureLabel: "नमी",
+      meshSizeLabel: "मेष का आकार",
+      shelfLifeLabel: "शेल्फ जीवन",
+      storageLabel: "भंडारण (Storage)",
+      packagingLabel: "पैकेजिंग",
+      backToProducts: "← वापस सभी उत्पादों पर जाएं",
+      contactForPricing: "मूल्य निर्धारण के लिए हमसे संपर्क करें →",
+      whyUseTitle: "क्यों उपयोग करें",
+      howToUseTitle: "कैसे उपयोग करें",
+      popularWaysTitle: "लोकप्रिय तरीके",
+      recommendedUsageTitle: "अनुशंसित उपयोग",
+      productsList: [
+        {
+          id: "moringa-powder",
+          name: "मोरिंगा पाउडर",
+          slug: "moringa-powder",
+          longDescription: "मोरिंगा पाउडर ध्यान से सुखाए गए और बारीक पिसे हुए मोरिंगा के पत्तों से बनाया जाता है, जिसे अक्सर प्रकृति के सबसे अधिक पोषक तत्वों से भरपूर पौधों में से एक कहा जाता है। आवश्यक विटामिन, खनिज, एंटीऑक्सीडेंट और पौधे-आधारित पोषक तत्वों से भरपूर, यह एक स्वस्थ जीवन शैली का समर्थन करने का एक सरल और प्राकृतिक तरीका है।\n\nचाहे आप अपने दैनिक पोषण को बढ़ाना चाहते हों, एक सक्रिय दिनचर्या बनाए रखना चाहते हों, या अपने आहार में अधिक पौधे-आधारित अच्छाई शामिल करना चाहते हों, मोरिंगा पाउडर एक सुविधाजनक समाधान प्रदान करता है।",
+          howToUse: "अपनी दिनचर्या में मोरिंगा पाउडर को शामिल करना सरल और सुविधाजनक है। इसका हल्का, मिट्टी जैसा स्वाद कई खाद्य पदार्थों और पेय पदार्थों के साथ अच्छी तरह घुलमिल जाता है।",
+          popularWays: [
+          {
+                    "title": "स्मूदी और रस",
+                    "desc": "एक पौष्टिक बूस्ट के लिए अपनी पसंदीदा स्मूदी या ताजे रस में एक चम्मच मोरिंगा पाउडर मिलाएं।"
+          },
+          {
+                    "title": "चाय और स्वास्थ्य पेय",
+                    "desc": "अपनी दैनिक कल्याण दिनचर्या के हिस्से के रूप में गर्म पानी, हर्बल चाय या स्वास्थ्य पेय के साथ मिलाएं।"
+          },
+          {
+                    "title": "सूप और करी",
+                    "desc": "उनके पोषण मूल्य को बढ़ाने के लिए सूप, दाल, करी और सॉस में जोड़ें।"
+          },
+          {
+                    "title": "बेकिंग और स्वस्थ रेसिपी",
+                    "desc": "कुकीज़, एनर्जी बार, पेनकेक्स या अन्य पके हुए उत्पादों में शामिल करें।"
+          },
+          {
+                    "title": "रोजमर्रा का भोजन",
+                    "desc": "चपाती के आटे, चावल के व्यंजनों, सलाद या दही में आसानी से पोषण जोड़ने के लिए मिलाएं।"
+          }
+          ],
+          recommendedUsage: "नियमित सेवन के लिए, अपने पसंदीदा भोजन या पेय में प्रतिदिन 1-2 चम्मच (लगभग 3-5 ग्राम) मिलाएं। अपनी आहार संबंधी आवश्यकताओं के अनुसार समायोजित करें।\n\nNNP Products में, हमारे मोरिंगा पाउडर को इसकी प्राकृतिक अच्छाई को संरक्षित करने में मदद करने के लिए सावधानीपूर्वक संसाधित किया जाता है।",
+          shortDescription: "प्रीमियम मोरिंगा के पत्तों से बना पोषक तत्वों से भरपूर सुपरफूड पाउडर।",
+          image: "/moringa.png",
+          benefits: [
+            "एंटीऑक्सीडेंट से भरपूर",
+            "सूजन कम करता है",
+            "रक्त शर्करा के स्तर को कम करता है",
+            "कोलेस्ट्रॉल कम करता है",
+          ],
+          applications: [
+            "आहार अनुपूरक (Dietary Supplements)",
+            "स्मूदी मिश्रण",
+            "स्वास्थ्य पेय",
+            "न्यूट्रास्यूटिकल्स",
+          ],
+          specifications: {
+            color: "जीवंत हरा",
+            moisture: "अधिकतम 8%",
+            meshSize: "60-80 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "सीधे धूप से दूर ठंडी, सूखी जगह पर स्टोर करें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "ginger-powder",
+          name: "अदरक पाउडर",
+          slug: "ginger-powder",
+          longDescription: "अदरक पाउडर सावधानी से सुखाए गए और बारीक पिसे हुए अदरक की जड़ों से बना एक बहुमुखी और सुगंधित घटक है। अपने विशिष्ट स्वाद और प्राकृतिक अच्छाई के लिए जाना जाने वाला, अदरक पाउडर अदरक के लाभों का आनंद लेने का एक सुविधाजनक तरीका प्रदान करता है।",
+          howToUse: "अदरक पाउडर को आपकी दिनचर्या में आसानी से शामिल किया जा सकता है। इसका केंद्रित स्वाद इसे पाक और कल्याण अनुप्रयोगों की एक विस्तृत श्रृंखला के लिए आदर्श बनाता है।",
+          popularWays: [
+          {
+                    "title": "चाय और हर्बल पेय",
+                    "desc": "गर्म पानी, चाय, या हर्बल पेय में थोड़ी मात्रा में मिलाकर एक ताज़ा अदरक पेय तैयार करें।"
+          },
+          {
+                    "title": "खाना पकाने और करी",
+                    "desc": "स्वाद और सुगंध बढ़ाने के लिए सब्जियों, करी, सूप, ग्रेवी और सॉस में जोड़ें।"
+          },
+          {
+                    "title": "बेकिंग और डेसर्ट",
+                    "desc": "गर्म, मसालेदार स्वाद के लिए कुकीज़, केक, बिस्कुट, मफिन और अन्य पके हुए उत्पादों में उपयोग करें।"
+          },
+          {
+                    "title": "स्मूदी और स्वास्थ्य पेय",
+                    "desc": "अतिरिक्त स्वाद और सुविधा के लिए स्मूदी, रस या पोषण पेय के साथ मिलाएं।"
+          },
+          {
+                    "title": "सीज़निंग और मसाला मिश्रण",
+                    "desc": "एक समृद्ध पाक अनुभव के लिए मसाला मिक्स, मैरिनेड और सीज़निंग ब्लेंड्स में शामिल करें।"
+          }
+          ],
+          recommendedUsage: "प्रतिदिन लगभग ½-1 चम्मच उपयोग करें या अपने नुस्खा और स्वाद वरीयता के अनुसार आवश्यकतानुसार उपयोग करें।",
+          shortDescription: "उच्च जिंजरोल सामग्री के साथ सुगंधित और तीखा अदरक पाउडर।",
+          image: "/ginger-powders.png",
+          benefits: [
+            "पाचन में सहायक",
+            "मतली से राहत देता है",
+            "सूजन-रोधी गुण",
+            "प्रतिरक्षा प्रणाली को बढ़ाता है",
+          ],
+          applications: [
+            "पाक मसाले",
+            "चाय मिश्रण",
+            "बेकरी उत्पाद",
+            "आयुर्वेदिक दवाएं",
+          ],
+          specifications: {
+            color: "हल्का पीला से भूरा",
+            moisture: "अधिकतम 10%",
+            meshSize: "60 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "ठंडे, अंधेरे वातावरण में कसकर सील किए गए कंटेनर में रखें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "beetroot-powder",
+          name: "चुकंदर पाउडर",
+          slug: "beetroot-powder",
+          shortDescription: "जीवंत प्राकृतिक रंग और नाइट्रेट्स से भरपूर स्वास्थ्य पूरक।",
+          image: "/beetroot-powders.png",
+          benefits: [
+            "रक्त प्रवाह में सुधार करता है",
+            "रक्तचाप कम करता है",
+            "एथलेटिक प्रदर्शन को बढ़ाता है",
+            "आवश्यक पोषक तत्वों से भरपूर",
+          ],
+          applications: [
+            "प्राकृतिक खाद्य रंग",
+            "खेल पोषण",
+            "बेकिंग और डेसर्ट",
+            "पेय पदार्थ",
+          ],
+          specifications: {
+            color: "गहरा लाल/बैंगनी",
+            moisture: "अधिकतम 5%",
+            meshSize: "80 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "हाइग्रोस्कोपिक (नमी सोखने वाला)। एक सूखी जगह में कसकर सील करके रखें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "onion-powder",
+          name: "प्याज पाउडर",
+          slug: "onion-powder",
+          longDescription: "प्याज पाउडर ध्यान से चुने गए प्याज से बनाया जाता है जो एक सुविधाजनक और स्वादिष्ट घटक बनाने के लिए निर्जलित और बारीक पिसे होते हैं। यह ताजे प्याज के छीलने, काटने या भंडारण की चिंताओं की आवश्यकता के बिना प्याज का समृद्ध स्वाद और सुगंध प्रदान करता है।",
+          howToUse: "प्याज पाउडर एक बहुमुखी घटक है जो व्यंजनों में आसानी से मिल जाता है, एक सुविधाजनक पाउडर रूप में प्रामाणिक प्याज का स्वाद प्रदान करता है।",
+          popularWays: [
+          {
+                    "title": "करी और ग्रेवी",
+                    "desc": "समृद्ध प्याज के स्वाद के लिए करी, ग्रेवी और सब्जियों के व्यंजनों में जोड़ें।"
+          },
+          {
+                    "title": "सूप और सॉस",
+                    "desc": "स्वाद और सुगंध बढ़ाने के लिए सूप, सॉस, ड्रेसिंग और मैरिनेड में मिलाएं।"
+          },
+          {
+                    "title": "सीज़निंग और मसाला मिश्रण",
+                    "desc": "संतुलित स्वादिष्ट स्वाद के लिए सीज़निंग मिक्स, मसाला ब्लेंड्स और स्नैक कोटिंग्स में उपयोग करें।"
+          },
+          {
+                    "title": "स्नैक्स और फास्ट फूड",
+                    "desc": "चिप्स, पॉपकॉर्न, भुने हुए मेवे, नूडल्स और अन्य स्वादिष्ट स्नैक तैयारियों के लिए आदर्श।"
+          },
+          {
+                    "title": "ब्रेड और स्वादिष्ट व्यंजन",
+                    "desc": "अतिरिक्त स्वाद के लिए ब्रेड के आटे, स्वादिष्ट पके हुए माल और घर के व्यंजनों में शामिल करें।"
+          }
+          ],
+          recommendedUsage: "½-2 चम्मच का उपयोग करें या अपने नुस्खा और वांछित स्वाद की तीव्रता के अनुसार समायोजित करें।",
+          shortDescription: "निर्जलित प्रीमियम प्याज से बना सुविधाजनक स्वाद बढ़ाने वाला।",
+          image: "/Onion-Powders.png",
+          benefits: [
+            "सुविधाजनक पाक उपयोग",
+            "लंबा शेल्फ जीवन",
+            "एंटीऑक्सीडेंट शामिल हैं",
+            "सुसंगत स्वाद प्रोफ़ाइल",
+          ],
+          applications: [
+            "सूप और सॉस",
+            "मीट रब्स",
+            "स्नैक सीज़निंग",
+            "रेडी-टू-ईट भोजन",
+          ],
+          specifications: {
+            color: "मलाईदार सफेद से हल्का भूरा",
+            moisture: "अधिकतम 6%",
+            meshSize: "60-100 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "ठंडी, सूखी जगह पर स्टोर करें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "curry-leaves-powder",
+          name: "करी पत्ता पाउडर",
+          slug: "curry-leaves-powder",
+          longDescription: "करी पत्ता पाउडर सावधानी से चुने गए और स्वाभाविक रूप से सुखाए गए करी पत्तों से बनाया जाता है, जिन्हें उनके प्रामाणिक स्वाद, सुगंध और पोषण मूल्य को संरक्षित करने के लिए बारीक पीस लिया जाता है।",
+          howToUse: "करी पत्ता पाउडर को व्यंजनों की एक विस्तृत श्रृंखला में आसानी से शामिल किया जा सकता है, जिससे यह रोजमर्रा के खाना पकाने के लिए एक बहुमुखी घटक बन जाता है।",
+          popularWays: [
+          {
+                    "title": "करी और ग्रेवी",
+                    "desc": "प्रामाणिक स्वाद और सुगंध के लिए करी, ग्रेवी और सब्जियों के व्यंजनों में जोड़ें।"
+          },
+          {
+                    "title": "चावल की तैयारी",
+                    "desc": "चावल के व्यंजनों, पुलाव, खिचड़ी या स्वाद वाले चावल के व्यंजनों में मिलाएं।"
+          },
+          {
+                    "title": "चटनी और डिप्स",
+                    "desc": "स्वाद और पोषण बढ़ाने के लिए चटनी, डिप्स और मसाला मिश्रण में ब्लेंड करें।"
+          },
+          {
+                    "title": "सूप और स्नैक्स",
+                    "desc": "सूप, स्नैक्स, भुने हुए मेवे, या स्वादिष्ट तैयारियों में छिड़कें।"
+          },
+          {
+                    "title": "चपाती और पराठा आटा",
+                    "desc": "चपाती, पराठे, या अन्य घर की बनी ब्रेड के आटे में मिलाएं।"
+          }
+          ],
+          recommendedUsage: "प्रतिदिन 1-2 चम्मच (लगभग 3-5 ग्राम) जोड़ें या अपने नुस्खा और स्वाद वरीयता के अनुसार आवश्यकतानुसार उपयोग करें।",
+          shortDescription: "ताजे करी पत्तों के आवश्यक तेलों को बनाए रखने वाला सुगंधित पाउडर।",
+          image: "/curry-leaves.png",
+          benefits: [
+            "बालों के स्वास्थ्य को बढ़ावा देता है",
+            "पाचन में सुधार करता है",
+            "आयरन और फोलिक एसिड से भरपूर",
+            "एंटीऑक्सीडेंट गुण",
+          ],
+          applications: [
+            "मसाला मिश्रण",
+            "बालों की देखभाल योगों",
+            "आयुर्वेदिक पूरक",
+            "पाक व्यंजन",
+          ],
+          specifications: {
+            color: "गहरा हरा",
+            moisture: "अधिकतम 8%",
+            meshSize: "60 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "गर्मी और नमी से दूर स्टोर करें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "methi-powder",
+          name: "मेथी पाउडर",
+          slug: "methi-powder",
+          longDescription: "मेथी पाउडर सावधानी से चुने गए मेथी के पत्तों से बनाया जाता है जिन्हें उनकी विशिष्ट सुगंध, स्वाद और पोषण मूल्य को संरक्षित करने के लिए स्वाभाविक रूप से सुखाया और बारीक पीस लिया जाता है।",
+          howToUse: "मेथी पाउडर को खाद्य पदार्थों की एक विस्तृत श्रृंखला में आसानी से शामिल किया जा सकता है, जिससे यह दैनिक खाना पकाने के लिए एक बहुमुखी घटक बन जाता है।",
+          popularWays: [
+          {
+                    "title": "करी और सब्जी व्यंजन",
+                    "desc": "स्वाद और सुगंध बढ़ाने के लिए करी, सब्जी और ग्रेवी में जोड़ें।"
+          },
+          {
+                    "title": "चपाती और पराठा आटा",
+                    "desc": "अतिरिक्त स्वाद और पोषण के लिए चपाती, पराठे और अन्य फ्लैटब्रेड के आटे में मिलाएं।"
+          },
+          {
+                    "title": "सूप और दाल की तैयारी",
+                    "desc": "अपने स्वाद प्रोफ़ाइल को समृद्ध करने के लिए सूप, दाल और दाल-आधारित व्यंजनों में ब्लेंड करें।"
+          },
+          {
+                    "title": "सीज़निंग और मसाला मिश्रण",
+                    "desc": "प्रामाणिक स्वाद के लिए मसाला मिक्स, चटनी और सीज़निंग ब्लेंड्स में उपयोग करें।"
+          },
+          {
+                    "title": "स्नैक्स और स्वादिष्ट व्यंजन",
+                    "desc": "स्नैक्स, स्वादिष्ट पके हुए माल और पारंपरिक व्यंजनों में शामिल करें।"
+          }
+          ],
+          recommendedUsage: "प्रतिदिन 1-2 चम्मच (लगभग 3-5 ग्राम) जोड़ें या अपने नुस्खा और स्वाद वरीयता के अनुसार आवश्यकतानुसार उपयोग करें।",
+          shortDescription: "थोड़ा कड़वा, अत्यधिक पौष्टिक पाउडर जिसका उपयोग कल्याण और पाक अनुप्रयोगों में किया जाता है।",
+          image: "/methi.png",
+          benefits: [
+            "रक्त शर्करा विनियमन में सहायता करता है",
+            "पाचन का समर्थन करता है",
+            "चयापचय को बढ़ाता है",
+            "त्वचा और बालों का स्वास्थ्य",
+          ],
+          applications: [
+            "मसाला मिक्स",
+            "हर्बल चाय",
+            "न्यूट्रास्यूटिकल्स",
+            "सौंदर्य प्रसाधन",
+          ],
+          specifications: {
+            color: "पीला भूरा",
+            moisture: "अधिकतम 10%",
+            meshSize: "60 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "एक ठंडी, अंधेरी, सूखी जगह में रखें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "tomato-powder",
+          name: "टमाटर पाउडर",
+          slug: "tomato-powder",
+          longDescription: "टमाटर पाउडर ध्यान से चुने गए, पके टमाटरों से बनाया जाता है जिन्हें एक सुविधाजनक और बहुमुखी घटक बनाने के लिए निर्जलित और बारीक पिसा जाता है।",
+          howToUse: "टमाटर पाउडर एक अत्यधिक बहुमुखी घटक है जिसे प्रामाणिक टमाटर स्वाद और रंग जोड़ने के लिए कई व्यंजनों में शामिल किया जा सकता है।",
+          popularWays: [
+          {
+                    "title": "सूप और सॉस",
+                    "desc": "बेहतर स्वाद और स्थिरता के लिए सूप, पास्ता सॉस, ग्रेवी और करी बेस में मिलाएं।"
+          },
+          {
+                    "title": "सीज़निंग और मसाला मिश्रण",
+                    "desc": "एक समृद्ध टमाटर स्वाद जोड़ने के लिए सीज़निंग मिक्स, स्नैक कोटिंग्स और मसाला ब्लेंड्स में उपयोग करें।"
+          },
+          {
+                    "title": "करी और सब्जी व्यंजन",
+                    "desc": "प्राकृतिक टमाटर के स्वाद के लिए सीधे करी, सब्जियों और स्वादिष्ट व्यंजनों में जोड़ें।"
+          },
+          {
+                    "title": "केचप और डिप्स",
+                    "desc": "पानी के साथ पुनर्गठन करें और घर के बने केचप, डिप्स और स्प्रेड में उपयोग करें।"
+          },
+          {
+                    "title": "रेडी-टू-ईट और सुविधा वाले खाद्य पदार्थ",
+                    "desc": "तत्काल खाद्य पदार्थ, सूप, नूडल्स और खाद्य प्रसंस्करण अनुप्रयोगों के लिए आदर्श।"
+          }
+          ],
+          recommendedUsage: "1-2 चम्मच का उपयोग करें या अपने नुस्खा, वांछित स्वाद की तीव्रता और अनुप्रयोग के अनुसार समायोजित करें।",
+          shortDescription: "धूप में पके निर्जलित टमाटरों से बना तीखा, जीवंत पाउडर।",
+          image: "/tomato-powders.png",
+          benefits: [
+            "लाइकोपीन से भरपूर",
+            "उच्च विटामिन सी सामग्री",
+            "उमामी स्वाद प्रदान करता है",
+            "सुविधाजनक भंडारण",
+          ],
+          applications: [
+            "सूप और ग्रेवी",
+            "स्नैक फ्लेवरिंग",
+            "पास्ता सॉस",
+            "तत्काल मिश्रण",
+          ],
+          specifications: {
+            color: "चमकीला लाल",
+            moisture: "अधिकतम 5%",
+            meshSize: "60-80 मेष",
+            shelfLife: "10 महीने",
+          },
+          storage: "हाइग्रोस्कोपिक। पूरी तरह से शुष्क, ठंडे वातावरण में संग्रहित किया जाना चाहिए।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg",
+        },
+        {
+          id: "lemongrass-powder",
+          name: "लेमनग्रास पाउडर",
+          slug: "lemongrass-powder",
+          longDescription: "लेमनग्रास पाउडर सावधानी से चुने गए लेमनग्रास के पत्तों से बनाया जाता है, जिन्हें उनकी ताज़ा साइट्रस सुगंध, स्वाद और प्राकृतिक अच्छाई को बनाए रखने के लिए प्राकृतिक रूप से सुखाया और बारीक पिसा जाता है।",
+          howToUse: "लेमनग्रास पाउडर एक बहुमुखी घटक है जिसे विभिन्न प्रकार के पेय पदार्थों और व्यंजनों में शामिल किया जा सकता है।",
+          popularWays: [
+            {
+              "title": "हर्बल चाय और इन्फ्यूजन",
+              "desc": "एक ताज़ा लेमनग्रास पेय तैयार करने के लिए गर्म पानी या चाय के साथ मिलाएँ।"
+            },
+            {
+              "title": "स्वास्थ्य पेय और स्मूदी",
+              "desc": "प्राकृतिक साइट्रस स्वाद के लिए स्मूदी, रस और कल्याण पेय में शामिल करें।"
+            },
+            {
+              "title": "सूप और करी",
+              "desc": "स्वाद और सुगंध बढ़ाने के लिए सूप, करी और शोरबा में उपयोग करें।"
+            },
+            {
+              "title": "सीज़निंग और मसाला मिश्रण",
+              "desc": "एक अद्वितीय स्वाद प्रोफ़ाइल के लिए मसाला मिक्स और पाक मिश्रणों में उपयोग करें।"
+            },
+            {
+              "title": "बेकिंग और विशिष्ट रेसिपी",
+              "desc": "एक ताज़ा स्वाद के लिए बेक किए गए सामान, डेसर्ट और अभिनव व्यंजनों में जोड़ें।"
+            }
+          ],
+          recommendedUsage: "प्रतिदिन ½-1 चम्मच (लगभग 2-3 ग्राम) जोड़ें या अपने नुस्खा और स्वाद वरीयता के अनुसार आवश्यकतानुसार उपयोग करें।",
+          shortDescription: "सावधानी से चुने गए लेमनग्रास के पत्तों से बना, अपनी ताज़ा साइट्रस सुगंध और स्वाद को बनाए रखने के लिए प्राकृतिक रूप से सुखाया गया।",
+          image: "/lemongrass-powder.png",
+          benefits: [
+            "प्रीमियम गुणवत्ता वाले लेमनग्रास से बना",
+            "ताज़ा प्राकृतिक साइट्रस सुगंध और स्वाद",
+            "प्राकृतिक रूप से पाए जाने वाले एंटीऑक्सीडेंट से भरपूर",
+            "सुविधाजनक और उपयोग में आसान",
+            "पेय, खाना पकाने और स्वास्थ्य अनुप्रयोगों के लिए उपयुक्त",
+            "लंबे शेल्फ जीवन के साथ स्टोर करना आसान"
+          ],
+          applications: [
+            "हर्बल चाय और इन्फ्यूजन",
+            "स्वास्थ्य पेय और स्मूदी",
+            "सूप और करी",
+            "सीज़निंग और मसाला मिश्रण",
+            "बेकिंग और विशिष्ट रेसिपी"
+          ],
+          specifications: {
+            color: "हल्का हरा",
+            moisture: "अधिकतम 5%",
+            meshSize: "60-80 मेष",
+            shelfLife: "12 महीने"
+          },
+          storage: "सीधे धूप से दूर ठंडी, सूखी जगह पर स्टोर करें।",
+          packaging: "न्यूनतम ऑर्डर के लिए - 50g, 100g, 200g, 500g और 1kg\nथोक ऑर्डर के लिए - 10kg, 25kg, 50kg"
+        }
+      ]
+    },
+    contact: {
+      heroTitle: "हमसे संपर्क करें",
+      heroSubtitle: "क्या हमारे उत्पादों के बारे में कोई प्रश्न है या नमूना मांगना चाहते हैं? हमें आपसे सुनना अच्छा लगेगा।",
+      getInTouch: "संपर्क करें",
+      headOffice: "मुख्य कार्यालय और सुविधा",
+      phoneLabel: "फोन / व्हाट्सएप",
+      emailLabel: "ईमेल",
+      businessHours: "काम करने के घंटे",
+      hoursDetails: "सोम - शनि: सुबह 9:00 - शाम 6:00",
+      connectWithUs: "हमसे जुड़ें",
+      sendInquiry: "पूछताछ भेजें",
+      formName: "पूरा नाम",
+      formNamePlaceholder: "जॉन डो",
+      formCompany: "कंपनी का नाम",
+      formCompanyPlaceholder: "एक्मे कॉर्प",
+      formEmail: "ईमेल पता",
+      formEmailPlaceholder: "john@example.com",
+      formPhone: "फोन नंबर",
+      formPhonePlaceholder: "+91 98765 43210",
+      formProduct: "रुचि का उत्पाद",
+      formProductPlaceholder: "उदा. मोरिंगा पाउडर",
+      formMessage: "संदेश",
+      formMessagePlaceholder: "कृपया हमें अपनी आवश्यकताएं बताएं (MOQ, विनिर्देश, आदि)",
+      inquireViaWhatsApp: "व्हाट्सएप के माध्यम से पूछताछ करें",
+      whatsappMsgNewInquiry: "*नई पूछताछ*",
+      whatsappMsgName: "*नाम:*",
+      whatsappMsgCompany: "*कंपनी:*",
+      whatsappMsgEmail: "*ईमेल:*",
+      whatsappMsgPhone: "*फोन:*",
+      whatsappMsgProduct: "*उत्पाद:*",
+      whatsappMsgMessage: "*संदेश:*"
+    },
+    gallery: {
+      heroTitle: "गैलरी",
+      heroSubtitle: "हमारे कारखाने, हमारे फार्म भागीदारों और हमारे तैयार उत्पादों की तस्वीरें देखें। इसे पूर्ण आकार में देखने के लिए किसी भी छवि पर क्लिक करें।",
+      viewOurProducts: "हमारे उत्पाद देखें",
+      viewOurProductsDesc: "प्राकृतिक पाउडर की हमारी पूरी श्रृंखला ब्राउज़ करें।",
+      aboutCompany: "हमारी कंपनी के बारे में",
+      aboutCompanyDesc: "NNP Products और हमारी कहानी के बारे में जानें।",
+      contactUs: "हमसे संपर्क करें",
+      contactUsDesc: "ऑर्डर या सवालों के लिए संपर्क करें।"
+    },
+    testimonials: {
+      badge: "भागीदार प्रतिक्रिया",
+      heroTitle: "हमारे ग्राहक क्या कहते हैं",
+      heroSubtitle: "खाद्य कंपनियां, सप्लीमेंट ब्रांड और कल्याण व्यवसाय गुणवत्ता और विश्वसनीयता के लिए NNP Products पर भरोसा करते हैं। यहाँ वे क्या कहते हैं।",
+      exploreProducts: "हमारे उत्पादों का अन्वेषण करें",
+      exploreProductsDesc: "हमारे ग्राहकों द्वारा पसंद किए जाने वाले प्राकृतिक पाउडर देखें।",
+      contactUs: "हमसे संपर्क करें",
+      contactUsDesc: "क्या आप हमारे साथ साझेदारी करने के लिए तैयार हैं? आज ही संपर्क करें।",
+      items: [
+        {
+          text: "NNP Products मोरिंगा और चुकंदर पाउडर के लिए हमारा विश्वसनीय आपूर्तिकर्ता रहा है। गुणवत्ता और समय पर डिलीवरी में उनकी निरंतरता उद्योग में बेजोड़ है।",
+          name: "राजेश कुमार",
+          role: "ग्लोबल हेल्थ सप्लीमेंट्स",
+        },
+        {
+          text: "उनके अदरक पाउडर का जीवंत रंग और प्रामाणिक सुगंध हमारे जैविक चाय मिश्रणों के अनुकूल है। हम उनकी पारदर्शी निर्माण प्रक्रिया की सराहना करते हैं।",
+          name: "सारा विलियम्स",
+          role: "ऑर्गेनिक वेलनेस कं.",
+        },
+        {
+          text: "पोषण प्रोफ़ाइल को अक्षुण्ण रखते हुए कम नमी की मात्रा बनाए रखने वाले निर्माता को खोजना कठिन है। NNP Products इसे निर्दोष रूप से करता है।",
+          name: "अमित पटेल",
+          role: "स्पाइस मास्टर एक्सपोर्ट्स",
+        },
+        {
+          text: "उनके निर्जलित फलों के पाउडर ने हमारी पेय लाइन में क्रांति ला दी है। प्राकृतिक स्वाद प्रोफ़ाइल इतनी तीव्र है, कि हमने कृत्रिम योजकों को पूरी तरह से हटा दिया है।",
+          name: "एलेना रोड्रिग्ज",
+          role: "बेवरेज इनोवेशन लैब",
+        },
+        {
+          text: "NNP Products के थोक आपूर्ति समाधानों की बदौलत हमारे न्यूट्रास्युटिकल ब्रांड को बढ़ाना आसान था। वे लगातार हमारे कड़े गुणवत्ता मानकों को पूरा करते हैं।",
+          name: "माइकल चेन",
+          role: "न्यूट्रिलाइफ फार्मास्यूटिकल्स",
+        },
+        {
+          text: "हमने अपने रेडी-टू-ईट भोजन के लिए उनके प्याज और टमाटर पाउडर पर स्विच किया। शेल्फ-लाइफ स्थिरता और स्वाद प्रतिधारण बस उत्कृष्ट हैं।",
+          name: "प्रिया शर्मा",
+          role: "क्विकमील्स इंडिया",
+        },
+        {
+          text: "हर्बल पाउडर के लिए उनके अनुकूलित कण आकार ने हमें हमारी कॉस्मेटिक लाइन में एक प्रमुख फॉर्मूलेशन समस्या को हल करने में मदद की। वास्तव में एक उत्तरदायी बी2बी भागीदार।",
+          name: "अमांडा फोस्टर",
+          role: "अर्थली कॉस्मेटिक्स",
+        },
+        {
+          text: "खेत सोर्सिंग से लेकर अंतिम डिलीवरी तक, NNP Products का व्यावसायिकता स्पष्ट है। हमारी आपूर्ति श्रृंखला पहले कभी इतनी सुरक्षित नहीं रही।",
+          name: "डेविड ओकाफोर",
+          role: "ग्लोबल इंग्रीडिएंट्स लिमिटेड",
+        },
+        {
+          text: "उनके कृषि पाउडर की शुद्धता प्रमाणित और सत्यापित है। वे हमारी नई प्रतिरक्षा-बढ़ाने वाली पूरक श्रृंखला की रीढ़ हैं।",
+          name: "सोफी बेनेट",
+          role: "वाइटैलिटी सप्लीमेंट्स",
+        },
+      ]
+    },
+    blog: {
+      heroTitle: "ब्लॉग और अंतर्दृष्टि",
+      heroSubtitle: "प्राकृतिक पाउडर के स्वास्थ्य लाभों के बारे में जानें, उन्हें कैसे बनाया जाता है, और खाद्य उद्योग में क्या हो रहा है।",
+      readArticle: "लेख पढ़ें →",
+      exploreProducts: "हमारे उत्पादों का अन्वेषण करें",
+      exploreProductsDesc: "हमारे द्वारा निर्मित पाउडर की पूरी श्रृंखला देखें।",
+      manufacturingProcess: "हमारी विनिर्माण प्रक्रिया",
+      manufacturingProcessDesc: "जानें कि हम खेत से पैकेजिंग तक अपने पाउडर कैसे बनाते हैं।",
+      backToBlog: "← वापस ब्लॉग पर जाएं",
+      sharePost: "इस पोस्ट को शेयर करें",
+      posts: [
+        {
+          id: "moringa-powder-benefits",
+          slug: "moringa-powder-benefits",
+          title: "मोरिंगा पाउडर के लाभों के लिए अंतिम मार्गदर्शिका",
+          excerpt: "मोरिंगा को एक कारण से 'चमत्कारी पेड़' कहा जाता है। इसके अद्भुत स्वास्थ्य लाभों के बारे में जानें और कैसे मोरिंगा पाउडर आपके दैनिक पोषण को बढ़ा सकता है।",
+          category: "स्वास्थ्य लाभ",
+          date: "15 जून, 2026",
+          image: "/blog1.png",
+          content: `
+            मोरिंगा ओलिफेरा, जिसे विश्व स्तर पर "चमत्कारी पेड़" के रूप में मान्यता प्राप्त है, पारंपरिक कल्याण की आधारशिला है जो आधुनिक सुपरफूड में बदल गया है। NNP Products में, हमारा प्रीमियम निर्जलित मोरिंगा पाउडर अधिकतम पोषण घनत्व प्रदान करने के लिए तैयार किया गया है।
+
+            ### व्यापक पोषण प्रोफ़ाइल
+            हमारा सावधानीपूर्वक संसाधित मोरिंगा पाउडर एक शक्तिशाली, प्राकृतिक मल्टीविटामिन के रूप में कार्य करता है। यह प्रदान करता है:
+            - **विटामिन सी:** संतरे से बेहतर, प्रतिरक्षा प्रणाली को मजबूत करता है।
+            - **पोटेशियम:** केले से अधिक, हृदय और मांसपेशियों के स्वास्थ्य के लिए महत्वपूर्ण।
+            - **कैल्शियम और प्रोटीन:** अस्थि घनत्व और सेलुलर मरम्मत के लिए आवश्यक बिल्डिंग ब्लॉक्स।
+            - **विटामिन ए और ई:** दृष्टि, त्वचा के स्वास्थ्य और सेलुलर सुरक्षा के लिए महत्वपूर्ण।
+
+            ### नैदानिक स्वास्थ्य लाभ
+            - **प्रतिरक्षा प्रणाली का सुदृढ़ीकरण:** आयरन और विटामिन की उच्च सांद्रता थकान से लड़ती है और प्रतिरक्षा प्रतिक्रियाओं को बढ़ाती है।
+            - **शक्तिशाली एंटीऑक्सीडेंट कार्रवाई:** क्वेरसेटिन और क्लोरोजेनिक एसिड से भरपूर, जो मुक्त कणों को बेअसर करते हैं और रक्तचाप को कम करते हैं।
+            - **उन्नत सूजन-रोधी समर्थन:** शक्तिशाली आइसोथियोसाइनेट्स होते हैं जो कई स्वास्थ्य स्थितियों से जुड़ी पुरानी सूजन को स्वाभाविक रूप से कम करते हैं।
+            - **रक्त शर्करा विनियमन:** नियमित खपत से रक्त ग्लूकोज के स्तर को स्थिर करने में मदद मिलती है।
+            
+            ### औद्योगिक और पाक अनुप्रयोग
+            - **आहार पूरक:** एन्कैप्सुलेशन और ग्रीन सुपरफूड मिश्रणों के लिए आदर्श।
+            - **कार्यात्मक पेय:** स्वास्थ्य पेय, स्मूदी और डिटॉक्स चाय में समेकित रूप से एकीकृत होता है।
+            - **पाककला संवर्द्धन:** सूप, सॉस और पके हुए माल में हल्का, मिट्टी का पोषण बढ़ावा देता है।
+          `
+        },
+        {
+          id: "trending-natural-colorants",
+          slug: "trending-natural-colorants",
+          title: "खाद्य उद्योग में ट्रेंडिंग प्राकृतिक रंग",
+          excerpt: "अधिक खाद्य कंपनियां कृत्रिम रंगों के बजाय चुकंदर और पालक पाउडर का चयन कर रही हैं। जानें कि प्राकृतिक रंग भविष्य क्यों हैं।",
+          category: "उद्योग के रुझान",
+          date: "5 जून, 2026",
+          image: "/blog3.png",
+          content: `
+            जैसे-जैसे वैश्विक उपभोक्ता जागरूकता स्वच्छ-लेबल उत्पादों की ओर बढ़ती है, खाद्य और पेय उद्योग कृत्रिम खाद्य रंगों से दूर जा रहा है। प्राकृतिक वनस्पति और फलों के पाउडर सुरक्षित, जीवंत और कार्यात्मक खाद्य रंग के लिए उद्योग मानक के रूप में उभर रहे हैं।
+
+            ### कृत्रिम रंजक से दूर बदलाव
+            - **उपभोक्ता संशयवाद:** कृत्रिम रंग एजेंटों के दीर्घकालिक प्रभावों के बारे में बढ़ती स्वास्थ्य चिंताएं।
+            - **नियामक दबाव:** कृत्रिम योजकों के उपयोग को सीमित करने वाले सख्त वैश्विक खाद्य सुरक्षा नियम।
+            - **क्लीन लेबल की मांग:** आधुनिक उपभोक्ता सरल, पहचानने योग्य और प्राकृतिक सामग्री सूचियों वाले उत्पादों की सक्रिय रूप से तलाश करते हैं।
+
+            ### प्राकृतिक वनस्पति पाउडर की शक्ति
+            चुकंदर (जीवंत लाल/गुलाबी) और पालक (गहरा हरा) जैसी सामग्रियां अब केवल पोषण की खुराक नहीं हैं; वे आवश्यक सूत्रीकरण उपकरण हैं।
+
+            ### खाद्य निर्माताओं के लिए रणनीतिक लाभ
+            1. **"कोई कृत्रिम रंग नहीं" दावे:** पैकेजिंग पर क्लीन-लेबल घोषणाओं की अनुमति देकर तुरंत ब्रांड विश्वास और बाजार की स्थिति को बढ़ाता है।
+            2. **मूल्य वर्धित पोषण:** सिंथेटिक रंगों के विपरीत, प्राकृतिक पाउडर अंतिम उत्पाद में विटामिन, खनिज और एंटीऑक्सीडेंट का सूक्ष्म, कार्यात्मक बढ़ावा देते हैं।
+            3. **असाधारण बहुमुखी प्रतिभा:** अत्यधिक घुलनशील और स्थिर, ये पाउडर पके हुए माल, पास्ता, खेल पेय और कन्फेक्शनरी में समेकित रूप से एकीकृत होते हैं।
+            4. **लगातार दृश्य अपील:** उन्नत निर्जलीकरण मानक रंग प्रोफाइल सुनिश्चित करता है, जिससे विश्वसनीय बैच निर्माण की अनुमति मिलती है।
+          `
+        },
+        {
+          id: "sun-vs-tray-drying-techniques",
+          slug: "sun-vs-tray-drying-techniques",
+          title: "सूर्य सुखाने बनाम ट्रे सुखाने की निर्जलीकरण तकनीक",
+          excerpt: "पारंपरिक सूर्य सुखाने और आधुनिक ट्रे निर्जलीकरण के बीच महत्वपूर्ण अंतरों की खोज करें, और वे पाउडर की गुणवत्ता को कैसे प्रभावित करते हैं।",
+          category: "विनिर्माण",
+          date: "26 जून, 2026",
+          image: "/blog2.png",
+          content: `
+            निर्जलीकरण (Dehydration) कृषि उपज को संरक्षित करने के सबसे पुराने और सबसे प्रभावी तरीकों में से एक है। हालाँकि, उपयोग की जाने वाली सटीक तकनीक अंतिम पाउडर के पोषण प्रोफ़ाइल, स्वच्छता और शेल्फ जीवन को नाटकीय रूप से प्रभावित करती है। NNP Products में, हम प्रीमियम गुणवत्ता सुनिश्चित करने के लिए सही तकनीक का उपयोग करने पर जोर देते हैं।
+
+            ### पारंपरिक धूप में सुखाने की तकनीक
+            धूप में सुखाना एक सदियों पुरानी प्रथा है जो पूरी तरह से प्राकृतिक सौर विकिरण और कटी हुई उपज से नमी को हटाने के लिए परिवेशी वायु प्रवाह पर निर्भर करती है।
+
+            ### धूप में सुखाने के फायदे
+            - **लागत प्रभावी:** न्यूनतम बुनियादी ढांचे और शून्य विद्युत ऊर्जा की आवश्यकता होती है, जिससे यह अत्यधिक किफायती हो जाता है।
+            - **इको-फ्रेंडली:** शून्य कार्बन पदचिह्न वाली पूरी तरह से प्राकृतिक प्रक्रिया।
+            - **बड़े पैमाने पर व्यवहार्यता:** खुले खेतों में बड़े पैमाने पर थोक मात्रा में प्रसंस्करण के लिए उपयुक्त।
+
+            ### धूप में सुखाने के नुकसान
+            1. **मौसम पर निर्भरता:** प्रक्रिया पूरी तरह से अप्रत्याशित मौसम की स्थिति, वर्षा और आर्द्रता की दया पर है।
+            2. **पोषक तत्वों की हानि:** कठोर यूवी किरणों के अनियंत्रित, लंबे समय तक संपर्क से गर्मी के प्रति संवेदनशील विटामिन (जैसे विटामिन सी) और एंटीऑक्सीडेंट नष्ट हो जाते हैं।
+            3. **संदूषण के जोखिम:** ओपन-एयर एक्सपोजर उपज को धूल, कीड़े और हवाई रोगजनकों के लिए अत्यधिक संवेदनशील बनाता है।
+
+            ### आधुनिक ट्रे सुखाने का निर्जलीकरण
+            ट्रे सुखाने (या कैबिनेट डिहाइड्रेशन) एक अत्यधिक नियंत्रित, मशीनीकृत प्रक्रिया है जहां ताजी उपज को काटा जाता है और एक संलग्न कक्ष के भीतर छिद्रित ट्रे पर रखा जाता है। नमी को कुशलता से निकालने के लिए गर्म हवा को सटीक तापमान पर लगातार प्रसारित किया जाता है।
+
+            ### प्रीमियम पाउडर के लिए ट्रे सुखाना बेहतर क्यों है
+            - **प्रेसिजन नियंत्रण:** तापमान, वायु प्रवाह और आर्द्रता की कड़ाई से निगरानी की जाती है, जिससे विशिष्ट सब्जियों और फलों के अनुरूप सुखाने वाले वक्रों को अनुकूलित किया जा सकता है।
+            - **अधिकतम पोषक तत्व प्रतिधारण:** यूवी जोखिम के बिना कम, नियंत्रित तापमान पर सुखाने से, नाजुक जैव रासायनिक संरचनाओं और विटामिनों को बरकरार रखा जाता है।
+            - **पूर्ण स्वच्छता:** मुहरबंद वातावरण पूरी तरह से बाहरी संदूषण के जोखिम को समाप्त करता है, खाद्य-ग्रेड सुरक्षा और शुद्धता सुनिश्चित करता है।
+            - **लगातार गुणवत्ता और रंग:** तेजी से, एक समान सुखाने से एंजाइमी ब्राउनिंग को रोका जा सकता है, जिसके परिणामस्वरूप पाउडर ताजे उत्पादों के जीवंत प्राकृतिक रंगों और मजबूत स्वादों को बनाए रखता है।
+          `
+        }
+      ]
+    },
+    footer: {
+      brandDesc: "NNP Products में, हमारी यात्रा एक सरल विश्वास से शुरू होती है: सबसे शुद्ध पोषण प्रकृति से ही आता है। प्रकृति का पोषण, सरल और शक्तिशाली।",
+      quickLinks: "त्वरित लिंक",
+      contactUs: "हमसे संपर्क करें",
+      phone: "+91 84597 11477",
+      email: "nutrinaturalpowders123@gmail.com",
+      address: "प्लॉट नंबर एस-5, एस-6, ईश्वरपुर एमआईडीसी, तालुका वाळवा, जिला सांगली, महाराष्ट्र",
+      followUs: "हमें फॉलो करें",
+      rights: "© 2026 NNP Products. सर्वाधिकार सुरक्षित।",
+    }
+  },
 };
 
-export type Language = 'en' | 'mr';
+export type Language = 'en' | 'mr' | 'hi';
 
 export function getTranslations(lang: string | undefined | null) {
   if (lang === 'mr') return translations.mr;
+  if (lang === 'hi') return translations.hi;
   return translations.en;
 }

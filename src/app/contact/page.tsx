@@ -114,7 +114,7 @@ export default async function ContactPage() {
             </div>
             <div className="w-full rounded-2xl overflow-hidden h-[400px]">
               <iframe
-                src="https://maps.google.com/maps?q=Ishwarpur%20MIDC%2C%20Walwa%2C%20Sangli%2C%20Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Nutri%20Natural%20Powders%20NNP%20Products%2C%20S-5%2C%20S-6%20Ishwarpur%20MIDC%2C%20Tal.%20Walwa%2C%20Dist.%20Sangli%2C%20Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -58,10 +58,10 @@ export default async function ManufacturingPage() {
             <FadeIn direction="left">
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&q=80&w=600" alt="Machinery" fill className="object-cover" />
+                  <Image src="/manu1.png" alt="Machinery" fill className="object-cover" />
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden mt-12">
-                  <Image src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="Lab Testing" fill className="object-cover" />
+                  <Image src="/manu2.png" alt="Lab Testing" fill className="object-cover" />
                 </div>
               </div>
             </FadeIn>

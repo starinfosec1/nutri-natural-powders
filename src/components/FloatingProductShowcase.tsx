@@ -13,6 +13,7 @@ const products = [
   { name: "Curry Leaves Powder", image: "/curry-leaves.png", slug: "curry-leaves-powder" },
   { name: "Methi Powder", image: "/methi.png", slug: "methi-powder" },
   { name: "Tomato Powder", image: "/tomato-powders.png", slug: "tomato-powder" },
+  { name: "Lemongrass Powder", image: "/lemongrass-powder.png", slug: "lemongrass-powder" },
 ];
 
 export function FloatingProductShowcase() {
