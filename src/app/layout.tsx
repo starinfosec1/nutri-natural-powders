@@ -69,7 +69,7 @@ export default async function RootLayout({
       lang={lang}
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans overflow-x-hidden">
         <Header lang={lang} />
         <main className="flex-1">{children}</main>
         <Footer lang={lang} />

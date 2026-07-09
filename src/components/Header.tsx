@@ -28,9 +28,9 @@ export function Header({ lang }: { lang: string }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-3">
-              <Image src="/logo.jpg" alt="NNP Products Logo" width={60} height={60} className="object-contain" />
-              <span className="font-heading text-2xl font-bold text-primary">NNP Products</span>
+            <Link href="/" className="flex items-center gap-2 sm:gap-3">
+              <Image src="/logo.jpg" alt="NNP Products Logo" width={60} height={60} className="object-contain w-10 h-10 sm:w-[60px] sm:h-[60px]" />
+              <span className="font-heading text-lg sm:text-2xl font-bold text-primary">NNP Products</span>
             </Link>
           </div>
           <div className="hidden xl:block">
@@ -52,7 +52,7 @@ export function Header({ lang }: { lang: string }) {
               {t.nav.inquire}
             </Link>
           </div>
-          <div className="-mr-2 flex xl:hidden items-center gap-4">
+          <div className="-mr-2 flex xl:hidden items-center gap-1 sm:gap-4">
             <LanguageToggle />
             <Button
               variant="ghost"
