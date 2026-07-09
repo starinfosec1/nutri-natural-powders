@@ -12,10 +12,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function TestimonialsClient({ t }: { t: any }) {
-  const testimonials = t.testimonials.items.map((item: any, index: number) => ({
-    ...item,
-    image: `https://randomuser.me/api/portraits/${index % 2 === 0 ? 'men' : 'women'}/${11 + index}.jpg`,
-  }));
+  const testimonials = t.testimonials.items;
 
   const firstColumn = testimonials.slice(0, 3);
   const secondColumn = testimonials.slice(3, 6);
@@ -56,13 +53,9 @@ export function TestimonialsClient({ t }: { t: any }) {
                   <div className="p-6 bg-white border border-border rounded-2xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col mx-2">
                     <p className="text-muted-foreground mb-6 flex-1 italic">"{item.text}"</p>
                     <div className="flex items-center gap-4 mt-auto">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        width={48}
-                        height={48}
-                        className="rounded-full object-cover"
-                      />
+                      <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-xl">
+                        {item.name.charAt(0)}
+                      </div>
                       <div>
                         <h4 className="font-bold text-foreground">{item.name}</h4>
                         <p className="text-sm text-muted-foreground">{item.role}</p>
