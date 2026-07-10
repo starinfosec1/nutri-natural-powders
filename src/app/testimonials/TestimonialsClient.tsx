@@ -10,6 +10,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { buttonVariants } from "@/components/ui/button";
+import { Star } from "lucide-react";
 
 export function TestimonialsClient({ t }: { t: any }) {
   const testimonials = t.testimonials.items;
@@ -40,6 +42,17 @@ export function TestimonialsClient({ t }: { t: any }) {
           <p className="text-lg text-muted-foreground mt-6 max-w-xl mx-auto">
             {t.testimonials.heroSubtitle}
           </p>
+          <div className="mt-8 flex justify-center">
+            <a 
+              href="https://g.page/r/CS7_vDWFCTW_EBM/review" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={buttonVariants({ variant: "default", size: "lg", className: "gap-2 rounded-full font-bold" })}
+            >
+              <Star className="w-5 h-5 fill-current" />
+              Write a Google Review
+            </a>
+          </div>
         </motion.div>
 
         <div className="px-12 relative max-w-6xl mx-auto mt-16">
